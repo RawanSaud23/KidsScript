@@ -10,39 +10,225 @@
     
 <body> 
     <header> <!--top bar of the page-->
-        <a href="index.html">
-        <img src="images/kidsScriptLOGO.png" alt="kids Script logo" height="30" width="30"> 
-    <h1>Kids Script</h1>	
+    <a href="index.html"> <img src="images/kidsScriptLOGO.png" alt="kids Script logo" height="80">  </a>    	
     
     <nav> 
-    <a href= "index.html"> Home </a>
-    <a href= "Parentdashboard.html"> parent</a>
+    <a href="index.html"> Home </a>
+    <a href="Parentdashboard.html"> parent</a>
     <a href="Administratordashboard.html"> Administrator</a>
     <a href="Courses.html"> Courses</a>
     <a href="Courses.html"> Sign in</a> <!--How we do pop-up window??-->
     </nav>
-    </header>	
-    
-    <main>
-        <div class="corsess card"> <!-- to do a background in css-->
-            <div id="course#1">
-                <img src="images/Python.PNG" altr="" height="50" width="50">
-                <h4>Python course</h4>
-                <p>course description<br> <!--th des--> </p>
-                <img src="images/teacher1.jpeg" altr="" height="30" width="30"> <p>T.Amal</p>
-                <aside> <!--Is it aside?-->
-                    <ul>
-                    <li> <button type="button" onclick: href= "">Prerequisite</button> </li>
-                    <li> <button type="button" onclick: href= "">Objectives</button> </li>
-                    </ul> 
-                </aside>
-                <p>Rate <!--??--> </p>
-            </div>
 
-            <div id="course#2">
-                
-            </div>
+    </header>	
+
+    <div class="pageLink">
+        <nav> 
+            <a href="index.html">Home</a> /
+            <a href=""> Courses</a>
+        </nav>
+        </div>  
+    
+<main>
+<div class="all corsess cards"> <!-- to do a background in css-->
+            
+    <div class="courseCard"> <!--1-Python-->
+    <img src="images/Python.PNG" altr="Python logo" style="width:100%">
+        <div class= "cardInfo">
+        <h4>Python</h4>
+        <!--date and time-->
+        <p><b>course description:</b> <br>
+        <!--th des--> </p>
+        <div class="Tutor">
+            <img src="images/Tutor1.png" alt="Avatar" width="30" height="30">
+            T.Sara Ahmed
+          </div>
+          <div class="MoreInfo"> 
+            <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
+            <a href= "">Objectives</a>  <!--url= pop-up window--> 
         </div>
+
+        <p>Rate: </p> <!--not working-->
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+
+        </div> <!--CardInfo-->
+        </div> <!--card1-->
+
+        <div class="courseCard"> <!--2-Swift-->
+            <img src="images/Swift.png" altr="Swift logo" style="width:100%">
+                <div class= "cardInfo">
+                <h4>Swift</h4>
+                <!--date and time-->
+                <p><b>course description:</b> <br>
+                <!--th des--> </p>
+                <div class="Tutor">
+                    <img src="images/Tutor2.png" alt="Avatar" width="30" height="30">
+                    T.Layan turki
+                </div>
+                <div class="MoreInfo"> 
+                    <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
+                    <a href= "">Objectives</a>  <!--url= pop-up window--> 
+                </div>
+        
+                <p>Rate: <!--form?--> </p>
+        
+                </div> <!--CardInfo-->
+                </div> <!--card2-->
+
+        <div class="courseCard"> <!--3-php-->
+            <img src="images/php.png" altr="pjp logo" style="width:100%">
+            <div class= "cardInfo">
+            <h4>php Basics</h4>
+            <!--date and time-->
+            <p><b>course description:</b> <br>
+            <!--th des--> </p>
+            <div class="Tutor">
+                <img src="images/Tutor1.png" alt="Avatar" width="30" height="30">
+                T.Sara Ahmed
+            </div>
+            <div class="MoreInfo"> 
+                <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
+                <a href= "">Objectives</a>  <!--url= pop-up window--> 
+            </div>
+                
+            <p>Rate: <!--form?--> </p>
+                
+        </div> <!--CardInfo-->
+        </div> <!--card3-->
+
+        <div class="courseCard"> <!--4- C++-->
+            <img src="images/c++.png" altr="C++ logo" style="width:100%">
+            <div class= "cardInfo">
+            <h4>C++</h4>
+            <!--date and time-->
+            <p><b>course description:</b> <br>
+            <!--th des--> </p>
+            <div class="Tutor">
+                <img src="images/Tutor6.png" alt="Avatar" width="30" height="30">
+                T.Alanoud Abdulaziz
+            </div>
+            <div class="MoreInfo"> 
+                <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
+                <a href= "">Objectives</a>  <!--url= pop-up window--> 
+            </div>
+                
+            <p>Rate: <!--form?--> </p>
+                
+        </div> <!--CardInfo-->
+        </div> <!--card4-->          
+
+        <div class="courseCard"> <!--5- C#-->
+            <img src="images/cSharp.png" altr="C sharp logo" style="width:100%">
+            <div class= "cardInfo">
+            <h4>C#</h4>
+            <!--date and time-->
+            <p><b>course description:</b> <br>
+            <!--th des--> </p>
+            <div class="Tutor">
+                <img src="images/Tutor5.png" alt="Avatar" width="30" height="30">
+                T.Nasser Alyehya
+            </div>
+            <div class="MoreInfo"> 
+                <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
+                <a href= "">Objectives</a>  <!--url= pop-up window--> 
+            </div>
+                
+            <p>Rate: <!--form?--> </p>
+                
+        </div> <!--CardInfo-->
+        </div> <!--card5-->
+        
+        <div class="courseCard"> <!--6-Java Script-->
+            <img src="images/JavaScript.png" altr="JavaScript logo" style="width:100%">
+            <div class= "cardInfo">
+            <h4>Java Script</h4>
+            <!--date and time-->
+            <p><b>course description:</b> <br>
+            <!--th des--> </p>
+            <div class="Tutor">
+                <img src="images/Tutor3.png" alt="Avatar" width="30" height="30">
+                T.Ghala Hussam
+            </div>
+            <div class="MoreInfo"> 
+                <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
+                <a href= "">Objectives</a>  <!--url= pop-up window--> 
+            </div>>
+                
+            <p>Rate: <!--form?--> </p>
+                
+        </div> <!--CardInfo-->
+        </div> <!--card6--> 
+        
+        <div class="courseCard"> <!--7-SQL-->
+            <img src="images/SQL.png" altr="SQL logo" style="width:100%">
+            <div class= "cardInfo">
+            <h4>SQL</h4>
+            <!--date and time-->
+            <p><b>course description:</b> <br>
+            <!--th des--> </p>
+            <div class="Tutor">
+                <img src="images/Tutor4.png" alt="Avatar" width="30" height="30">
+                T.Faris Yousef
+            </div>
+            <div class="MoreInfo"> 
+                <ul>
+                <a href= "">Prerequisite <br></a>  <!--url= pop-up window-->
+                <a href= "">Objectives </a>  <!--url= pop-up window-->
+                </ul> 
+            </div>
+            <p>Rate: <!--form?--> </p>
+                
+        </div> <!--CardInfo-->
+        </div> <!--card7-->
+
+        <div class="courseCard"> <!--8-HTML-->
+            <img src="images/HTML.png" altr="HTML logo" style="width:100%">
+            <div class= "cardInfo">
+            <h4>HTML</h4>
+            <!--date and time-->
+            <p><b>course description:</b> <br>
+            <!--th des--> </p>
+            <div class="Tutor">
+                <img src="images/Tutor5.png" alt="Avatar" width="50" height="50">
+                T.Nasser Alyehya
+              </div> 
+            <div class="MoreInfo"> 
+                <a href= "">Prerequisite <br></a> <!--url= pop-up window-->
+                <a href= "">Objectives</a> <!--url= pop-up window--> 
+            </div>
+                
+            <p>Rate: <!--form?--> </p>
+                
+        </div> <!--CardInfo-->
+        </div> <!--card8-->    
+        
+        <div class="courseCard"> <!--9-Java-->
+            <img src="images/java.PNG" altr="Java logo" style="width:100%">
+            <div class= "cardInfo">
+            <h4>Java</h4>
+            <!--date and time-->
+            <p><b>course description:</b> <br>
+            <!--th des--> </p>
+            <div class="Tutor">
+                <img src="images/Tutor6.png" alt="Avatar" width="50" height="50">
+                T.Alanoud Abdulaziz
+              </div>
+            <div class="MoreInfo"> 
+                <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
+                <a href= "">Objectives</a>  <!--url= pop-up window--> 
+            </div>
+                
+            <p>Rate: <!--form?--> </p>
+                
+        </div> <!--CardInfo-->
+        </div> <!--card9-->          
+      
+
+</div> <!--All courses-->
     </main>
 
     <footer>
