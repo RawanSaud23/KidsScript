@@ -1,1 +1,13 @@
 /* test */
+
+header,footer{background-color: #f4f4f4;}
+footer{font-weight: bold;font-size: small;text-align: center;line-height: 3em;}
+
+footer{
+    width: 100%;
+    Height: auto;
+    border-style: outset;
+    border: 1%;
+    padding: 0%;
+    margin: 0%;
+    }
