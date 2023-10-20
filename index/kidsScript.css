@@ -23,8 +23,8 @@ footer{
     padding: 0%;
     margin: 0%;
     }
-    /*Courses page: */
 
+    /*---------------------------------------------------Courses page---------------------------------------------------*/
     .courseCard {
         /* Add shadows to create the "card" effect */
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -64,11 +64,11 @@ footer{
         border-radius: 50%;
       }
 
-      /*end Course page*/
-
     .checked {
     color: orange;
     }
+    /*---------------------------------------------------end Course page---------------------------------------------------*/
+
 
     table{align:"center";font-family:'Times New Roman', Times, serif; text-align: center;}
     table caption{font-family:'Times New Roman', Times, serif; font-weight: bold; font-size: 2em;}
