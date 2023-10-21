@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"> 
            <title>Register a new child</title> 
+            <link rel="stylesheet" href="kidsScript.css"> 
     </head>
 
     <header>
@@ -10,5 +11,63 @@
         <h1>kids Script</h1>
         <!--CSS link here-->
     </header>
+<body>
+<main>
+<h2>Register a new kid</h2>
+<div id="kidForm">
+<form>
 
+<fieldset>
+<legend>Kid's Information </legend>
+
+<div class="details">
+ <div class="input-box text ">
+<label>Name: <input type="text" name="kid name"></label>
+</div>
+
+ <div class="input-box text ">
+<label>Date of Birth: <input type="date" name="date of birth"></label> 
+</div>
+
+ <div class="input-box text ">
+<label>Photo: <input type="file" name="kid photo"></label>
+</div>
+
+ <div class="input-box"> 
+<label>Gender: </label>
+
+
+ <div class="genderCategory">
+
+<label><input type="radio" name="gender" value="Male">  Male</label>
+<label> <input type="radio" name="gender" value="Female">  Female</label>
+
+</div>
+
+</div>
+</div>
+
+</fieldset>
+
+<fieldset>
+<legend>Contact Information </legend>
+
+<div class="details">
+ <div class="input-box text">
+<label>Phone Number: <input type="tel" name="phonr number"></label>
+</div>
+
+ <div class="input-box text">
+<label>Email: <input type="text" name="email"></label>
+</div>
+</div>
+</fieldset>
+
+ <div class="button">
+<input class="center" type="submit" value="add kid">
+</div>
+</form>
+</div>
+</main>
+</body>
 </html> 
