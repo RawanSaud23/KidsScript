@@ -178,3 +178,87 @@ footer{
   }
 
     /*-------------------------------------------------Administrator dashboard-----------------------------------------------*/
+    
+    
+    /*---------------------------------------------------Register new child page---------------------------------------------------*/
+    
+#kidForm{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form{
+background-color:#d4e6d9; 
+padding: 20px; 
+border-radius: 10px;
+}
+
+
+#kidForm fieldset{
+border-width: 1px ;
+border-radius: 10px;
+padding: 10px;
+margin:10px; 
+}
+
+
+
+#kidForm form .details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+
+}
+
+form .details .input-box {
+ margin-bottom: 15px;
+ width: calc(100% / 2 - 20px);
+}
+
+.details .text input{
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border-color:black;
+
+  }
+  
+  
+
+.button{ 
+text-align: center; }
+
+
+form .button{
+height: 45px;
+margin: 45px 0;
+
+}
+
+
+
+form .button input{
+height: 100%;
+width:50%;
+color: black;
+font-size: 18px;
+font-weight: 500;
+border-radius: 5px;
+letter-spacing: 1px;
+border-color:black;
+background-color:white;
+}
+
+
+ 
+form .genderCategory{
+display: flex;
+width: 60%;
+justify-content: space-between;
+}
+    
+     /*---------------------------------------------------end Register new child page---------------------------------------------------*/
+    
+    
