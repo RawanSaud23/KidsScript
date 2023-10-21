@@ -27,6 +27,19 @@ footer{
 
 /*---------------------------------------------------Courses page---------------------------------------------------*/
     /* !!!     width: 100vw;     !!! */
+<<<<<<< Updated upstream
+=======
+    .allCorsessCards{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 95%;
+      border-radius: 2%;
+      background-color: rgb(164, 178, 226);
+      border-style: hidden; /* not sure */
+    }
+>>>>>>> Stashed changes
 
 .allCorsessCards{
   display: flex;
@@ -38,6 +51,7 @@ footer{
   margin: auto;
 }
 
+<<<<<<< Updated upstream
 /*  justify-content: space-around;
   align-items: center;
   width: 95%;
@@ -61,6 +75,20 @@ footer{
   transition: 0.3s;
   background-color: #f4f4f4;
 }
+=======
+    .courseCard {
+      width: 30%;
+      height: 70%;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 5%;
+      background-color: #f4f4f4;
+    }
+
+    .timeDate{
+      float: right;
+    }
+>>>>>>> Stashed changes
 
 .timeDate{
   float: right;
@@ -184,6 +212,7 @@ footer{
   }
 
     /*-------------------------------------------------Administrator dashboard-----------------------------------------------*/
+<<<<<<< Updated upstream
     
     
     /*---------------------------------------------------Register new child page---------------------------------------------------*/
@@ -268,3 +297,6 @@ justify-content: space-between;
      /*---------------------------------------------------end Register new child page---------------------------------------------------*/
     
     
+=======
+
+>>>>>>> Stashed changes
