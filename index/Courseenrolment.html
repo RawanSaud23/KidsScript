@@ -5,23 +5,97 @@
            <title>Course enrolment</title> 
            <link rel="stylesheet" href="kidsScript.css"  >
            <style>
-               dt{ font-weight:bold; color:#9e72d6 ;}
-               dl{text-align: center; line-height: 3em;}
-               *{margin:0; box-sizing: border-box;}
-               
-           </style>
-    </head>
+               h2{
+text-align: center;
+}
 
+
+
+#kidForm{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form{
+background-color:#d4e6d9; 
+padding: 20px; 
+border-radius: 10px;
+}
+
+
+#kidForm fieldset{
+border-width: 1px ;
+border-radius: 10px;
+padding: 10px;
+margin:10px; 
+}
+
+
+
+#kidForm form .details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+
+}
+
+form .details .input-box {
+ margin-bottom: 15px;
+ width: calc(100% / 2 - 20px);
+}
+
+.details .text input{
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border-color:black;
+
+  }
+  
+  
+
+.button{ 
+text-align: center; }
+
+
+form .button{
+height: 45px;
+margin: 45px 0;
+
+}
+
+
+
+form .button input{
+height: 100%;
+width:50%;
+color: black;
+font-size: 18px;
+font-weight: 500;
+border-radius: 5px;
+letter-spacing: 1px;
+border-color:black;
+background-color:white;
+}  
+           </style>
+
+    </head>
+    
     <header>
 <img src="images/kidsScriptLOGO.png" alt="kids Script logo" height="30" width="30"> 
         <h1>kids Script</h1>
         <!--CSS link here-->
     </header>
-  
+
+  <body>
     <main>
-        <body>
-<div class="flex-container">
-       <div> <h2>Choose your kid:* <br>
+        <h2>Course enrolment</h2> 
+<div id="course enrolment">
+    <form>
+        <fieldset>
+       <legend>Choose your kid:*</legend>
             <select name="Choosing the kid name">
                 <option>Abdullah Sulaiman</option>
                 <option>Reem Ali</option>
@@ -32,11 +106,14 @@
                 <option>Nawaf Abdulllah</option>
                 <option>Maha Fahad</option>
                </select>
-        </h2> 
         </div>
         <div>
-        <h2>Choose the Course:*
+        </fieldset>
+
+        <fieldset>
+        <legend>Choose the course:*</legend>
         <h6>(Note that you can check more than one.)</h6>
+        
         <ul>
          <li><input type="checkbox" name="Course type" value="c++ course"><img src="images/c++.png" alt="c++ logo" width="30" height="30">C++</li> 
          <li><input type="checkbox" name="Course type" value="java course"><img src="images/java2.png"alt="java logo" width="30" height="30">Java</li> 
@@ -50,9 +127,15 @@
         </ul>
         </h2>
     </div>
-        </body>
+    </div>
+    <div class="button">
+        <input class="center" type="submit" value="Enrol">
+        </div>
+        </form>
+    </div>
+        
        
     </main>
-
+</body>
 </html> 
 
