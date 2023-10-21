@@ -3,6 +3,18 @@
 header,footer{background-color: #f4f4f4;}
 footer{font-weight: bold;font-size: small;text-align: center;line-height: 3em;}
 
+header img{
+  float: top;  
+}
+
+header nav{
+    float: right;  
+  }
+
+.pageLink{
+    float: top left;
+}
+
 footer{
     width: 100%;
     Height: auto;
@@ -12,9 +24,65 @@ footer{
     margin: 0%;
     }
 
+    /*---------------------------------------------------Courses page---------------------------------------------------*/
+    .courseCard {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+      }
+      
+      .card:hover {
+        /* On mouse-over, add a deeper shadow */
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .cardInfo {
+        /* Add some padding inside the card container */
+        padding: 2px 16px;
+      }
+
+      .MoreInfo {
+        float: right;
+      }
+
+      .Tutor {
+        display: inline-block;
+        padding: 0 25px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 50px;
+        border-radius: 25px;
+        background-color: #f1f1f1;
+      }
+      
+      .Tutor img {
+        float: left;
+        margin: 0 10px 0 -25px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+
+    .checked {
+    color: orange;
+    }
+    /*---------------------------------------------------end Course page---------------------------------------------------*/
+
+
     table{align:"center";font-family:'Times New Roman', Times, serif; text-align: center;}
     table caption{font-family:'Times New Roman', Times, serif; font-weight: bold; font-size: 2em;}
     table thead{background-color:rgb(134, 66, 236); color:rgb(106, 193, 237);}
     table tbody th{border-style:solid; border-width: 2px; background-color: white; color: rgb(114, 10, 241);}
     table tbody td{border-style:solid; border-width: 2px; background-color: rgba(125, 193, 241, 0); color: rgba(140, 160, 240, 0.712);}
-
+    /*-------------------------------------------------Administrator dashboard-----------------------------------------------*/
+    .kid {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+    }
+    .pic{
+        width: 100%;
+        height: 100%;
+    }
+    /*-------------------------------------------------Administrator dashboard-----------------------------------------------*/
