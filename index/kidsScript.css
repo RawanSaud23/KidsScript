@@ -24,6 +24,7 @@ footer{
     margin: 0%;
     }
 
+
 /*---------------------------------------------------Courses page---------------------------------------------------*/
     /* !!!     width: 100vw;     !!! */
     .allCorsessCards{
@@ -34,6 +35,7 @@ footer{
       width: 95%;
       border-radius: 1%;
       background-color: rgb(164, 178, 226);
+      border-style: hidden; /* not sure */
     }
 
     .each3{
@@ -56,27 +58,25 @@ footer{
     .Tutor {
       display: inline-block;
       padding: 0 25px;
-      height: 50px;
+      height: 40px;
       font-size: 16px;
       line-height: 50px;
       border-radius: 25px;
-      background-color: #e3e1e3;
+      background-color: #dad7d7;
       }
       
     .Tutor img {
       float: left;
       margin: 0 10px 0 -25px;
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
       }
 
-    .MoreInfo {
+    .MoreInfo { 
       float: right;
     }  
 
-    .checked { /* NOT working*/
-    color: orange;
-    }
     /*---------------------------------------------------end Course page---------------------------------------------------*/
 
 
