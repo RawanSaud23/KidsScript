@@ -7,6 +7,11 @@
            <style>
                dt{ font-weight:bold; color:#9e72d6 ;}
                dl{text-align: center; line-height: 3em;}
+               *{margin:0; box-sizing: border-box;}
+               .flex-container{display:flex;}
+               padding:10px;
+               border:1 px;
+
            </style>
     </head>
 
@@ -14,11 +19,12 @@
         <h1>kids Script</h1>
         <!--CSS link here-->
     </header>
-
+  
     <main>
         <body>
-        <h2>Choose your kid:*
-            <select name="kid name"> this band
+<div class="flex-container">
+       <div> <h2>Choose your kid:* <br>
+            <select name="Choosing the kid name">
                 <option>Abdullah Sulaiman</option>
                 <option>Reem Ali</option>
                 <option>Khaled Nasser</option>
@@ -26,10 +32,24 @@
                 <option>Waleed Saleh</option>
                 <option>Rana Saif</option>
                 <option>Nawaf Abdulllah</option>
-                <option>NMaha Fahad</option>
+                <option>Maha Fahad</option>
                </select>
-        </h2>    
+        </h2> 
+        </div>
+        <div>
+        <h2>Choose the Course:*
+        <h6>(Note that you can check more than one.)</h6>
+        <ul>
+         <li><input type="checkbox" name="Course type" value="c++ course"><img src="images/c++.png"alt="c++ logo" width="30" height="30">C++</li> 
+         <li><input type="checkbox" name="Course type" value="java course"><img src="images/java2.png"alt="java logo" width="30" height="30">Java</li> 
+         <li><input type="checkbox" name="Course type" value="php course"><img src="images/php.png"alt="php logo" width="30" height="30">Php</li> 
+         <li><input type="checkbox" name="Course type" value="python course"><img src="images/Python.png"alt="python logo" width="30" height="30">Python</li>
+        </ul>
+        </h2>
+    </div>
         </body>
+       
     </main>
 
 </html> 
+
