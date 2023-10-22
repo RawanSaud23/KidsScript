@@ -11,4 +11,119 @@
         <!--CSS link here-->
     </header>
 
+    <style>
+        h2{
+text-align: center;
+}
+
+
+
+#kidForm{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form{
+background-color:#d4e6d9; 
+padding: 20px; 
+border-radius: 10px;
+}
+
+
+#kidForm fieldset{
+border-width: 1px ;
+border-radius: 10px;
+padding: 10px;
+margin:10px; 
+}
+
+
+
+#kidForm form .details{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 20px 0 12px 0;
+
+}
+
+form .details .input-box {
+margin-bottom: 15px;
+width: calc(100% / 2 - 20px);
+}
+
+.details .text input{
+height: 30px;
+width: 100%;
+border-radius: 5px;
+border-color:black;
+
+}
+
+
+
+.button{ 
+text-align: center; }
+
+
+form .button{
+height: 45px;
+margin: 45px 0;
+
+}
+
+
+
+form .button input{
+height: 100%;
+width:50%;
+color: black;
+font-size: 18px;
+font-weight: 500;
+border-radius: 5px;
+letter-spacing: 1px;
+border-color:black;
+background-color:white;
+}  
+    </style>
+    
+    <body>
+        <main>
+            <h2>Course evaluation</h2> 
+    <div id="course evaluation">
+        <form>
+            <fieldset>
+           <legend>Choose the course:*</legend>
+                <select name="Choosing the course:*">
+                    <option>C++</option>
+                    <option>Java</option>
+                    <option>Php</option>
+                    <option>Python</option>
+                    <option>Java Script</option>
+                    <option>C#</option>
+                    <option>Swift</option>
+                    <option>SQL</option>
+                    <option>HTML</option>
+                   </select>
+            
+            </fieldset>
+            </div>
+            <div>
+            <fieldset>
+            <legend>Rate:*</legend>
+             <img src="images/Star.jpeg" alt="stars for Rate" width="200" height="40">
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+         <legend>Feedback:*</legend>
+            <textarea name="entry" rows="6" cols="60">write your feedback here</textarea>
+            </fieldset>
+            </div>
+        <div class="button">
+            <input class="center" type="submit" value="Evaluate">
+            </div>
+            </form>
+        </div>
 </html> 
