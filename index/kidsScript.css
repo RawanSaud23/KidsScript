@@ -138,6 +138,7 @@ footer{
       width: 50px;
       border-radius: 50%;
     }
+   
     .tutor li{
       list-style-type: none;
       margin: 0;
@@ -156,27 +157,19 @@ footer{
   }
 
   .KidsInfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 95%;
-    border-radius: 1%;
-    background-color: rgb(164, 178, 226);
-  }
-  /*
-   .kid{
-    width: 28%;
-    height: 200px;
-    color: purple;
-    font-size: 20px;
-    text-align: left;
-    line-height: 20px;
-    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 40%;
-   }*/
+    background-color: #f4f4f4;
+    margin: 25px 25px 25px;
+  }
+  .tab{
+    background-color: rgb(164, 178, 226);
+  }
+
    .kid{
     display: flex;
     flex-direction: column;
@@ -185,11 +178,12 @@ footer{
     align-items: space-around;
     border-radius: 1%;
     margin: auto;
+    margin: 25px 25px 25px;
 }
   
    .each4{
     display: flex;
-    flex-direction: row; /*default*/
+    flex-direction: row; 
     justify-content: space-around;
   }
 
