@@ -1,129 +1,98 @@
 <!DOCTYPE html>
 <html lang="el">
-    <head>
-        <meta charset="utf-8"> 
+<head>
+    <meta charset="utf-8"> 
            <title>Course evaluation</title> 
-    </head>
+           </head>
+<style>
 
-    <header>
-        <img src="images/kidsScriptLOGO.png" alt="kids Script logo" height="30" width="30"> 
-        <h1>kids Script</h1>
-        <!--CSS link here-->
-    </header>
-
-    <style>
-        h2{
-text-align: center;
+.evaluation {
+  display: flex;
+  flex-wrap:wrap;
+  text-align:left;
+  background-image: url("images/kidsScriptLOGO.png") ;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-
-#kidForm{
-display: flex;
-justify-content: center;
-align-items: center;
+.evaluation div {
+  background-color: #a077d19e;
+  margin: 10px;
+  padding: 20px;
+  position: center;
+  text-align:center;
+  font-size: 30px;
 }
 
-form{
-background-color:#d4e6d9; 
-padding: 20px; 
-border-radius: 10px;
+div {
+  justify-content:center;
+  text-align: left;
 }
 
-
-#kidForm fieldset{
-border-width: 1px ;
-border-radius: 10px;
-padding: 10px;
-margin:10px; 
+h1{
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(162, 0, 255, 0.623);
+  font-family: "Times New Roman", Times, serif;
 }
 
-
-
-#kidForm form .details{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-margin: 20px 0 12px 0;
-
+.Evaluate{
+  background-color: #8c898900;
+  padding: 15px 32px;
+  text-align: left;
+  font-size: 20px;
+  display: flex;
+  position:center;
+  border: none;
 }
 
-form .details .input-box {
-margin-bottom: 15px;
-width: calc(100% / 2 - 20px);
+legend {
+    text-align: left;
 }
+</style>
+<body>
 
-.details .text input{
-height: 30px;
-width: 100%;
-border-radius: 5px;
-border-color:black;
+<h1>Course evaluation</h1>
 
-}
+<div class="evaluation">
+
+  <div>
+    <fieldset>
+    <legend>Choose the course:*</legend>
+    <select>
+        <option>C++</option>
+        <option>Java</option>
+        <option>Php</option>
+        <option>Python</option>
+        <option>Java Script</option>
+        <option>C#</option>
+        <option>Swift</option>
+        <option>SQL</option>
+        <option>HTML</option>
+      </select>
+    </fieldset>
+       </div>
 
 
-
-.button{ 
-text-align: center; }
-
-
-form .button{
-height: 45px;
-margin: 45px 0;
-
-}
+  <div>
+    <fieldset>
+        <legend>Rate:*</legend>
+         <img src="images/Star.jpeg" alt="stars for Rate" width="200" height="40">
+        </fieldset>
+  </div>
 
 
-
-form .button input{
-height: 100%;
-width:50%;
-color: black;
-font-size: 18px;
-font-weight: 500;
-border-radius: 5px;
-letter-spacing: 1px;
-border-color:black;
-background-color:white;
-}  
-    </style>
+  <div>
+    <fieldset>
+    <legend>Feedback:</legend>
+       <textarea name="entry" rows="6" cols="60">write your feedback here</textarea>
+       </fieldset>
+    </div>  
     
-    <body>
-        <main>
-            <h2>Course evaluation</h2> 
-    <div id="course evaluation">
-        <form>
-            <fieldset>
-           <legend>Choose the course:*</legend>
-                <select name="Choosing the course:*">
-                    <option>C++</option>
-                    <option>Java</option>
-                    <option>Php</option>
-                    <option>Python</option>
-                    <option>Java Script</option>
-                    <option>C#</option>
-                    <option>Swift</option>
-                    <option>SQL</option>
-                    <option>HTML</option>
-                   </select>
-            
-            </fieldset>
-            </div>
-            <div>
-            <fieldset>
-            <legend>Rate:*</legend>
-             <img src="images/Star.jpeg" alt="stars for Rate" width="200" height="40">
-            </fieldset>
-        </div>
-        <div>
-            <fieldset>
-         <legend>Feedback:*</legend>
-            <textarea name="entry" rows="6" cols="60">write your feedback here</textarea>
-            </fieldset>
-            </div>
-        <div class="button">
-            <input class="center" type="submit" value="Evaluate">
-            </div>
-            </form>
-        </div>
-</html> 
+
+    <button class="Evaluate">
+      <input class="button" type="submit" value="Evaluate">
+    </button>
+
+</div>
+</body>
+</html>
