@@ -3,61 +3,40 @@
 <head>
     <meta charset="utf-8"> 
            <title>Course evaluation</title> 
+           <link rel="stylesheet" href="styleG.css">
            </head>
-<style>
-
-.evaluation {
-  display: flex;
-  flex-wrap:wrap;
-  text-align:left;
-  background-image: url("images/kidsScriptLOGO.png") ;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.evaluation div {
-  background-color: #a077d19e;
-  margin: 10px;
-  padding: 20px;
-  position: center;
-  text-align:center;
-  font-size: 30px;
-}
-
-div {
-  justify-content:center;
-  text-align: left;
-}
-
-h1{
-  text-align: center;
-  text-shadow: 2px 2px 5px rgba(162, 0, 255, 0.623);
-  font-family: "Times New Roman", Times, serif;
-}
-
-.Evaluate{
-  background-color: #8c898900;
-  padding: 15px 32px;
-  text-align: left;
-  font-size: 20px;
-  display: flex;
-  position:center;
-  border: none;
-}
-
-legend {
-    text-align: left;
-}
-</style>
+ 
 <body>
-
+    <header>
+        <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" />
+        <nav>
+          <ul class="nav_links">
+            <li><a href="indx.html">Home</a></li>
+            <li><a href="Parentdashboard.html">Parent</a></li>
+            <li><a href="Tutor.html">Tutor</a></li>
+            <li><a href="Administratordashboard.html">Adminstrator</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <!--- <li><a href="signIn.html"></a>Sign in</li>-->
+          </ul>
+        </nav>
+        <a href="signIn.html" class="signIn"><button>Sign in</button></a>
+      </header>
+      <!--End of navigation bar -->
+  
+      <div class="pageLink">
+        <nav>
+          <!--I don't think we need one since we already in the same page-->
+        </nav>
+      </div>
+  
 <h1>Course evaluation</h1>
 
 <div class="evaluation">
 
-  <div>
-    <fieldset>
-    <legend>Choose the course:*</legend>
+  <div class="row1">
+<div class="item1">
+    <h2>Choose the course:*</h2>
+   
     <select>
         <option>C++</option>
         <option>Java</option>
@@ -69,30 +48,26 @@ legend {
         <option>SQL</option>
         <option>HTML</option>
       </select>
-    </fieldset>
-       </div>
-
-
-  <div>
-    <fieldset>
-        <legend>Rate:*</legend>
+ 
+    </div>
+ 
+<div class="item2">
+        <h2>Rate:*</h2>
          <img src="images/Star.jpeg" alt="stars for Rate" width="200" height="40">
-        </fieldset>
+        </div>
   </div>
 
 
-  <div>
-    <fieldset>
-    <legend>Feedback:</legend>
+
+  <div class="evaluationfeedback">
+    <h2>Feedback:</h2>
        <textarea name="entry" rows="6" cols="60">write your feedback here</textarea>
        </fieldset>
     </div>  
     
-
-    <button class="Evaluate">
-      <input class="button" type="submit" value="Evaluate">
-    </button>
-
+<div class="EvaButtn"> 
+    <button type="submit"> Evaluate</button>
+</div>
 </div>
 </body>
 </html>
