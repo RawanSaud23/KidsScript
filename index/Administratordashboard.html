@@ -30,11 +30,12 @@
             li {
                 width: 30%;
                 justify-content: space-around;
-                 margin:  1%;
-                 border: 1% solid rgb(164, 178, 226);
-                 border-radius: 15%;
-
-                }
+                margin:0%;
+                border-radius: 15%;
+            }
+            a:hover{
+                background-color: brown;
+            }
 
             li:nth-child(1) {
                 background: white;
@@ -63,62 +64,57 @@
                 background: white;
                 flex: 0 0 25%;
             }
-li:nth-child(7) {
-  background: white;
-  flex: 0 0 25%;
-}
-li:nth-child(8) {
-  background: white;
-  flex: 0 0 25%;
-}
-h1{
-    justify-content:left;
-    padding: 0%;
-}
-.course-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}
+            li:nth-child(7) {
+                background: white;
+                flex: 0 0 25%;
+            }
+            li:nth-child(8) {
+                background: white;
+                flex: 0 0 25%;
+            }
+            
+            .course-list {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
+            }
 
-.course-list li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1%;
-  background-color: white;
-  margin: 1%;
-  justify-content: center;
-}
+            .course-list li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1%;
+                background-color: white;
+                margin: 1%;
+                justify-content: left;
+            }
 
-.course-list img {
- overflow: hidden;
- border-top-left-radius: 15%;
- border-top-right-radius: 15%;
- width:100%;
- height:90%;
-    object-fit:cover;
-}
-
-li p{
-  padding: 0%;
-}
-.kid-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.kid-card {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10%;
+            .course-list img {
+                overflow: hidden;
+                border-top-left-radius: 15%;
+                border-top-right-radius: 15%;
+                width:100%;
+                height:90%;
+                object-fit:cover;
+            }
 
 
-}
+            .kid-list {
+                list-style: none;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 15%;
+            }
 
+            .kid-card {
+                display: flex;
+                align-items:center;
+                margin-bottom: 10%;
+            }
+            
     </style>
     </head>
     
@@ -189,38 +185,14 @@ li p{
             </div>
 
             <div class="CoursesInfo">
-                <!--
-                <ul style= "list-style-type: none;" id="COURSESE"> 
-                    <li><h2>Programming with Scratch</h2>
-                        <h3>Instructor : Sara Ahmed</h3>
-                        <h3>Kid&apos;s name : </h3>
-    
-                        <ul>
-                            <li>Maha Fahad</li>
-                            <li>Rana Saif</li>
-                            </ul>
-                        </li>
-                    
-
-                    <li><img src="images/Python.PNG" alt="python.png"><h2>Python</h2>
-                        <h3>Instructor : Rasha Thamer</h3>
-                        <h3>Kid&apos;s name : </h3>
-                        <ul>
-                            <li>Rana Saif</li>
-                            <li>Waleed Saleh</li>
-                            <li>Reem Ali</li>
-                            <li>Abdullah Sulaiman</li>
-                            <li>Shoug Saleh</li> -->
-                        <!-- <li>More></li>
-                        </ul>
-                    </li>-->
                     <section id="nestCourse">
 
                         <ul class="course-list">
                           <li>
                             <img src="images/robotics.png" alt="Robotics course">
                             <h3>Introduction to robotics</h3>
-                            <p>Instructor: Alanoud Abdulaziz</p>
+                            <p>Instructor: Alanoud Abdulaziz<br>
+                            kid&apos;s name :</p>
                             <ul class="kid-list">
                               <li class="kid-card">
                                 Nawaf Abdullah
@@ -233,7 +205,8 @@ li p{
                           <li>
                             <img src="images/CSS.png" alt="CSS course">
                             <h3>Introduction to CSS</h3>
-                            <p>Instructor: Sara Ahmed</p>
+                            <p>Instructor: Sara Ahmed<br>
+                            kid&apos;s name :</p>
                             <ul class="kid-list">
                               <li class="kid-card">
                                 Rana Saif
@@ -248,7 +221,8 @@ li p{
                           <li>
                             <img src="images/Python.PNG" alt="Python course">
                             <h3>Introduction to Python</h3>
-                            <p>Instructor: Layan turki</p>
+                            <p>Instructor: Layan turki<br>
+                            kid&apos;s name :</p>
                             <ul class="kid-list">
                               <li class="kid-card">
                                 Shoug Saleh
@@ -261,7 +235,8 @@ li p{
                           <li>
                             <img src="images/SQL.png" alt="SQL course">
                             <h3>Introduction to SQL</h3>
-                            <p>Instructor: Faris Yousef</p>
+                            <p>Instructor: Faris Yousef<br>
+                            kid&apos;s name :</p>
                             <ul class="kid-list">
                               <li class="kid-card">
                                 Maha Fahad
@@ -272,12 +247,22 @@ li p{
                               <li class="kid-card">
                                 Reem Ali
                               </li>
+                              <li class="kid-card">
+                                Rana Fahed
+                              </li>
+                              <li class="kid-card">
+                                Shoug saleh
+                              </li>
+                              <li class="kid-card">
+                                <a>more</a>
+                              </li>
                             </ul> <!--end of kids list(inner list)-->
                           </li><!--end of course 4-->
                           <li>
                             <img src="images/JavaScript.png" alt="JavaScript course">
                             <h3>Introduction to JavaScript</h3>
-                            <p>Instructor: Ghala Hussam</p>
+                            <p>Instructor: Ghala Hussam<br>
+                            kid&apos;s name :</p>
                             <ul class="kid-list">
                               <li class="kid-card">
                                 Abdullah Sulaiman
@@ -293,7 +278,8 @@ li p{
                           <li>
                             <img src="images/Swift.png" alt="Swift course">
                             <h3>Introduction to Swift</h3>
-                            <p>Instructor: Yasser Alharbi</p>
+                            <p>Instructor: Yasser Alharbi<br>
+                            kid&apos;s name :</p>
                             <ul class="kid-list">
                               <li class="kid-card">
                                 Nawaf Abdullah
@@ -309,7 +295,8 @@ li p{
                           <li>
                             <img src="images/Java.PNG" alt="Java course">
                             <h3>Introduction to Java</h3>
-                            <p>Instructor: Yasser Alharbi</p>
+                            <p>Instructor: Yasser Alharbi<br>
+                            kid&apos;s name :</p>
                             <ul class="kid-list">
                               <li class="kid-card">
                                 Rana Saif
@@ -322,7 +309,8 @@ li p{
                           <li>
                             <img src="images/HTML.png" alt="HTML course">
                             <h3>HTML Basics</h3>
-                            <p>Instructor: Yasser Alharbi</p>
+                            <p>Instructor: Yasser Alharbi<br>
+                            kid&apos;s name : </p>
                             <ul class="kid-list">
                               <li class="kid-card">
                                 Nawaf Abdullah
@@ -339,6 +327,153 @@ li p{
         </div>
         </div>
 
+        <div class="TutorTab_withInfo">
+
+            <div class="Tutor_tab tab">
+                <h1>Tutor</h1>
+            </div>
+
+            <div class="TutorInfo">
+                    <section id="nestTutor">
+
+                        <ul class="Tutor-list">
+                          <li>
+                            <img src="images/Tutor1.png" alt="">
+                            <h3><a href="Schedule.html"></a>Sara Ahmed</h3>
+                            <p>Courses :</p>
+                            <ul class="courses-list">
+                              <li class="courses-card">
+                                Introduction to Python
+                              </li>
+                              <li class="courses-card">
+                                Introduction to CSS 
+                              </li>
+                            </ul> <!--end of kids list(inner list)-->
+                          </li><!--end of course 1-->
+                  
+                          <li>
+                            <img src="images/Tutor2.png" alt="">
+                            <h3><a href="Schedule.html"></a></h3>
+                            <p>Courses :</p>
+                            <ul class="courses-list">
+                              <li class="courses-card">
+                                Introduction to Python
+                              </li>
+                              <li class="courses-card">
+                                Introduction to CSS 
+                              </li>
+                            </ul> <!--end of kids list(inner list)-->
+                          </li><!--end of course 2-->
+                          
+                          <li>
+                            <img src="images/Tutor3.png" alt="Python course">
+                            <h3>Introduction to Python</h3>
+                            <p>Instructor: Layan turki<br>
+                            kid&apos;s name :</p>
+                            <ul class="kid-list">
+                              <li class="kid-card">
+                                Shoug Saleh
+                              </li>
+                              <li class="kid-card">
+                                Abdullah Sulaiman
+                              </li>
+                            </ul> <!--end of kids list(inner list)-->
+                          </li><!--end of course 3-->
+                          <li>
+                            <img src="images/Tutor4.png" alt="SQL course">
+                            <h3>Introduction to SQL</h3>
+                            <p>Instructor: Faris Yousef<br>
+                            kid&apos;s name :</p>
+                            <ul class="kid-list">
+                              <li class="kid-card">
+                                Maha Fahad
+                              </li>
+                              <li class="kid-card">
+                                Waleed Saleh
+                              </li>
+                              <li class="kid-card">
+                                Reem Ali
+                              </li>
+                              <li class="kid-card">
+                                Rana Fahed
+                              </li>
+                              <li class="kid-card">
+                                Shoug saleh
+                              </li>
+                              <li class="kid-card">
+                                <a>more</a>
+                              </li>
+                            </ul> <!--end of kids list(inner list)-->
+                          </li><!--end of course 4-->
+                          <li>
+                            <img src="images/Tutor4.png" alt="JavaScript course">
+                            <h3>Introduction to JavaScript</h3>
+                            <p>Instructor: Ghala Hussam<br>
+                            kid&apos;s name :</p>
+                            <ul class="kid-list">
+                              <li class="kid-card">
+                                Abdullah Sulaiman
+                              </li>
+                              <li class="kid-card">
+                                Waleed Saleh
+                              </li>
+                              <li class="kid-card">
+                                Khaled Saleh
+                              </li>
+                            </ul> <!--end of kids list(inner list)-->
+                          </li><!--end of course 5--> 
+                          <li>
+                            <img src="images/Tutor6.png" alt="Swift course">
+                            <h3>Introduction to Swift</h3>
+                            <p>Instructor: Yasser Alharbi<br>
+                            kid&apos;s name :</p>
+                            <ul class="kid-list">
+                              <li class="kid-card">
+                                Nawaf Abdullah
+                              </li>
+                              <li class="kid-card">
+                                Abdullah Sulaiman
+                              </li>
+                              <li class="kid-card">
+                                Shoug Saleh
+                              </li>
+                            </ul> <!--end of kids list(inner list)-->
+                          </li><!--end of course 6--> 
+                          <li>
+                            <img src="images/Tutor7.png" alt="Java course">
+                            <h3>Introduction to Java</h3>
+                            <p>Instructor: Yasser Alharbi<br>
+                            kid&apos;s name :</p>
+                            <ul class="kid-list">
+                              <li class="kid-card">
+                                Rana Saif
+                              </li>
+                              <li class="kid-card">
+                                Maha Fahad
+                              </li>
+                            </ul> <!--end of kids list(inner list)-->
+                          </li><!--end of course 7-->
+                          <li>
+                            <img src="images/Tutor8.png" alt="HTML course">
+                            <h3>HTML Basics</h3>
+                            <p>Instructor: Yasser Alharbi<br>
+                            kid&apos;s name : </p>
+                            <ul class="kid-list">
+                              <li class="kid-card">
+                                Nawaf Abdullah
+                              </li>
+                              <li class="kid-card">
+                                Maha Fahad
+                              </li>
+                           
+                            </ul> <!--end of kids list(inner list)-->
+                          </li><!--end of course 8-->                        
+                        </ul><!--outer list-->
+                      </section>
+
+        </div>
+        </div>
+        <!--
         <div class="tutorsTab_withInfo">
             <div class="tutors_tab tab">
                 <h1>Tutors</h1>
@@ -425,6 +560,8 @@ li p{
         
 
         </div>
+        -->
+
     </main>
 
 
