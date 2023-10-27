@@ -89,6 +89,7 @@
                 background-color: white;
                 margin: 1%;
                 justify-content: left;
+                line-height: 1;
             }
 
             .course-list img {
@@ -114,6 +115,43 @@
                 align-items:center;
                 margin-bottom: 10%;
             }
+            .Tutor-list {
+  list-style: none;
+  padding: 0;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+}
+
+.Tutor-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: white;
+  margin: 20px;
+}
+
+
+li p{
+  padding: 20px;
+}
+.Course-list {
+  list-style: none;
+  padding: 0;
+
+}
+
+.Course-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
             
     </style>
     </head>
@@ -326,153 +364,30 @@
 
         </div>
         </div>
+        <div class="tutorsTab_withInfo">
+          <div class="tutors_tab tab">
+              <h1>Tutors</h1>
+          </div>
+        <section id="nestTutor">
+          <ul class="Tutor-list">
+            <li>
+              <img src="images/Tutor1.png" alt="Tutot">
+              <h3><a href="Schedule.html">Sarah Ahmed </a></h3>
+              <p>Courses:</p>
+              <ul class="Course-list">
+                <li class="Course-card">
+                  Introduction to CSS
+                </li>
+                <li class="Course-card">
+                  Python
+                </li>
+                <!-- Add more kid cards as needed -->
+              </ul> <!--end of kids list(inner list)-->
+            </li><!--end of course 1-->
+    
+        </section>
+        </div> 
 
-        <div class="TutorTab_withInfo">
-
-            <div class="Tutor_tab tab">
-                <h1>Tutor</h1>
-            </div>
-
-            <div class="TutorInfo">
-                    <section id="nestTutor">
-
-                        <ul class="Tutor-list">
-                          <li>
-                            <img src="images/Tutor1.png" alt="">
-                            <h3><a href="Schedule.html"></a>Sara Ahmed</h3>
-                            <p>Courses :</p>
-                            <ul class="courses-list">
-                              <li class="courses-card">
-                                Introduction to Python
-                              </li>
-                              <li class="courses-card">
-                                Introduction to CSS 
-                              </li>
-                            </ul> <!--end of kids list(inner list)-->
-                          </li><!--end of course 1-->
-                  
-                          <li>
-                            <img src="images/Tutor2.png" alt="">
-                            <h3><a href="Schedule.html"></a></h3>
-                            <p>Courses :</p>
-                            <ul class="courses-list">
-                              <li class="courses-card">
-                                Introduction to Python
-                              </li>
-                              <li class="courses-card">
-                                Introduction to CSS 
-                              </li>
-                            </ul> <!--end of kids list(inner list)-->
-                          </li><!--end of course 2-->
-                          
-                          <li>
-                            <img src="images/Tutor3.png" alt="Python course">
-                            <h3>Introduction to Python</h3>
-                            <p>Instructor: Layan turki<br>
-                            kid&apos;s name :</p>
-                            <ul class="kid-list">
-                              <li class="kid-card">
-                                Shoug Saleh
-                              </li>
-                              <li class="kid-card">
-                                Abdullah Sulaiman
-                              </li>
-                            </ul> <!--end of kids list(inner list)-->
-                          </li><!--end of course 3-->
-                          <li>
-                            <img src="images/Tutor4.png" alt="SQL course">
-                            <h3>Introduction to SQL</h3>
-                            <p>Instructor: Faris Yousef<br>
-                            kid&apos;s name :</p>
-                            <ul class="kid-list">
-                              <li class="kid-card">
-                                Maha Fahad
-                              </li>
-                              <li class="kid-card">
-                                Waleed Saleh
-                              </li>
-                              <li class="kid-card">
-                                Reem Ali
-                              </li>
-                              <li class="kid-card">
-                                Rana Fahed
-                              </li>
-                              <li class="kid-card">
-                                Shoug saleh
-                              </li>
-                              <li class="kid-card">
-                                <a>more</a>
-                              </li>
-                            </ul> <!--end of kids list(inner list)-->
-                          </li><!--end of course 4-->
-                          <li>
-                            <img src="images/Tutor4.png" alt="JavaScript course">
-                            <h3>Introduction to JavaScript</h3>
-                            <p>Instructor: Ghala Hussam<br>
-                            kid&apos;s name :</p>
-                            <ul class="kid-list">
-                              <li class="kid-card">
-                                Abdullah Sulaiman
-                              </li>
-                              <li class="kid-card">
-                                Waleed Saleh
-                              </li>
-                              <li class="kid-card">
-                                Khaled Saleh
-                              </li>
-                            </ul> <!--end of kids list(inner list)-->
-                          </li><!--end of course 5--> 
-                          <li>
-                            <img src="images/Tutor6.png" alt="Swift course">
-                            <h3>Introduction to Swift</h3>
-                            <p>Instructor: Yasser Alharbi<br>
-                            kid&apos;s name :</p>
-                            <ul class="kid-list">
-                              <li class="kid-card">
-                                Nawaf Abdullah
-                              </li>
-                              <li class="kid-card">
-                                Abdullah Sulaiman
-                              </li>
-                              <li class="kid-card">
-                                Shoug Saleh
-                              </li>
-                            </ul> <!--end of kids list(inner list)-->
-                          </li><!--end of course 6--> 
-                          <li>
-                            <img src="images/Tutor7.png" alt="Java course">
-                            <h3>Introduction to Java</h3>
-                            <p>Instructor: Yasser Alharbi<br>
-                            kid&apos;s name :</p>
-                            <ul class="kid-list">
-                              <li class="kid-card">
-                                Rana Saif
-                              </li>
-                              <li class="kid-card">
-                                Maha Fahad
-                              </li>
-                            </ul> <!--end of kids list(inner list)-->
-                          </li><!--end of course 7-->
-                          <li>
-                            <img src="images/Tutor8.png" alt="HTML course">
-                            <h3>HTML Basics</h3>
-                            <p>Instructor: Yasser Alharbi<br>
-                            kid&apos;s name : </p>
-                            <ul class="kid-list">
-                              <li class="kid-card">
-                                Nawaf Abdullah
-                              </li>
-                              <li class="kid-card">
-                                Maha Fahad
-                              </li>
-                           
-                            </ul> <!--end of kids list(inner list)-->
-                          </li><!--end of course 8-->                        
-                        </ul><!--outer list-->
-                      </section>
-
-        </div>
-        </div>
         <!--
         <div class="tutorsTab_withInfo">
             <div class="tutors_tab tab">
