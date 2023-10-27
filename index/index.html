@@ -1,455 +1,626 @@
 <!DOCTYPE html>
-<html lang="el">
-    <head>
-        <meta charset="utf-8"> 
-           <title>Kids Script</title> <!--tab--> 
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Header and Navigation-->
 
-   <body>
-    <!--Start of header section-->
+    <!--top bar of the page-->
     <header>
-      <div class="logo">
-        <img
-          src="images/logo.png"
-          alt="Kids Script logo "
-          width="179"
-          height="auto"
-        />
-      </div>
-      <!---------Start of navigation bar-------->
-      <nav class="NavBar">
-        <a href="index.html">Home</a>
-        <a href="Parentdashboard.html">Parent</a>
-        <a href="Tutors.html">Tutor</a>
-        <a href="Adminstratordashboard.html">Adminstrator</a>
-        <a href="Courses.html">Courses</a>
-        <a href="??">Sign in</a>
-     
+      <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" />
+      <nav>
+        <ul class="nav_links">
+          <li><a href="indx.html">Home</a></li>
+          <li><a href="Parentdashboard.html">Parent</a></li>
+          <li><a href="Tutor.html">Tutor</a></li>
+          <li><a href="Administratordashboard.html">Adminstrator</a></li>
+          <li><a href="Courses.html">Courses</a></li>
+          <!--- <li><a href="signIn.html"></a>Sign in</li>-->
+        </ul>
       </nav>
-      <!---------End of navigation bar-------->
+      <a href="signIn.html" class="signIn"><button>Sign in</button></a>
     </header>
+    <!--End of navigation bar -->
 
+    <div class="pageLink">
+      <nav>
+        <!--I don't think we need one since we already in the same page-->
+      </nav>
+    </div>
+
+    <!--End-header-->
     <main>
-      <!---------Start of vision section-------->
-      <div class="Vision">
-        <h2 class="vision-title">Vision</h2>
-        <pre class="vision-text">
-        Fostering Young Innovators, Kids Script inspires 
-        kids to code through engaging, creative programs,
-        equipping them to shape a limitless future
-        in the digital age.
-     </pre
-        >
-        <div class="photo">
-          <img src="" alt="" class="vision-pic" />
-        </div>
+      <!--Vision-->
+
+      <!--
+      <div class="Titles">
+        <h2>Vision</h2>
       </div>
-      <!---------End of vision section-------->
-      <!--Note: div(Courses) contains ALL the 6 courses
-         each course is in a single div-->
-      <!---------Start of "Most common courses" section-------->
-      <div class="Courses">
-        <h2 class mostCC>The most common courses</h2>
-        <div class="course#1">
-          <!--Course image here-->
-          <img src="" alt="" class="coursePic" />
-          <!--Course name here-->
-          <h4>Python Course</h4>
-          <!--Course descrition here-->
-          <p>Course descrition</p>
-          <p class="D-text">the description here</p>
-          <!--Tutor pic here-->
-          <img src="" alt="" class="tutorPic" />
-          <!--Course rate here-->
-          <p>Rate</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="169"
-            height="29"
-            viewBox="0 0 169 29"
-            fill="none"
-          >
-            <path
-              d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M85.5 0L88.7555 10.0193L99.2903 10.0193L90.7674 16.2115L94.0229 26.2307L85.5 20.0385L76.9771 26.2307L80.2326 16.2115L71.7097 10.0193L82.2445 10.0193L85.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.233 16.2115L105.71 10.0193L116.245 10.0193L119.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.233 16.2115L140.71 10.0193L151.245 10.0193L154.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M50.5 0L53.7555 10.0193L64.2903 10.0193L55.7674 16.2115L59.0229 26.2307L50.5 20.0385L41.9771 26.2307L45.2326 16.2115L36.7097 10.0193L47.2445 10.0193L50.5 0Z"
-              fill="#8B91DB"
-            />
-          </svg>
-        </div>
-
-        <div class="course#2">
-          <!--Course image here-->
-          <img src="" alt="" class="coursePic" />
-          <!--Course name here-->
-          <h4>Course name</h4>
-          <!--Course descrition here-->
-          <p>Course descrition</p>
-          <p class="D-text">the description here</p>
-          <!--Tutor pic here-->
-          <img src="" alt="" class="tutorPic" />
-          <!--Course rate here-->
-          <p>Rate</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="169"
-            height="29"
-            viewBox="0 0 169 29"
-            fill="none"
-          >
-            <path
-              d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M50.5 0L53.7555 10.0193L64.2903 10.0193L55.7674 16.2115L59.0229 26.2307L50.5 20.0385L41.9771 26.2307L45.2326 16.2115L36.7097 10.0193L47.2445 10.0193L50.5 0Z"
-              fill="#8B91DB"
-            />
-
-            <path
-              d="M85.5 0L88.7555 10.0193L99.2903 10.0193L90.7674 16.2115L94.0229 26.2307L85.5 20.0385L76.9771 26.2307L80.2326 16.2115L71.7097 10.0193L82.2445 10.0193L85.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.233 16.2115L105.71 10.0193L116.245 10.0193L119.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.233 16.2115L140.71 10.0193L151.245 10.0193L154.5 0Z"
-              fill="#8B91DB"
-            />
-          </svg>
-        </div>
-
-        <div class="course#3">
-          <!--Course image here-->
-          <img src="" alt="" class="coursePic" />
-          <!--Course name here-->
-          <h4>Course name</h4>
-          <!--Course descrition here-->
-          <p>Course descrition</p>
-          <p class="D-text">the description here</p>
-          <!--Tutor pic here-->
-          <img src="" alt="" class="tutorPic" />
-          <!--Course rate here-->
-          <p>Rate</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="169"
-            height="29"
-            viewBox="0 0 169 29"
-            fill="none"
-          >
-            <path
-              d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M50.5 0L53.7555 10.0193L64.2903 10.0193L55.7674 16.2115L59.0229 26.2307L50.5 20.0385L41.9771 26.2307L45.2326 16.2115L36.7097 10.0193L47.2445 10.0193L50.5 0Z"
-              fill="#8B91DB"
-            />
-
-            <path
-              d="M85.5 0L88.7555 10.0193L99.2903 10.0193L90.7674 16.2115L94.0229 26.2307L85.5 20.0385L76.9771 26.2307L80.2326 16.2115L71.7097 10.0193L82.2445 10.0193L85.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.233 16.2115L105.71 10.0193L116.245 10.0193L119.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.233 16.2115L140.71 10.0193L151.245 10.0193L154.5 0Z"
-              fill="#8B91DB"
-            />
-          </svg>
-        </div>
-
-        <div class="course#4">
-          <!--Course image here-->
-          <img src="" alt="" class="coursePic" />
-          <!--Course name here-->
-          <h4>Course name</h4>
-          <!--Course descrition here-->
-          <p>Course descrition</p>
-          <p class="D-text">the description here</p>
-          <!--Tutor pic here-->
-          <img src="" alt="" class="tutorPic" />
-          <!--Course rate here-->
-          <p>Rate</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="169"
-            height="29"
-            viewBox="0 0 169 29"
-            fill="none"
-          >
-            <path
-              d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M50.5 0L53.7555 10.0193L64.2903 10.0193L55.7674 16.2115L59.0229 26.2307L50.5 20.0385L41.9771 26.2307L45.2326 16.2115L36.7097 10.0193L47.2445 10.0193L50.5 0Z"
-              fill="#8B91DB"
-            />
-
-            <path
-              d="M85.5 0L88.7555 10.0193L99.2903 10.0193L90.7674 16.2115L94.0229 26.2307L85.5 20.0385L76.9771 26.2307L80.2326 16.2115L71.7097 10.0193L82.2445 10.0193L85.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.233 16.2115L105.71 10.0193L116.245 10.0193L119.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.233 16.2115L140.71 10.0193L151.245 10.0193L154.5 0Z"
-              fill="#D9D9D9"
-            />
-          </svg>
-        </div>
-
-        <div class="course#5">
-          <!--Course image here-->
-          <img src="" alt="" class="coursePic" />
-          <!--Course name here-->
-          <h4>Course name</h4>
-          <!--Course descrition here-->
-          <p>Course descrition</p>
-          <p class="D-text">the description here</p>
-          <!--Tutor pic here-->
-          <img src="" alt="" class="tutorPic" />
-          <!--Course rate here-->
-          <p>Rate</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="169"
-            height="29"
-            viewBox="0 0 169 29"
-            fill="none"
-          >
-            <path
-              d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M50.5 0L53.7555 10.0193L64.2903 10.0193L55.7674 16.2115L59.0229 26.2307L50.5 20.0385L41.9771 26.2307L45.2326 16.2115L36.7097 10.0193L47.2445 10.0193L50.5 0Z"
-              fill="#8B91DB"
-            />
-
-            <path
-              d="M85.5 0L88.7555 10.0193L99.2903 10.0193L90.7674 16.2115L94.0229 26.2307L85.5 20.0385L76.9771 26.2307L80.2326 16.2115L71.7097 10.0193L82.2445 10.0193L85.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.233 16.2115L105.71 10.0193L116.245 10.0193L119.5 0Z"
-              fill="#D9D9D9"
-            />
-            <path
-              d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.233 16.2115L140.71 10.0193L151.245 10.0193L154.5 0Z"
-              fill="#D9D9D9"
-            />
-          </svg>
-        </div>
-
-        <div class="course#6">
-          <!--Course image here-->
-          <img src="" alt="" class="coursePic" />
-          <!--Course name here-->
-          <h4>Course name</h4>
-          <!--Course descrition here-->
-          <p>Course descrition</p>
-          <p class="D-text">the description here</p>
-          <!--Tutor pic here-->
-          <img src="" alt="" class="tutorPic" />
-          <!--Course rate here-->
-          <p>Rate</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="169"
-            height="29"
-            viewBox="0 0 169 29"
-            fill="none"
-          >
-            <path
-              d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M50.5 0L53.7555 10.0193L64.2903 10.0193L55.7674 16.2115L59.0229 26.2307L50.5 20.0385L41.9771 26.2307L45.2326 16.2115L36.7097 10.0193L47.2445 10.0193L50.5 0Z"
-              fill="#8B91DB"
-            />
-
-            <path
-              d="M85.5 0L88.7555 10.0193L99.2903 10.0193L90.7674 16.2115L94.0229 26.2307L85.5 20.0385L76.9771 26.2307L80.2326 16.2115L71.7097 10.0193L82.2445 10.0193L85.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.233 16.2115L105.71 10.0193L116.245 10.0193L119.5 0Z"
-              fill="#8B91DB"
-            />
-            <path
-              d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.233 16.2115L140.71 10.0193L151.245 10.0193L154.5 0Z"
-              fill="#8B91DB"
-            />
-          </svg>
-        </div>
+      <div class="Vision-text">
+        <pre>
+          Fostering Young Innovators, Kids Script inspires kids 
+          to code through engaging, creative programs, equipping
+           them to shape a limitless future in the digital age.
+        </pre>
       </div>
-      <!---------End of "Most common courses" section-------->
-      <!---------Start of the Reviews section-------->
-      <!--Note: same as the courses, all the reviews are stored in one big div(Reviews) 
-        and each rev is in a single div-->
+      -->
+      <!--End-Vision-->
 
-      <div class="Reviews">
-        <h2 class="Reviews">Reviews</h2>
-        <div class="rev1">
-          <!--User pic here-->
-          <img src="" alt="" />
-          <!--@UserName-->
-          <p class="username">@UserName</p>
-          <p class="rev-text">
-            This course is ..............................................
-          </p>
-          <!--The reviewed course-->
-          <p class="reviewedC">CourseName</p>
-          <!--The rating stars-->
+      <!--Common courses section-->
+      <div class="Titles">
+        <h2>The most common courses</h2>
+      </div>
+      <div class="coursesRow1">
+        <!---------------Course1----------------->
+        <div class="CourseContainer">
+          <div class="coursePic">
+            <img src="images/robotics.png" alt="Robotics course" />
+          </div>
+          <div class="courseDetails">
+            <h4>Introduction to robotics</h4>
+            <p class="courseD-title">Course description</p>
+
+            <div class="courseD-text">
+              <p>
+                Explore the world of robotics with ‘Introduction to Robotics for
+                Kids.’ This course offers hands-on projects, interactive
+                lessons, and the opportunity to build and program robots. With
+                an enthusiastic instructor and engaging activities, it’s the
+                perfect start for young minds on their robotic journey.
+              </p>
+            </div>
+          </div>
+          <div class="TutorInfo-course">
+            <img src="images/ProfilePic.png.webp" alt="Tutor picture" />
+            <p>Tutor name: Mohammad Alghamdi</p>
+          </div>
+          <div class="rate-course">
+            <p>Rate</p>
+            <div class="stars-coursee">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="169"
+                height="29"
+                viewBox="0 0 169 29"
+                fill="none"
+              >
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M85.4999 0L88.7553 10.0193L99.2902 10.0193L90.7673 16.2115L94.0228 26.2307L85.4999 20.0385L76.977 26.2307L80.2324 16.2115L71.7096 10.0193L82.2444 10.0193L85.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.232 16.2115L105.71 10.0193L116.244 10.0193L119.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.232 16.2115L140.71 10.0193L151.244 10.0193L154.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M50.4999 0L53.7553 10.0193L64.2902 10.0193L55.7673 16.2115L59.0228 26.2307L50.4999 20.0385L41.977 26.2307L45.2324 16.2115L36.7096 10.0193L47.2444 10.0193L50.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!---------------END of course1----------------->
+        <!---------------Course2----------------->
+        <div class="CourseContainer">
+          <div class="coursePic">
+            <img src="images/Java.png" alt="Robotics course" />
+          </div>
+          <div class="courseDetails">
+            <h4>Introduction to Java</h4>
+            <p class="courseD-title">Course description</p>
+
+            <div class="courseD-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                expedita culpa voluptate dolor distinctio alias. Voluptatum odio
+                ratione assumenda eos, inventore, nisi deleniti eum ad dolore et
+                culpa laboriosam sequi.
+              </p>
+            </div>
+          </div>
+          <div class="TutorInfo-course">
+            <img src="images/ProfilePic.png.webp" alt="Tutor picture" />
+            <p>Tutor name: Mohammad Alghamdi</p>
+          </div>
+          <div class="rate-course">
+            <p>Rate</p>
+            <div class="stars-coursee">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="169"
+                height="29"
+                viewBox="0 0 169 29"
+                fill="none"
+              >
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M85.4999 0L88.7553 10.0193L99.2902 10.0193L90.7673 16.2115L94.0228 26.2307L85.4999 20.0385L76.977 26.2307L80.2324 16.2115L71.7096 10.0193L82.2444 10.0193L85.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.232 16.2115L105.71 10.0193L116.244 10.0193L119.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.232 16.2115L140.71 10.0193L151.244 10.0193L154.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M50.4999 0L53.7553 10.0193L64.2902 10.0193L55.7673 16.2115L59.0228 26.2307L50.4999 20.0385L41.977 26.2307L45.2324 16.2115L36.7096 10.0193L47.2444 10.0193L50.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!---------------END of course2----------------->
+        <!---------------Course3----------------->
+        <div class="CourseContainer">
+          <div class="coursePic">
+            <img src="images/scratch.png" alt="Robotics course" />
+          </div>
+          <div class="courseDetails">
+            <h4>Programming with Scratch</h4>
+            <p class="courseD-title">Course description</p>
+
+            <div class="courseD-text">
+              <p>
+                Programming with Scratch is a creative course that introduces
+                young learners to the exciting world of coding. Using Scratch, a
+                visual programming language designed for kids, children will
+                bring their ideas to life. This course is perfect for beginners
+                and encourages kids to think critically, and solve problems.
+              </p>
+            </div>
+          </div>
+          <div class="TutorInfo-course">
+            <img src="images/ProfilePic.png.webp" alt="Tutor picture" />
+            <p>Tutor name: Mohammad Alghamdi</p>
+          </div>
+          <div class="rate-course">
+            <p>Rate</p>
+            <div class="stars-coursee">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="169"
+                height="29"
+                viewBox="0 0 169 29"
+                fill="none"
+              >
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M85.4999 0L88.7553 10.0193L99.2902 10.0193L90.7673 16.2115L94.0228 26.2307L85.4999 20.0385L76.977 26.2307L80.2324 16.2115L71.7096 10.0193L82.2444 10.0193L85.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.232 16.2115L105.71 10.0193L116.244 10.0193L119.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.232 16.2115L140.71 10.0193L151.244 10.0193L154.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M50.4999 0L53.7553 10.0193L64.2902 10.0193L55.7673 16.2115L59.0228 26.2307L50.4999 20.0385L41.977 26.2307L45.2324 16.2115L36.7096 10.0193L47.2444 10.0193L50.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!---------------END of course3----------------->
+      </div>
+      <!--End of the first row of the common  courses section-->
+
+      <!--Start of the second row of the most common courses sectin-->
+      <div class="coursesRow2">
+        <!---------------Course4----------------->
+        <div class="CourseContainer">
+          <div class="coursePic">
+            <img src="images/html.png" alt="html course" />
+          </div>
+          <div class="courseDetails">
+            <h4>HTML Basics</h4>
+            <p class="courseD-title">Course description</p>
+
+            <div class="courseD-text">
+              <p>
+                HTML Basics is a beginner’s course that introduces children to
+                the essentials of web development. In this course, young
+                learners will explore the basics of HTML, the language behind
+                web pages. It’s a perfect starting point for kids interested in
+                understanding how websites are created in a simple and engaging
+                way.
+              </p>
+            </div>
+          </div>
+          <div class="TutorInfo-course">
+            <img src="images/ProfilePic.png.webp" alt="Tutor picture" />
+            <p>Tutor name: Mohammad Alghamdi</p>
+          </div>
+          <div class="rate-course">
+            <p>Rate</p>
+            <div class="stars-coursee">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="169"
+                height="29"
+                viewBox="0 0 169 29"
+                fill="none"
+              >
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M85.4999 0L88.7553 10.0193L99.2902 10.0193L90.7673 16.2115L94.0228 26.2307L85.4999 20.0385L76.977 26.2307L80.2324 16.2115L71.7096 10.0193L82.2444 10.0193L85.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.232 16.2115L105.71 10.0193L116.244 10.0193L119.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.232 16.2115L140.71 10.0193L151.244 10.0193L154.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M50.4999 0L53.7553 10.0193L64.2902 10.0193L55.7673 16.2115L59.0228 26.2307L50.4999 20.0385L41.977 26.2307L45.2324 16.2115L36.7096 10.0193L47.2444 10.0193L50.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!---------------END of course4----------------->
+        <!---------------Course5----------------->
+        <div class="CourseContainer">
+          <div class="coursePic">
+            <img src="images/css.png" alt="CSS course" />
+          </div>
+          <div class="courseDetails">
+            <h4>Styling with CSS</h4>
+            <p class="courseD-title">Course description</p>
+
+            <div class="courseD-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                expedita culpa voluptate dolor distinctio alias. Voluptatum odio
+                ratione assumenda eos, inventore, nisi deleniti eum ad dolore et
+                culpa laboriosam sequi.
+              </p>
+            </div>
+          </div>
+          <div class="TutorInfo-course">
+            <img src="images/ProfilePic.png.webp" alt="Tutor picture" />
+            <p>Tutor name: Mohammad Alghamdi</p>
+          </div>
+          <div class="rate-course">
+            <p>Rate</p>
+            <div class="stars-coursee">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="169"
+                height="29"
+                viewBox="0 0 169 29"
+                fill="none"
+              >
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M85.4999 0L88.7553 10.0193L99.2902 10.0193L90.7673 16.2115L94.0228 26.2307L85.4999 20.0385L76.977 26.2307L80.2324 16.2115L71.7096 10.0193L82.2444 10.0193L85.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.232 16.2115L105.71 10.0193L116.244 10.0193L119.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.232 16.2115L140.71 10.0193L151.244 10.0193L154.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M50.4999 0L53.7553 10.0193L64.2902 10.0193L55.7673 16.2115L59.0228 26.2307L50.4999 20.0385L41.977 26.2307L45.2324 16.2115L36.7096 10.0193L47.2444 10.0193L50.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!---------------END of course5----------------->
+        <!---------------Course6----------------->
+        <div class="CourseContainer">
+          <div class="coursePic">
+            <img src="images/javascript.png" alt="JavaScript course" />
+          </div>
+          <div class="courseDetails">
+            <h4>Introduction to javascript</h4>
+            <p class="courseD-title">Course description</p>
+
+            <div class="courseD-text">
+              <p>
+                JavaScript Adventures for Kids is an exciting course that
+                introduces children to the magic of coding. In this
+                beginner-friendly program, kids will learn to create interactive
+                web content and fun games with JavaScript. Our friendly
+                instructors will guide your child through this creative journey.
+              </p>
+            </div>
+          </div>
+          <div class="TutorInfo-course">
+            <img src="images/ProfilePic.png.webp" alt="Tutor picture" />
+            <p>Tutor name: Mohammad Alghamdi</p>
+          </div>
+          <div class="rate-course">
+            <p>Rate</p>
+            <div class="stars-coursee">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="169"
+                height="29"
+                viewBox="0 0 169 29"
+                fill="none"
+              >
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M85.4999 0L88.7553 10.0193L99.2902 10.0193L90.7673 16.2115L94.0228 26.2307L85.4999 20.0385L76.977 26.2307L80.2324 16.2115L71.7096 10.0193L82.2444 10.0193L85.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.232 16.2115L105.71 10.0193L116.244 10.0193L119.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.232 16.2115L140.71 10.0193L151.244 10.0193L154.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M50.4999 0L53.7553 10.0193L64.2902 10.0193L55.7673 16.2115L59.0228 26.2307L50.4999 20.0385L41.977 26.2307L45.2324 16.2115L36.7096 10.0193L47.2444 10.0193L50.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!---------------END of course6----------------->
+      </div>
+      <!--End of the second row of the most common courses sectin-->
+      <!--End-Common courses section-->
+      <!------------------------------------------------------------------------------------------------------------->
+      <!--Parents reviews-->
+      <div class="allTheReviews">
+        <!--Review 1-->
+        <div class="Container">
+          <div class="title">
+            <img src="images/ProfilePic.png.webp" alt="profile picture" />
+            <div class="info">
+              <h4 class="name">Mohammad</h4>
+              <p class="userName">@Mohmmad98</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              My child has gained valuable skills in building and programming
+              robots. This course is a must for any parent looking to ignite
+              their child’s interest in robotics.”
+            </p>
+          </div>
+          <div class="courseInfo">
+            <p>Intoduction to robotics</p>
+          </div>
+
           <div class="rate">
             <p>Rate</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="169"
-              height="29"
-              viewBox="0 0 169 29"
-              fill="none"
-            >
-              <path
-                d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
-                fill="#8B91DB"
-              />
-              <path
-                d="M50.5 0L53.7555 10.0193L64.2903 10.0193L55.7674 16.2115L59.0229 26.2307L50.5 20.0385L41.9771 26.2307L45.2326 16.2115L36.7097 10.0193L47.2445 10.0193L50.5 0Z"
-                fill="#8B91DB"
-              />
-
-              <path
-                d="M85.5 0L88.7555 10.0193L99.2903 10.0193L90.7674 16.2115L94.0229 26.2307L85.5 20.0385L76.9771 26.2307L80.2326 16.2115L71.7097 10.0193L82.2445 10.0193L85.5 0Z"
-                fill="#8B91DB"
-              />
-              <path
-                d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.233 16.2115L105.71 10.0193L116.245 10.0193L119.5 0Z"
-                fill="#8B91DB"
-              />
-              <path
-                d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.233 16.2115L140.71 10.0193L151.245 10.0193L154.5 0Z"
-                fill="#8B91DB"
-              />
-            </svg>
+            <div class="stars">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="169"
+                height="29"
+                viewBox="0 0 169 29"
+                fill="none"
+              >
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M85.4999 0L88.7553 10.0193L99.2902 10.0193L90.7673 16.2115L94.0228 26.2307L85.4999 20.0385L76.977 26.2307L80.2324 16.2115L71.7096 10.0193L82.2444 10.0193L85.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.232 16.2115L105.71 10.0193L116.244 10.0193L119.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.232 16.2115L140.71 10.0193L151.244 10.0193L154.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M50.4999 0L53.7553 10.0193L64.2902 10.0193L55.7673 16.2115L59.0228 26.2307L50.4999 20.0385L41.977 26.2307L45.2324 16.2115L36.7096 10.0193L47.2444 10.0193L50.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
           </div>
         </div>
 
-        <div class="rev2">
-          <!--User pic here-->
-          <img src="" alt="" />
-          <!--@UserName-->
-          <p class="username">@UserName</p>
-          <p class="rev-text">
-            This course is ..............................................
-          </p>
-          <!--The reviewed course-->
-          <p class="reviewedC">CourseName</p>
-          <!--The rating stars-->
+        <!--Review 2-->
+        <div class="Container">
+          <div class="title">
+            <img src="images/ProfilePic.png.webp" alt="profile picture" />
+            <div class="info">
+              <h4 class="name">Reem</h4>
+              <p class="userName">@Reem_Ali</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              Introduction to Java has been a fantastic course for my child.
+              It’s engaging and teaches Java in a way that’s easy for kids to
+              understand. My child has learned valuable skills and enjoys the
+              interactive lessons. I highly recommend it!
+            </p>
+          </div>
+          <div class="courseInfo">
+            <p>Introduction to Java</p>
+          </div>
+
           <div class="rate">
             <p>Rate</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="169"
-              height="29"
-              viewBox="0 0 169 29"
-              fill="none"
-            >
-              <path
-                d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
-                fill="#8B91DB"
-              />
-              <path
-                d="M50.5 0L53.7555 10.0193L64.2903 10.0193L55.7674 16.2115L59.0229 26.2307L50.5 20.0385L41.9771 26.2307L45.2326 16.2115L36.7097 10.0193L47.2445 10.0193L50.5 0Z"
-                fill="#8B91DB"
-              />
-
-              <path
-                d="M85.5 0L88.7555 10.0193L99.2903 10.0193L90.7674 16.2115L94.0229 26.2307L85.5 20.0385L76.9771 26.2307L80.2326 16.2115L71.7097 10.0193L82.2445 10.0193L85.5 0Z"
-                fill="#8B91DB"
-              />
-              <path
-                d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.233 16.2115L105.71 10.0193L116.245 10.0193L119.5 0Z"
-                fill="#8B91DB"
-              />
-              <path
-                d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.233 16.2115L140.71 10.0193L151.245 10.0193L154.5 0Z"
-                fill="#8B91DB"
-              />
-            </svg>
+            <div class="stars">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="169"
+                height="29"
+                viewBox="0 0 169 29"
+                fill="none"
+              >
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#fff"
+                />
+                <path
+                  d="M85.4999 0L88.7553 10.0193L99.2902 10.0193L90.7673 16.2115L94.0228 26.2307L85.4999 20.0385L76.977 26.2307L80.2324 16.2115L71.7096 10.0193L82.2444 10.0193L85.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.232 16.2115L105.71 10.0193L116.244 10.0193L119.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.232 16.2115L140.71 10.0193L151.244 10.0193L154.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M50.4999 0L53.7553 10.0193L64.2902 10.0193L55.7673 16.2115L59.0228 26.2307L50.4999 20.0385L41.977 26.2307L45.2324 16.2115L36.7096 10.0193L47.2444 10.0193L50.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
           </div>
         </div>
 
-        <div class="rev3">
-          <!--User pic here-->
-          <img src="" alt="" />
-          <!--@UserName-->
-          <p class="username">@UserName</p>
-          <p class="rev-text">
-            This course is ..............................................
-          </p>
-          <!--The reviewed course-->
-          <p class="reviewedC">CourseName</p>
-          <!--The rating stars-->
+        <!--Review 3-->
+        <div class="Container">
+          <div class="title">
+            <img src="images/ProfilePic.png.webp" alt="profile picture" />
+            <div class="info">
+              <h4 class="name">Layan</h4>
+              <p class="userName">@LayanAbdullah</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              My child loved the Python course. It’s engaging and educational,
+              and the instructors are great at making Python fun for kids. I
+              noticed a boost in our child’s problem-solving skills. It's a
+              great course for young learners!
+            </p>
+          </div>
+          <div class="courseInfo">
+            <p>Introduction to python</p>
+          </div>
+
           <div class="rate">
             <p>Rate</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="169"
-              height="29"
-              viewBox="0 0 169 29"
-              fill="none"
-            >
-              <path
-                d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
-                fill="#8B91DB"
-              />
-              <path
-                d="M50.5 0L53.7555 10.0193L64.2903 10.0193L55.7674 16.2115L59.0229 26.2307L50.5 20.0385L41.9771 26.2307L45.2326 16.2115L36.7097 10.0193L47.2445 10.0193L50.5 0Z"
-                fill="#8B91DB"
-              />
-
-              <path
-                d="M85.5 0L88.7555 10.0193L99.2903 10.0193L90.7674 16.2115L94.0229 26.2307L85.5 20.0385L76.9771 26.2307L80.2326 16.2115L71.7097 10.0193L82.2445 10.0193L85.5 0Z"
-                fill="#8B91DB"
-              />
-              <path
-                d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.233 16.2115L105.71 10.0193L116.245 10.0193L119.5 0Z"
-                fill="#8B91DB"
-              />
-              <path
-                d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.233 16.2115L140.71 10.0193L151.245 10.0193L154.5 0Z"
-                fill="#8B91DB"
-              />
-            </svg>
+            <div class="stars">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="169"
+                height="29"
+                viewBox="0 0 169 29"
+                fill="none"
+              >
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M85.4999 0L88.7553 10.0193L99.2902 10.0193L90.7673 16.2115L94.0228 26.2307L85.4999 20.0385L76.977 26.2307L80.2324 16.2115L71.7096 10.0193L82.2444 10.0193L85.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M119.5 0L122.755 10.0193L133.29 10.0193L124.767 16.2115L128.023 26.2307L119.5 20.0385L110.977 26.2307L114.232 16.2115L105.71 10.0193L116.244 10.0193L119.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M154.5 0L157.755 10.0193L168.29 10.0193L159.767 16.2115L163.023 26.2307L154.5 20.0385L145.977 26.2307L149.232 16.2115L140.71 10.0193L151.244 10.0193L154.5 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M50.4999 0L53.7553 10.0193L64.2902 10.0193L55.7673 16.2115L59.0228 26.2307L50.4999 20.0385L41.977 26.2307L45.2324 16.2115L36.7096 10.0193L47.2444 10.0193L50.4999 0Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  d="M15 0L18.3677 10.0193L29.2658 10.0193L20.4491 16.2115L23.8168 26.2307L15 20.0385L6.18322 26.2307L9.55093 16.2115L0.734152 10.0193L11.6323 10.0193L15 0Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-      <!---------End of the Reviews section-------->
+      <!--End-Parents reviews-->
     </main>
+    <!--Footer-->
+    <footer></footer>
+    <!--End-Footer-->
   </body>
-</html> 
+</html>
