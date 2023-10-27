@@ -13,7 +13,6 @@
 }
 .nav_links li a:hover {
 color:rgb(144, 141, 157);
-
 }
 
 button {
@@ -21,24 +20,24 @@ button {
   background-color: #565275;
   color: white;
   border: none;
-   border-radius:50px ;
-   transition: all 0.3s ease 0s;
-   cursor: pointer;
-   }
+  border-radius:50px ;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
   
-  button:hover{
-      background-color: #49465d;
-  }
+button:hover{
+  background-color: #49465d;
+}
 
 header{
   display:flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-      height: 50px;
- flex-shrink: 0;
- background: #FFF;
- box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.13);
+  height: 50px;
+  flex-shrink: 0;
+  background: #FFF;
+  box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.13);
   }
   header img{
      width:177px;
@@ -124,8 +123,12 @@ footer{
       width: 40px;
       border-radius: 15px;
     }
+
+    .checked {
+      color: orange;
+    }
   
-    /*    on hover       */
+    /*    on hover       
   
     .cardInfo{
       display: none;
@@ -138,6 +141,7 @@ footer{
     .MoreInfo { 
       float: right;
     } 
+*/
 
 /*---------------------------------------------------end Course page---------------------------------------------------*/
 
