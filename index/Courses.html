@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="kidsScript.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+    
     .allCorsessCards{
   display: flex;
   flex-direction: column;
@@ -21,14 +22,14 @@
 
 .coursesRow{
   display: flex;
+  flex-direction: row; /*default*/
+  justify-content:space-around ; 
   align-items: center;
-  justify-content:center ; 
-margin-right: 6rem;
-column-gap: 5rem;
-padding: 1rem 2rem;
-margin-left: 80px;
-margin-bottom: 2rem;
-
+  margin-right: 6rem;
+  column-gap: 5rem;
+  padding: 1rem 2rem;
+  margin-left: 80px;
+  margin-bottom: 2rem;
 }
 
   .CourseContainer{
@@ -128,6 +129,10 @@ margin-bottom: 2rem;
   margin-top: 0.3rem;
   }
 
+  .timeDate{
+    float: right;
+  }
+
   .checked {
     color: orange;
   }
@@ -159,6 +164,7 @@ margin-bottom: 2rem;
   
 <main>
 
+<!-- A list of all Courses that we have in the learning centre -->
 <div class="allCorsessCards"> <!-- to do a background in css and control the column-->
 
 <!--.....................Course1-Scratch.....................-->
