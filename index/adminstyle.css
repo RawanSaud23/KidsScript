@@ -7,9 +7,6 @@
   }
   body {
     background-color: #abacc9ad;
-    /*background: rgb(164, 178, 226);*/
-  
-    /* background: #c6c6da; */
   }
   img {
     height: auto;
@@ -164,7 +161,7 @@
     border-radius: 50%;
     text-align: center;
     aspect-ratio: 1 / 1;
-    border: 4px solid grey;
+    border: 5px solid rgb(141,102,161);
   }
   
   .child-name {
@@ -224,7 +221,7 @@
     margin: auto; 
     text-align: center;
     aspect-ratio: 1 / 1;
-    border: 4px solid gray;
+    border: 5px solid rgb(141,102,161);
   }
   
   .Tutor-name {
