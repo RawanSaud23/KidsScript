@@ -7,139 +7,13 @@
   <title>Courses</title> 
   <link rel="stylesheet" href="kidsScript.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style> 
-      .allCorsessCards{
-      display: flex;
-      flex-direction: column;
-      background-color:   #a69cecc5;
-      width: 80%;
-      border-radius: 43px;
-      align-items: stretch;
-      justify-content: center;
-      margin: auto;  
-    }
-    
-    /*  justify-content: space-around;
-      align-items: center;
-      width: 95%;
-      border-radius: 1%;
-      border-style: hidden; not sure
-      */
-    
-    .coursesRow{
-      display: flex;
-      flex-direction: row; /*default*/
-      justify-content: space-around;
-      /* ----coursesRow------ :
-        margin-right: 6rem;
-  column-gap: 5rem;
-  padding: 1rem 2rem;
-  margin-left: 80px;
-  margin-bottom: 2rem;
-      */
-    }
-    
-    .CourseContainer {
-      width: 50%;
-      
-      box-sizing: border-box;
-      border-radius: 43px;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: 0.3s;
-      background-color: #f4f4f4;
-      margin: 25px 25px 25px;
-      /* ---------CourseContainer----------
-      background: #FFFEFE;
-  display: flex;
-  flex-direction: column;
-  width: 336px;
-  height: 539px;
-  border: 1px solid #ccc;
-  filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
-  border-radius: 43px;
-      */
-    }
-    
-    .CourseContainer img{
-      border-top-left-radius: 43px;
-      border-top-right-radius: 43px;
-    }
-
-    .courseDetails{
-  padding: 10px;
-  }
-  
-  .courseDetails h4{
-  margin: 0;
-  color: #000;
-  font-family: Inter;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  }
-    
-    .timeDate{
-      float: right;
-    }
-    
-    .Tutor {
-      display: inline-block;
-      padding: 0 25px;
-      height: 40px;
-      font-size: 16px;
-      line-height: 50px;
-      border-radius: 25px;
-    }
-          
-    .Tutor img {
-      
-      float: left;
-      margin: 0 10px 0 -25px;
-      height: 40px;
-      width: 40px;
-      border-radius: 15px;
-
-    } 
-  
-    .MoreInfo p{
-      border: 2px solid #dad7d7;
-      border-radius: 12px;
-      padding: 5px;
-      background-color: #dad7d7;
-      float: right;
-    }
-
-    .checked {
-      color: orange;
-    }
-    
-    .cardInfo{
-      display: none;
-  }
-  
-  .Onhover:hover + .cardInfo{
-      display: block;
-  }
-  
-    
-    .MoreInfo { 
-      float: right;
-    } 
-  
-    .MoreInfo p{
-      border: 2px solid #dad7d7;
-      border-radius: 12px;
-      padding: 5px;
-      background-color: #dad7d7;
-    }
-  </style>
+  <link rel="stylesheet" href="styleCourses.css">
 </head>
     
 <body> 
 
   <header>
-      <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" />
+      <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" >
       <nav>
         <ul class="nav_links">
           <li><a href="indx.html">Home</a></li>
@@ -150,7 +24,7 @@
           <!--- <li><a href="signIn.html"></a>Sign in</li>-->
         </ul>
       </nav>
-      <a href="signIn.html" class="signIn"><button>Sign in</button></a>
+      <!-- <a href="signIn.html" class="signIn"><button>Sign in</button></a> -->
     </header>
 
 
