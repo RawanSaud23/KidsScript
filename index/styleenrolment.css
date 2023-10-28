@@ -54,7 +54,7 @@ box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.13);
     width:177px;
     cursor: pointer;
  }
- div.evaluation {
+ div.enrolment {
  background-color: #9287e37a;
   margin: 10px;
   padding: 20px;
@@ -70,7 +70,7 @@ div {
 
 .row1{
   display:flex;
-  align-items: center;
+  align-items: right;
   justify-content: center;
   column-gap: 8rem;
   width: 95%;
@@ -79,14 +79,11 @@ div {
   margin-bottom: 2rem;
 }
 
-div.evaluationfeedback{
-  align-items: center;
-  justify-content: center;
-  width: 95%;
-  padding: 1rem 2rem;
-  margin-right: 6rem;
-  margin-bottom: 2rem;
-  text-align: center;
+Filter{
+  display: flex;
+  padding-right: 100vw;
+  flex-direction: row;
+  justify-content: top;
 
 }
 
@@ -96,15 +93,19 @@ h1{
   font-family: "Times New Roman", Times, serif;
 }
 
+p{
+  font-size: x-small; 
+  line-height: 0%;
+}
 
- 
-
-
-
-
-.evaluation div select{
+.enrolment div select{
 width:200px;
-font-size: large;
+justify-content: left;
+font-size: medium;
 background-color: #9187e3;
 border-color: transparent transparent rgb(199, 157, 235) transparent;
+}
+
+#list{
+  text-align: left;
 }

@@ -1,19 +1,108 @@
 <!DOCTYPE html>
 <html lang="el">
     <head>
-        <meta charset="utf-8"> 
-           <title>Register a new child</title> 
-            <link rel="stylesheet" href="kidsScript.css"> 
-    </head>
+ <meta charset="utf-8"> 
+  <title>Register a new child</title> 
+   <link rel="stylesheet" href="kidsScript.css"> 
 
+
+<style>
+ .register h2{
+text-align: center;}
+   
+#kidForm{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form{
+background-color:#abacc9ad; 
+padding: 20px; 
+border-radius: 20px;
+}
+
+
+#kidForm fieldset{
+border-width: 1px ;
+border-radius: 10px;
+padding: 10px;
+margin:10px; 
+}
+
+
+
+#kidForm form .details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+
+}
+
+form .details .input-box {
+ margin-bottom: 15px;
+ width: calc(100% / 2 - 20px);
+}
+
+.details .text input{
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border-color:black;
+
+  }
+  
+  
+
+.button{ 
+text-align: center; }
+
+
+form .button{
+height: 2.5em;
+width:50%;
+margin:2em auto ;
+
+
+}
+
+
+
+form .button input{
+height: 100%;
+width:50%;
+color: black;
+font-size: 18px;
+font-weight: 500;
+border-radius: 5px;
+letter-spacing: 1px;
+border-color:black;
+background-color:white;
+}
+
+
+ 
+form .genderCategory{
+display: flex;
+width: 60%;
+justify-content: space-between;
+}
+    
+</style>
+
+    </head>
+<body>
     <header>
         <img src="images/kidsScriptLOGO.png" alt="kids Script logo" height="30" width="30"> 
         <h1>kids Script</h1>
         <!--CSS link here-->
     </header>
-<body>
+
 <main>
+<div class="register">
 <h2>Register a new kid</h2>
+</div>
 <div id="kidForm">
 <form>
 
@@ -22,19 +111,19 @@
 
 <div class="details">
  <div class="input-box text ">
-<label>Name: <input type="text" name="kid name"></label>
+<label>Name: *<input type="text" name="kid name"></label>
 </div>
 
  <div class="input-box text ">
-<label>Date of Birth: <input type="date" name="date of birth"></label> 
+<label>Date of Birth: * <input type="date" name="date of birth"></label> 
 </div>
 
  <div class="input-box text ">
-<label>Photo: <input type="file" name="kid photo"></label>
+<label>Photo: *<input type="file" name="kid photo"></label>
 </div>
 
  <div class="input-box"> 
-<label>Gender: </label>
+<label>Gender: *</label>
 
 
  <div class="genderCategory">
@@ -54,11 +143,11 @@
 
 <div class="details">
  <div class="input-box text">
-<label>Phone Number: <input type="tel" name="phonr number"></label>
+<label>Phone Number: *<input type="tel" name="phonr number"></label>
 </div>
 
  <div class="input-box text">
-<label>Email: <input type="text" name="email"></label>
+<label>Email: *<input type="text" name="email"></label>
 </div>
 </div>
 </fieldset>
