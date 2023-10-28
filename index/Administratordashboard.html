@@ -1,326 +1,439 @@
-<!--Leena-->
 <!DOCTYPE html>
-<html lang="el">
-    <head>
-        <meta charset="utf-8"> 
-           <title>Administrator dashboard</title> <!--tab--> 
-           <link rel="stylesheet" href="kidsScript.css"> 
-    </head>
-    
-    <header> <!--top bar of the page-->
-        <a href="index.html"> <img src="images/kidsScriptLOGO.png" alt="kids Script logo" height="80">  </a>    	
+<html lang="en">
 
-        
-        <nav> 
-        <a href= "index.html"> Home </a>
-        <a href= "Parentdashboard.html"> parent</a>
-        <a href="Administratordashboard.html"> Administrator</a>
-        <a href="Courses.html"> Courses</a>
-        <a href="Courses.html"> Sign in</a> <!--How we do pop-up window??-->
-         <!--do it as a normal page then with JS you will make it as a pop-up window-->
-            </nav>
-        </header>
-        <div class="pageLink">
-            <nav> 
-                <a href="index.html">Home</a> /
-                <a href=""> Administrator dashboard</a>
-            </nav>
-            </div>
-    <body> 
-        <main>
-        <div class="Registered_kidsTab_withInfo"><!--all kids with there info and tab-->
-            <div class = "Registered_kids_tab tab">  <!--only the tab icon-->  
-            <h1>Registered kids</h1>
-            </div>
-        <div class="KidsInfo"><!--only thier info blocks-->
-            <ul>
-                <div class="each4"><!--each 4cards togather-->
-        <div class="Kid1_block_withInfo kid"><!--firstCard-->
-            <img class="pic" src="images/Kid1.png" alt="kid picture" class ="pic"> 
-            <li><h2>Reem Ali</h2></li>
-            <img src="images/EmailIcon.png" alt="" class="pic"><h3>Reem'sMother@hotmail.com</h3>
-            </div>
-            <div class="Kid2_block_withInfo kid"><!--2 card-->
-                <img class="pic" src="images/Kid2.png" alt="kid picture" class ="pic">
-                <li><h2>Abdullah Sulaiman</h2></li>
-                <img src="images/EmailIcon.png" alt="" class="pic"><h3>Abdullah'sMother@gmail.com</h3>
-                </div><!--end 2card-->
-            <div class="Kid3_block_withInfo kid">
-                <img class="pic" src="images/Kid3.png" alt="kid picture" class ="pic">
-                <li><h2>Khaled Saleh</h2></li>
-                <img src="images/EmailIcon.png" alt="" class="pic"><h3>Khaled'sMother@gmail.com</h3>
-                </div>
-            <div class="Kid4_block_withInfo kid">
-                <img class="pic" src="images/Kid4.png" alt="kid picture" class ="pic">
-                <li><h2>Shoug Saleh</h2></li>
-                <img src="images/EmailIcon.png" alt="" class="pic"><h3>Shoug'sMother@gmail.com</h3>
-                </div>
-            </div><!--end each 4-->
-            <div class="each4"><!--start each4-->
-            <div class="Kid5_block_withInfo kid">
-                <img class="pic" src="images/Kid5.png" alt="kid picture" class ="pic">
-                <li><h2>Waleed Saleh</h2></li>
-                <img src="images/EmailIcon.png" alt="" class="pic"><h3>Waleed'sMother@gmail.com</h3>
-                </div>
-            <div class="Kid6_block_withInfo kid">
-                <img class="pic" src="images/Kid6.png" alt="kid picture" class ="pic">
-                <li><h2>Rana Saif</h2></li>
-                <img src="images/EmailIcon.png" alt="" class="pic"><h3>Rana'sMother@gmail.com</h3>
-                </div>              
-            <div class="Kid7_block_withInfo kid">
-                <img class="pic" src="images/Kid7.png" alt="kid picture" class ="pic">
-                <li><h2>Nawaf Abdullah</h2></li>
-                <img src="images/EmailIcon.png" alt="" class="pic"><h3>Nawaf'sMother@gmail.com</h3>
-                </div> 
-            <div class="Kid8_block_withInfo kid">
-                <img class="pic" src="images/Kid8.png" alt="kid picture" class ="pic">
-                <li><h2>Maha Fahad</h2></li>
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="adminstyle.css" >
+</head>
+
+<body>
+
+  <header>
+    <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" />
+    <nav>
+      <ul class="nav_links">
+        <li><a href="indx.html">Home</a></li>
+        <li><a href="Parentdashboard.html">Parent</a></li>
+        <li><a href="Tutor.html">Tutor</a></li>
+        <li><a href="Administratordashboard.html">Adminstrator</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+      </ul>
+    </nav>
+    <a href="signIn.html" class="signIn"><button>Sign in</button></a>
+  </header>
+  <main>
+    <h1>Admin Dashboard</h1>
+
+    <div class='breadcrumb'>
+      <a href="index.html">Home</a>
+      <span> / </span>
+      <a href="admin.html">Admin Dashboard</a>
+    </div>
+
+    <!-- A list of all children names who are registered in the learning centre -->
+    <div class="section-title">
+      <h2>Registered kids</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <ul class="children">
+      <li>
+        <div class="children-card" >
+          <img
+            src="images/Kid1.png"
+            alt="" >
+          <h2 class="child-name">Rohit Gupta</h2>
+          <p>youremail@mail.com</p>
+        </div>
+      </li>
+      <li>
+        <div class="children-card">
+          <img
+            src="images/Kid2.png"
+            alt="" >
+          <h2 class="child-name">Rohit Gupta</h2>
+          <p>youremail@mail.com</p>
+        </div>
+      </li>
+      <li>
+        <div class="children-card" >
+          <img
+            src="images/Kid3.png"
+            alt="" >
+          <h2 class="child-name">Rohit Gupta</h2>
+          <p>youremail@mail.com</p>
+        </div>
+      </li>
+      <li>
+        <div class="children-card">
+          <img
+            src="images/Kid4.png"
+            alt="" >
+          <h2 class="child-name">Rohit Gupta</h2>
+          <p>youremail@mail.com</p>
+        </div>
+      </li>
+      <li>
+        <div class="children-card" >
+          <img
+            src="images/Kid5.png"
+            alt="*" >
+          <h2 class="child-name">Rohit Gupta</h2>
+          <p>youremail@mail.com</p>
+        </div>
+      </li>
+      <li>
+        <div class="children-card">
+          <img
+            src="images/Kid6.png"
+            alt="*" >
+          <h2 class="child-name">Rohit Gupta</h2>
+          <p>youremail@mail.com</p>
+        </div>
+      </li>
+      <li>
+        <div class="children-card">
+          <img
+            src="images/Kid7.png"
+            alt="" >
+          <h2 class="child-name">Rohit Gupta</h2>
+          <p>youremail@mail.com</p>
+        </div>
+      </li>
+      <li>
+        <div class="children-card" >
+          <img
+            src="images/Kid8.png"
+            alt="" >
+          <h2 class="child-name">Rohit Gupta</h2>
+          <p>youremail@mail.com</p>
+        </div>
+      </li>
+    </ul>
+
+    <!-- courses section  -->
+    <div class="section-title">
+      <h2>Courses</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <ul class="courses">
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img alt="course photo" src="images/HTML.png" >
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">HTML basics </h2>
+            <p class="card_text">
+              Instructor: T. Lane Clark
+            </p>
+            <p class="card_text">
+              <strong> Students: </strong>
+            </p>
+            <ul class='card_list'>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
             </ul>
-                <img src="images/EmailIcon.png" alt="" class="pic"><h3>Maha'sMother@gmail.com</h3>
-                </div> 
-            </div><!--end each4-->
-        </div><!--end class Info-->
-        <div class="CoursesTab_withInfo">
-            <div class="Courses_tab tab">
-                <h1>Courses</h1>
-            </div>
-            <div class="CoursesInfo">
-                <div class="Course1_block_withInfo course">
-                    <img src="images/Scratch.png" alt="" class ="pic">
-                    <li><h2>Programming with Scratch</h2></li>
-                    <h3>Instructor : Sara Ahmed</h3>
-                    <h3>Kid&apos;s name : </h3>
-                    <ul>
-                        <li>Maha Fahad</li>
-                        <li>Rana Saif</li>
-                    </ul>
-
-                </div>
-                <div class="Course2_block_withInfo course">
-                    <img src="images/python.png" alt="" class ="pic">
-                    <li><h2>Python</h2></li>
-                    <h3>Instructor : Rasha Thamer</h3>
-                    <h3>Kid&apos;s name : </h3>
-                    <ul>
-                        <li>Rana Saif</li>
-                        <li>Waleed Saleh</li>
-                        <li>Reem Ali</li>
-                        <li>Abdullah Sulaiman</li>
-                        <li>Shoug Saleh</li>
-                        <li>More <!--Not Sure --> </li>
-                    </ul>
-
-                </div>
-                <div class="Course3_block_withInfo course">
-                    <img src="images/SQL.png" alt="" class="pic">
-                    <li><h2>SQL</h2></li>
-                    <h3>Instructor : Faris Yousef</h3>
-                    <h3>Kid&apos;s name : </h3>
-                    <ul>
-                        <li>Maha Fahad</li>
-                        <li>Waleed Saleh</li>
-                        <li>Reem Ali</li>
-                    </ul>
-
-                </div>
-                <div class="Course4_block_withInfo course">
-                    <img src="images/Swift.png" alt="" class="pic">
-                    <li><h2>Swift</h2></li>
-                    <h3>Instructor : Yasser Alharbi</h3>
-                    <h3>Kid&apos;s name : </h3>
-                    <ul>
-                        <li>Nawaf Abdullah</li>
-                        <li>Abdullah Sulaiman/li>
-                        <li>Shoug Saleh</li>
-                    </ul>
-
-
-                </div>
-                <div class="Course5_block_withInfo course">
-                    <img src="images/JavaScript.png" alt="" class="pic">
-                    <li><h2>Introduction to Javascript</h2></li>
-                    <h3>Instructor : Ghala Hussam</h3>
-                    <h3>Kid&apos;s name : </h3>
-                    <ul>
-                        <li>Abdullah Sulaiman</li>
-                        <li>Khaled Saleh</li>
-                        <li>Waleed Saleh</li>
-                    </ul>
-
-                </div>
-                <div class="Course6_block_withInfo course">
-                    <img src="images/CSS.png" alt="" class="pic">
-                    <li><h2>Styling CSS</h2></li>
-                    <h3>Instructor : Layan turki</h3>
-                    <h3>Kid&apos;s name : </h3>
-                    <ul>
-                        <li>Rana Saif</li>
-                        <li>Shoug Saleh</li>
-                    </ul>
-
-                </div>
-                <div class="Course7_block_withInfo course">
-                    <img class="pic" src="images/HTML.png" alt="" class="pic">
-                    <li><h2>HTML Basics</h2></li>
-                    <h3>Instructor : Yasser Alharbi</h3>
-                    <h3>Kid&apos;s name : </h3>
-                    <ul>
-                        <li>Rana Saif</li>
-                        <li>Maha Fahad</li>
-                        <li>Shoug Saleh</li>
-                    </ul>
-
-                </div>
-                <div class="Course8_block_withInfo">
-                    <img class="pic" src="images/robotics.png" alt="" class="pic">
-                    <li><h2>Introduction to robotics</h2></li>
-                    <h3>Instructor : Alanoud Abdulaziz</h3>
-                    <h3>Kid&apos;s name : </h3>
-                    <ul>
-                        <li>Nawaf Abdullah</li>
-                    </ul>
-
-                </div>
-                <div class="Course9_block_withInfo">
-                    <img class="pic" src="images/Java.PNG" alt="" class="pic">
-                    <li><h2>Java</h2></li>
-                    <h3>Instructor : Alanoud Abdulaziz</h3>
-                    <h3>Kid&apos;s name : </h3>
-                    <ul>
-                        <li>Nawaf Abdullah</li>
-                        <li>Maha Fahad</li>
-                    </ul>
-
-                </div>
-
-
-            </div>
-
-
+            <button class="btn card_btn">Read More</button>
+          </div>
         </div>
-        <div class="tutorsTab_withInfo">
-            <div class="tutors_tab tab">
-                <h1>Tutors</h1>
-            </div>
-            <div class="TutorsInfo">
-                <div class="Tutor1_block_withInfo tutor">
-                    <img src="images/Tutor1.png" alt=" tutor's picture" class="pic">
-                    <ul>
-                    <li><a href="Schedule.html"><h2>Sara Ahmed</h2></a></li>
-                    <h3>Courses</h3>
-                    <ul>
-                        <li>php Basics</li>
-                        <li>Python</li>
-                    </ul>                   
-                </div>
-                <div class="Tutor2_block_withInfo tutor">
-                    <img src="images/Tutor2.png" alt=" tutor's picture" class="pic">
-                    <li><a href="Schedule.html"><h2>Layan turki</h2></a></li>
-                    <h3>Courses</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Swift</li>
-                        <li>C#</li>
-                        <li>C++</li>
-                    </ul>                   
-                </div>
-                <div class="Tutor3_block_withInfo tutor">
-                    <img src="images/Tutor3.png" alt=" tutor's picture" class="pic">
-                   <li> <a href="Schedule.html"><h2>Ghala Hussam</h2></a></li>
-                    <h3>Courses</h3>
-                    <ul>
-                        <li>Swift</li>
-                        <li>Java Script</li>
-                        <li>C++</li>
-                    </ul>                   
-                </div>
-                <div class="Tutor4_block_withInfo tutor">
-                    <img src="images/Tutor4.png" alt=" tutor's picture" class="pic">
-                    <li><a href="Schedule.html"><h2>Faris Yousef</h2></a></li>
-                    <h3>Courses</h3>
-                    <ul>
-                        <li>SQL</li>
-                    </ul>                   
-                </div>
-                <div class="Tutor5_block_withInfo tutor">
-                    <img src="images/Tutor5.png" alt=" tutor's picture" class="pic">
-                    <li><a href="Schedule.html"><h2>Nasser Alyehya</h2></a></li>
-                    <h3>Courses</h3>
-                    <ul>
-                        <li>C#</li>
-                        <li>HTML</li>
-                    </ul>                   
-                </div>
-                <div class="Tutor6_block_withInfo tutor">
-                    <img src="images/Tutor6.png" alt=" tutor's picture" class="pic">
-                    <li><a href="Schedule.html"><h2>Alanoud Abdulaziz</h2></a></li>
-                    <h3>Courses</h3>
-                    <ul>
-                        <li>php Basics</li>
-                        <li>HTML</li>
-                        <li>Java</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                    </ul>                   
-                </div>
-                <div class="Tutor7_block_withInfo tutor">
-                    <img src="images/Tutor7.png" alt=" tutor's picture" class="pic">
-                    <li><a href="Schedule.html"><h2>Rasha Thamer</h2></a></li>
-                    <h3>Courses</h3>
-                    <ul>
-                        <li>Python</li>
-                    </ul>                   
-                </div>
-                <div class="Tutor8_block_withInfo tutor">
-                    <img src="images/Tutor8.png" alt=" tutor's picture" class="pic">
-                    <li><a href="Schedule.html"><h2>Yasser Alharbi</h2></a></li>
-                </ul>
-                    <h3>Courses</h3>
-                    <ul>
-                        <li>Swift</li>
-                        <li>C++</li>
-                        <li>HTML</li>
-                    </ul>                   
-                </div>
-
-            </div>
-
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img alt="course photo" src="images/CSS.png" >
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Styling with CSS</h2>
+            <p class="card_text">
+              Instructor: T. Michael Turner
+            </p>
+            <p class="card_text">
+              <strong> Students: </strong>
+            </p>
+            <ul class='card_list'>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+            </ul>
+            <button class="btn card_btn">Read More</button>
+          </div>
         </div>
-    </main>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img alt="course photo" src="images/JavaScript.png" >
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Introduction to JavaScript</h2>
+            <p class="card_text">
+              Instructor: T. Emily Anderson
+            </p>
+            <p class="card_text">
+              <strong> Students: </strong>
+            </p>
+            <ul class='card_list'>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+            </ul>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img alt="course photo" src="images/Java.png" >
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Introduction to Java</h2>
+            <p class="card_text">
+              Instructor: T. Rachel Adam 
+            </p>
+            <p class="card_text">
+              <strong> Students: </strong>
+            </p>
+            <ul class='card_list'>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+            </ul>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img alt="course photo" src="images/Python.png" >
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Introduction to Python</h2>
+            <p class="card_text">
+              Instructor: T. Kevin Lee
+            </p>
+            <p class="card_text">
+              <strong> Students: </strong>
+            </p>
+            <ul class='card_list'>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+            </ul>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img alt="course photo" src="images/robotics.png" >
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Introduction to Robotics</h2>
+            <p class="card_text">
+              Instructor: T. Joe Adams
+            </p>
+            <p class="card_text">
+              <strong> Students: </strong>
+            </p>
+            <ul class='card_list'>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+            </ul>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img alt="course photo" src="images/Scratch.png" >
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Introduction to Scratch</h2>
+            <p class="card_text">
+              Instructor: T. Daniel loe
+            </p>
+            <p class="card_text">
+              <strong> Students: </strong>
+            </p>
+            <ul class='card_list'>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+            </ul>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img alt="course photo" src="images/SQL.png" >
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">SQL basics</h2>
+            <p class="card_text">
+              Instructor: Rohit Gupta
+            </p>
+            <p class="card_text">
+              <strong> Students: </strong>
+            </p>
+            <ul class='card_list'>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+            </ul>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image">
+            <img alt="course photo" src="images/Swift.png" >
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Introduction to Swift</h2>
+            <p class="card_text">
+              Instructor: Rohit Gupta
+            </p>
+            <p class="card_text">
+              <strong> Students: </strong>
+            </p>
+            <ul class='card_list'>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+              <li> Prashant Dubey </li>
+            </ul>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- A list of all teachers names who are registered in the learning centre -->
+    <div class="section-title">
+      <h2>Tutors</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
 
 
-        <footer>
-            <div>
-                <h4>Why Us?</h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <hr>
-            <div>
-                <h4>FAQ</h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <hr>
-            <div>
-                <h4>Contact Us</h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li> 
-                </ul>
-            </div>
-    
-        <p>Copy right ©2023 made with <img src="images/heart.jpeg" alt="love" width="20" height="20"> in KSU</p> <!-- <i> </i>? -->
-        </footer>
-    </body>
-</html> 
+    <div class="Tutor-card">
+      <div class="Tutor-box">
+        <img
+          src="images/Tutor1.png"
+          alt="">
+        <a href="Sschedule2.html" class="Tutor-name">T. Lane Clark </a>
+        <p class="Course">Courses: </p>
+        <ul>
+          <li class="Course-name">HTML basics</li>
+        </ul>        
+      </div>
+      <div class="Tutor-box" >
+        <img
+          src="images/Tutor1.png"
+          alt="">
+        <a href="schedule.html" class="Tutor-name">T. Rachel Adam</a>
+        <p class="Course">Courses: </p>
+       <ul><li class="Course-name">Introduction to java </li>
+      </ul> 
+    </div>
+      <div class="Tutor-box" >
+        <img
+          src="images/Tutor3.png"
+          alt="">
+        <a href="Sschedule2.html" class="Tutor-name">T. Kevin Lee</a>
+        <p class="Course">Courses: </p>
+       <ul><li class="Course-name">Introduction to python</li>
+      </ul> 
+    </div>
+      <div class="Tutor-box" >
+        <img
+          src="images/Tutor4.png"
+          alt="">
+        <a href="schedule.html" class="Tutor-name">T. Michael Turner</a>
+        <p class="Course">Courses: </p>
+       <ul><li class="Course-name">Styling with CSS</li>
+      </ul> 
+    </div>
+      <div class="Tutor-box" >
+        <img
+          src="images/Tutor5.png"
+          alt="">
+        <a href="Sschedule2.html" class="Tutor-name">T. Joe Adams</a>
+        <p class="Course">Courses: </p>
+       <ul><li class="Course-name">Introduction to robotics</li>
+      </ul> 
+    </div>
+      <div class="Tutor-box">
+        <img
+          src="images/Tutor6.png"
+          alt="">
+        <a href="schedule.html" class="Tutor-name">T.Daniel loe</a>
+        <p class="Course">Courses: </p>
+       <ul><li class="Course-name">Programming with Scratch</li>
+      </ul> 
+    </div>
+      <div class="Tutor-box">
+        <img
+          src="images/Tutor7.png"
+          alt="">
+        <a href="Sschedule2.html" class="Tutor-name">T. Emily Anderson</a>
+        <p class="Course">Courses: </p>
+       <ul><li class="Course-name">Introduction to JavaScript</li>
+        
+      </ul> 
+    </div>
+      <div class="Tutor-box">
+        <img
+          src="images/Tutor8.png"
+          alt="">
+        <a href="schedule.html" class="Tutor-name">T. John Foster</a>
+        <p class="Course">Courses: </p>
+       <ul><li class="Course-name">SQL basics</li>
+        
+      </ul> 
+    </div>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
