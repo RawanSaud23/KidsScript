@@ -7,12 +7,13 @@
   <title>Courses</title> 
   <link rel="stylesheet" href="kidsScript.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styleCourses.css">
 </head>
     
 <body> 
 
   <header>
-      <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" />
+      <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" >
       <nav>
         <ul class="nav_links">
           <li><a href="indx.html">Home</a></li>
@@ -23,7 +24,7 @@
           <!--- <li><a href="signIn.html"></a>Sign in</li>-->
         </ul>
       </nav>
-      <a href="signIn.html" class="signIn"><button>Sign in</button></a>
+      <!-- <a href="signIn.html" class="signIn"><button>Sign in</button></a> -->
     </header>
 
 
@@ -35,26 +36,34 @@
 </div>  
   
 <main>
-<div class="allCorsessCards"> <!-- to do a background in css and control the column-->
-<div class="each3"> 
+<!-- A list of all Courses that we have in the learning centre -->
+<div class="allCorsessCards"> 
+<div class="coursesRow"> 
 
-  <!---------------1-Scratch----------------->
-<div class="courseCard"> 
+<!--.....................Course1-Scratch.....................-->
+<div class="CourseContainer"> 
 <img src="images/Scratch.png" alt="Scratch logo" style="width:100%" >
 
-<h2 class="Onhover">Scratch Basics</h2>
+<div class="courseDetails">
+<h4 class="Onhover">Introduction To Scratch</h4>
 
 <div class= "cardInfo">
-<p class="Time">days: Tuesday Monday<br>Time: 3:00-7:00pm </p>   <!--IKN-->
+<p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p> 
 
 <p><b>course description:</b> <br>
 Introduce your child to coding! Scratch is a kid-friendly coding language that&apos;s block-based and visual (like virtual LEGOs). 
 Kids will learn coding and CS fundamentals while building games they can play and share with friends.</p>
-<div class="Tutor"> <img src="images/Tutor1.png" alt="Avatar" width="30" height="30"> T.Sara Ahmed </div>
+
 <div class="MoreInfo"> 
   <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
   <a href= "">Objectives</a>  <!--url= pop-up window--> 
-</div>      
+</div>    
+
+
+<div class="Tutor"> 
+<img src="images/Tutor1.png" alt="Avatar" width="30" height="30"> 
+T.Sara Ahmed </div>
+
 <p>Rate:  
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
@@ -62,14 +71,19 @@ Kids will learn coding and CS fundamentals while building games they can play an
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
 </p>
+</div><!--CardInfo-->
 
-</div> <!--CardInfo-->
-</div> <!--card1-->
+</div> <!--courseDetails-->
+</div> 
+<!--.....................END Course1.....................-->
 
-<div class="courseCard"> <!--2-Java-->
+<!--.....................Course2-Java....................-->
+<div class="CourseContainer"> <!--2-Java-->
 <img src="images/Java.PNG" alt="Java logo" style="width:100%">
 
-<h2 class="Onhover">Java</h2>
+<div class="courseDetails">
+<h4 class="Onhover">Introduction To Java</h4>
+
 <div class= "cardInfo">
 <p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p> 
 
@@ -77,43 +91,72 @@ Kids will learn coding and CS fundamentals while building games they can play an
 Java is a great language for kids to learn because it has staying power. 
 Java is the fifth most popular programming language in the world. It powers parts of YouTube, and Amazon. In addition, 
 software engineers use Java to build Android apps and games.</p>
-<div class="Tutor"> <img src="images/Tutor6.png" alt="Avatar" width="50" height="50"> T.Alanoud Abdulaziz </div>
-<div class="MoreInfo"> 
-<a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
-<a href= "">Objectives</a>  <!--url= pop-up window--> 
-</div>     
-<p>Rate: <img src="images/Star.jpeg" alt="StarRating"> </p> 
-</div> <!--CardInfo-->
-</div> <!--card2--> 
 
-<div class="courseCard"> <!--3-Swift-->
+<div class="MoreInfo"> 
+<a href= "">Prerequisite <br> </a> 
+<a href= "">Objectives</a> 
+</div>  
+
+<div class="Tutor"> 
+<img src="images/Tutor6.png" alt="Avatar" width="50" height="50"> 
+T.Alanoud Abdulaziz </div>
+
+<p>Rate:  
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p> 
+</div> <!--CardInfo-->
+
+</div> <!--courseDetails-->
+</div> 
+<!--.....................END Course2.....................-->
+
+<!--.....................Course3-Swift....................-->
+<div class="CourseContainer">
 <img src="images/Swift.png" alt="Swift logo" style="width:100%">
 
-<h2 class="Onhover">Swift</h2>
+<div class="courseDetails">
+<h4 class="Onhover">Introduction To Swift</h4>
 
 <div class= "cardInfo">
-<p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p>   <!--IKN-->  
+<p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p>  
+
 <p><b>course description:</b> <br>
 Swift is Apple&apos;s modern, fast, and powerful programming language. It's highly readable, safe, and ideal for iOS, MacOS, 
 and general-purpose development. Perfect for beginners and aspiring app developers. </p>
-<div class="Tutor"> <img src="images/Tutor2.png" alt="Avatar" width="30" height="30"> T.Layan turki </div>
+
 <div class="MoreInfo"> 
 <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
 <a href= "">Objectives</a>  <!--url= pop-up window--> 
 </div>
-<p>Rate: <img src="images/Star.jpeg" alt="StarRating"> </p> 
-</div> <!--CardInfo-->
-</div> <!--card3-->
 
+<div class="Tutor"> 
+<img src="images/Tutor2.png" alt="Avatar" width="30" height="30"> 
+T.Layan turki </div>
 
-</div> <!--3-->
-
-<div class="each3"> 
+<p>Rate:  
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p>
+  </div> <!--CardInfo-->
   
-<div class="courseCard"> <!--4-HTML-->
+</div><!--courseDetails-->
+</div> 
+<!--.....................END Course3.....................-->
+</div> <!--end row 1--> 
+<div class="coursesRow">
+<!--.....................Course4-HTML....................--> 
+<div class="CourseContainer"> 
 <img src="images/HTML.png" alt="HTML logo" style="width:100%">
 
-<h4 class="Onhover">HTML</h4>
+<div class="courseDetails">
+<h4 class="Onhover">HTML Basics</h4>
 
 <div class= "cardInfo">
 <p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p>   <!--IKN-->
@@ -122,19 +165,35 @@ and general-purpose development. Perfect for beginners and aspiring app develope
 Is a relatively easy programming language to learn used to create web pages. 
 which makes it a great place for kids to start with coding in general or as another language to add to their repertoire.<br><br> 
 <small>NOTE: HTML and CSS are often take together</small></p> <!--Small?? OR bt CSS??-->
-<div class="Tutor"> <img src="images/Tutor5.png" alt="Avatar" width="50" height="50" > T.Nasser Alyehya </div> 
+
 <div class="MoreInfo"> 
   <a href= "">Prerequisite <br></a> <!--url= pop-up window-->
   <a href= "">Objectives</a> <!--url= pop-up window--> 
   </div>
-  <p>Rate: <img src="images/Star.jpeg" alt="StarRating"> </p> 
-</div> <!--CardInfo-->
-</div> <!--card4-->
 
-<div class="courseCard"> <!--5-CSS-->
+  <div class="Tutor"> 
+  <img src="images/Tutor5.png" alt="Avatar" width="50" height="50" > 
+  T.Nasser Alyehya </div> 
+
+  <p>Rate:  
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    </p>
+</div> <!--CardInfo-->
+
+</div> <!--courseDetails-->
+</div> 
+<!--.....................END Course4.....................-->
+
+<!--.....................Course5-CSS....................-->
+<div class="CourseContainer"> 
 <img src="images/CSS.png" alt="CSS logo" style="width:100%">
 
-<h2 class="Onhover">CSS</h2>
+<div class="courseDetails">
+<h4 class="Onhover">Styling With CSS</h4>
 
 <div class= "cardInfo"> 
 <p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p>   <!--IKN-->  
@@ -143,19 +202,35 @@ which makes it a great place for kids to start with coding in general or as anot
 CSS is a subset of HTML that cannot function independently. 
 CSS concerns itself with styling, which includes background, color, font, and animation, among others.<br><br> 
 <small>NOTE: HTML and CSS are often take together</small></p>
-<div class="Tutor"> <img src="images/Tutor6.png" alt="Avatar" width="30" height="30"> T.Alanoud Abdulaziz </div>
-<div class="MoreInfo"> 
-  <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
-  <a href= "">Objectives</a>  <!--url= pop-up window--> 
-</div>
-<p>Rate: <img src="images/Star.jpeg" alt="StarRating"> </p> 
-</div> <!--CardInfo-->
-</div> <!--card5--> 
 
-<div class="courseCard"> <!--6-Java Script-->
+<div class="MoreInfo"> 
+  <a href= "">Prerequisite <br> </a> 
+  <a href= "">Objectives</a>   
+</div>
+
+<div class="Tutor"> 
+<img src="images/Tutor6.png" alt="Avatar" width="30" height="30"> 
+T.Alanoud Abdulaziz </div>
+
+<p>Rate:  
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p>
+  </div> <!--CardInfo-->
+
+</div> <!--courseDetails-->
+</div> 
+<!--.....................END Course5.....................-->
+
+<!--.....................Course6-Java Script....................-->
+<div class="CourseContainer"> 
 <img src="images/JavaScript.png" alt="JavaScript logo" style="width:100%">
 
-<h2 class="Onhover">Java Script</h2>
+<div class="courseDetails">
+<h4 class="Onhover">Introduction To JavaScript</h4>
 
 <div class= "cardInfo">
 <p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p>   <!--IKN-->  
@@ -163,61 +238,106 @@ CSS concerns itself with styling, which includes background, color, font, and an
 <p><b>course description:</b> <br>
 Draw colorful graphics in JavaScript, it&apos;s great way to explore computer programming.
 Working hand in hand with HTML and CSS. JS helps to enhance interactivity and the overall user experience.</p>
-<div class="Tutor"> <img src="images/Tutor3.png" alt="Avatar" width="30" height="30"> T.Ghala Hussam </div>
+
 <div class="MoreInfo"> 
   <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
   <a href= "">Objectives</a>  <!--url= pop-up window--> 
 </div>   
-<p>Rate: <img src="images/Star.jpeg" alt="StarRating"> </p> 
-</div> <!--CardInfo-->
-</div> <!--card6-->
 
-</div> <!--3-->
-      
-<div class="each3"> 
-<div class="courseCard"> <!--7-SQL-->
+<div class="Tutor"> <img src="images/Tutor3.png" alt="Avatar" width="30" height="30"> T.Ghala Hussam </div>
+
+<p>Rate:  
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p> 
+</div> <!--CardInfo-->
+
+</div> <!--courseDetails-->
+</div> <!--card6-->
+<!--.....................END Course5.....................-->
+</div> <!--end row 2-->
+<div class="coursesRow"> 
+<!--.....................Course7-SQL....................-->
+<div class="CourseContainer"> 
 <img src="images/SQL.png" alt="SQL logo" style="width:100%">
-  
-<h2 class="Onhover">SQL</h2>
+
+<div class="courseDetails">
+<h4 class="Onhover">SQL Basics</h4>
 
 <div class= "cardInfo">
 <p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p>   <!--IKN--> 
+
 <p><b>course description:</b> <br>
   If your child is someone who loves critical thinking and solving problems, it is an ideal course for them. With SQL courses for kids, 
   our experts strive hard to teach students how to store, manipulate, and query data using SQL. </p>
-<div class="Tutor"> <img src="images/Tutor4.png" alt="Avatar" width="30" height="30"> T.Faris Yousef </div>
+
 <div class="MoreInfo"> <!-- list or div?????????????-->
 <a href= "">Prerequisite <br></a>  <!--url= pop-up window-->
 <a href= "">Objectives </a>  <!--url= pop-up window-->
 </div> 
-<p>Rate: <img src="images/Star.jpeg" alt="StarRating"> </p> 
-</div> <!--CardInfo-->
-</div> <!--card7-->
 
-<div class="courseCard"> <!--8-Python-->
+<div class="Tutor"> 
+<img src="images/Tutor4.png" alt="Avatar" width="30" height="30"> 
+T.Faris Yousef </div>
+
+<p>Rate:  
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p>
+  </div> <!--CardInfo-->
+
+</div> <!--courseDetails-->
+</div> 
+<!--.....................END Course7.....................-->
+
+<!--.....................Course8-Pythone....................-->
+<div class="CourseContainer">
 <img src="images/Python.PNG" alt="Python logo" style="width:100%">
 
-<h2 class="Onhover">Python</h2>
+<div class="courseDetails">
+<h4 class="Onhover">Python</h4>
 
 <div class= "cardInfo">
 <p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p>   <!--IKN-->
+
 <p><b>course description:</b> <br>
 Learners solve more complex programming problems and progress through Python fundamentals. 
 They&apos;re on their way to Python fluency. </p> 
-<div class="Tutor"> <img src="images/Tutor1.png" alt="Avatar" width="30" height="30"> T.Sara Ahmed </div>
+
 <div class="MoreInfo"> 
   <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
   <a href= "">Objectives</a>  <!--url= pop-up window--> 
 </div>
 
-<p>Rate: <img src="images/Star.jpeg" alt="StarRating"> </p> 
-</div> <!--CardInfo-->
-</div> <!--card8-->
+<div class="Tutor"> 
+<img src="images/Tutor1.png" alt="Avatar" width="30" height="30"> 
+T.Sara Ahmed </div>
 
-<div class="courseCard"> <!--9-Robotics-->
+<p>Rate:  
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p>
+  </div> <!--CardInfo-->
+
+</div> <!--courseDetails-->
+</div> 
+<!--.....................END Course8.....................-->
+
+<!--.....................Course9-Robotics....................-->
+<div class="CourseContainer"> 
 <img src="images/robotics.png" alt="Robotics logo" style="width:100%">
 
-<h2 class="Onhover">Robotics</h2>
+<div class="courseDetails">
+<h4 class="Onhover">Robotics</h4>
 
 <div class= "cardInfo">
 <p class="timeDate">days: Tuesday Monday<br>Time: 3:00-7:00pm </p>   <!--IKN-->
@@ -225,15 +345,29 @@ They&apos;re on their way to Python fluency. </p>
 It&apos;s a truly interdisciplinary space using AI, data science, coding, design, engineering, and more, 
 to produce machines that replicate human actions in the real world. For children who enjoy building things,
 or playing with LEGOs, robotics is a great way to achieve similar results. </p>
-<div class="Tutor"> <img src="images/Tutor5.png" alt="Avatar" width="30" height="30"> T.Nasser Alyehya </div>
+
 <div class="MoreInfo"> 
   <a href= "">Prerequisite <br> </a> <!--url= pop-up window-->
   <a href= "">Objectives</a>  <!--url= pop-up window--> 
 </div>
-              
-<p>Rate: <img src="images/Star.jpeg" alt="StarRating"> </p> 
-</div> <!--CardInfo-->
-</div> <!--card9-->
+
+<div class="Tutor"> 
+<img src="images/Tutor5.png" alt="Avatar" width="30" height="30">
+ T.Nasser Alyehya </div>
+         
+ <p>Rate:  
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p>
+  </div> <!--CardInfo-->
+
+</div> <!--courseDetails-->
+</div> 
+<!--.....................Course9....................-->
+
 
 </div><!--3-->
 </div> <!--All courses-->
