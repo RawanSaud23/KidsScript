@@ -48,11 +48,10 @@ border-radius: 43px;
     border-top-right-radius: 43px;
   }
 
-  .timeDate{ /*????????????????????*/
+  .timeDate{ 
     float:right;
     color: #000;
-    font-family: Inter;
-    font-size: 15px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
@@ -66,7 +65,6 @@ padding: 10px;
 .courseDetails h4{
 margin: 0;
 color: #000;
-font-family: Inter;
 font-size: 19px;
 font-style: normal;
 font-weight: 400;
@@ -75,7 +73,6 @@ line-height: normal;
 
 .courseD-title{
     color: #000;
-    font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 200;
@@ -86,7 +83,6 @@ line-height: normal;
 .courseD-text {
     margin: 5px 0;
     color: #6B6A6A;
-    font-family: Inter;
     font-size: 12px;
     font-style: normal;
     font-weight: 200;
