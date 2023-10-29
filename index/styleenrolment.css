@@ -54,28 +54,13 @@ body {
   background-color: #abacc9ad ;
 }
 
-.checkboxcourse input:checked ~ .mark {
-  background-color: #2196F3;
+#list{
+  text-align: left;
+  list-style-type: none;
+  align-items: center;
 }
-
-.mark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.checkboxcourse input:checked ~ .mark:after {
-  display: block;
-}
-
-.checkboxcourse .mark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.list1{  
+  justify-content: center;  
+  margin-left: 37%;
+  margin-right: 37%;
 }
