@@ -103,9 +103,14 @@ width:200px;
 justify-content: left;
 font-size: medium;
 background-color: #9187e3;
+/*
 border-color: transparent transparent rgb(199, 157, 235) transparent;
+*/
 }
 
 #list{
   text-align: left;
+}
+body {
+  background-color: ;
 }
