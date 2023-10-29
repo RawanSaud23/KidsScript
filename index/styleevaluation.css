@@ -41,11 +41,13 @@ h1{
   font-family: "Times New Roman", Times, serif;
 }
 
-
-
 .evaluation div select{
 width:200px;
 font-size: large;
 background-color: #9187e3;
 border-color: transparent transparent rgb(199, 157, 235) transparent;
+}
+
+body {
+  background-color: #abacc9ad ;
 }
