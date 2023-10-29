@@ -5,16 +5,10 @@
     width: 80%;
     border-radius: 43px;
     align-items: stretch;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto;  
   }
-  
-  /*  justify-content: space-around;
-    align-items: center;
-    width: 95%;
-    border-radius: 1%;
-    border-style: hidden; not sure
-    */
+
   
   .coursesRow{
     display: flex;
@@ -31,7 +25,6 @@ margin-bottom: 2rem;
   
   .CourseContainer {
     width: 50%;
-    
     box-sizing: border-box;
     border-radius: 43px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -55,6 +48,17 @@ border-radius: 43px;
     border-top-right-radius: 43px;
   }
 
+  .timeDate{ /*????????????????????*/
+    float:right;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 5px 0;
+  }
+
   .courseDetails{
 padding: 10px;
 }
@@ -68,10 +72,27 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-  
-  .timeDate{
-    float: right;
-  }
+
+.courseD-title{
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 5px 0;
+    }
+    
+.courseD-text {
+    margin: 5px 0;
+    color: #6B6A6A;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    height:5rem;
+    }
   
   .Tutor {
     display: inline-block;
