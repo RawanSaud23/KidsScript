@@ -7,6 +7,19 @@
 
 
 <style>
+ .breadcrumb{
+    margin: 20px 0;
+  }
+  .breadcrumb a{
+    /* text-decoration: none; */
+    color: #000;
+    font-size: 1rem;
+  }
+  .breadcrumb a:hover{
+    /* text-decoration: underline; */
+    color: #0008;
+  }
+
  .register h2{
 text-align: center;}
    
@@ -93,12 +106,14 @@ justify-content: space-between;
 
     </head>
 <body>
-    <header>
-        <img src="images/kidsScriptLOGO.png" alt="kids Script logo" height="30" width="30"> 
-        <h1>kids Script</h1>
-        <!--CSS link here-->
-    </header>
-
+   <div class='breadcrumb'>
+      <a href="index.html">Home</a>
+      <span> / </span>
+      <a href="Parentdashboard.html">Parent Dashboard</a>
+       <span> / </span>
+      <a href="RegisterNewChild.html">Register New Child</a>
+    </div>
+ 
 <main>
 <div class="register">
 <h2>Register a new kid</h2>
