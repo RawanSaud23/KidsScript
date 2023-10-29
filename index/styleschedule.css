@@ -6,6 +6,7 @@ table{
     margin-left: 400px;
     margin-right: 400px;
   }
+  
   table caption{
     font-family:'Times New Roman', Times, serif; 
     font-weight: bold; 
@@ -14,21 +15,25 @@ table{
     font-size: 2em;
     text-shadow: 2px 2px 5px rgba(162, 0, 255, 0.623);
   }
+
   table thead{
     background-color:rgb(134, 66, 236);
      color:rgb(106, 193, 237);
     }
+
   table tbody th{
     border-style:solid;
      border-width: 2px; 
      background-color: white; 
      color: rgb(114, 10, 241);
     }
+
   table tbody td{
     border-style:solid; 
     border-width: 2px; 
     background-color: rgba(125, 193, 241, 0);
     color: rgba(140, 160, 240, 0.712);
     }
+
     dt{ font-weight:bold; color:#9e72d6;}
     dl{text-align: center; line-height: 3em;}
