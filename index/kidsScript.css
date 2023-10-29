@@ -1,3 +1,14 @@
+.breadcrumb{
+  margin: 20px 0;
+}
+.breadcrumb a{
+  color: #000;
+  font-size: 1rem;
+}
+.breadcrumb a:hover{
+  color: #0008;
+}
+
 .nav_links {
   list-style: none;
 }
