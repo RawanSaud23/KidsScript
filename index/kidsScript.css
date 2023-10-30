@@ -1,3 +1,15 @@
+.breadcrumb{
+  margin: 20px 0;
+  text-align: left;
+}
+.breadcrumb a{
+  color: #000;
+  font-size: 1rem;
+}
+.breadcrumb a:hover{
+  color: #0008;
+}
+
 .nav_links {
   list-style: none;
 }
@@ -9,7 +21,7 @@
 
 .nav_links li a{
   transition: all 0.3s ease 0s;
- 
+ text-decoration:none;
 }
 .nav_links li a:hover {
 color:rgb(144, 141, 157);
@@ -56,52 +68,3 @@ footer{
     padding: 0%;
     margin: 0%;
     }
-
-
-/*---------------------------------------------------Schedule page---------------------------------------------------*/
-<<<<<<< Updated upstream
-    table{
-      align: "center";
-      font-family:'Times New Roman', Times, serif; 
-      text-align: center;
-      margin-top: 90px;
-      margin-left:50px;
-      margin-right: 50px;
-    }
-    table caption{
-      font-family:'Times New Roman', Times, serif; 
-      font-weight: bold; 
-      font-size: 2em;
-    }
-    table thead{
-      background-color:rgb(134, 66, 236);
-       color:rgb(106, 193, 237);
-      }
-    table tbody th{
-      border-style:solid;
-       border-width: 2px; 
-       background-color: white; 
-       color: rgb(114, 10, 241);
-      }
-    table tbody td{
-      border-style:solid; 
-      border-width: 2px; 
-      background-color: rgba(125, 193, 241, 0);
-      color: rgba(140, 160, 240, 0.712);
-      }
-=======
-
-
-
-      
->>>>>>> Stashed changes
-
-  
-
-    /*---------------------------------------------------end Schedule page---------------------------------------------------*/
-
-    /*---------------------------------------------------Register new child page---------------------------------------------------*/
-
-     /*---------------------------------------------------end Register new child page---------------------------------------------------*/
-    
-    

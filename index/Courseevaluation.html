@@ -4,6 +4,8 @@
     <meta charset="utf-8"> 
            <title>Course evaluation</title> 
            <link rel="stylesheet" href="styleevaluation.css">
+           <link rel="stylesheet" href="kidsScript.css">
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
            </head>
  
 <body>
@@ -28,7 +30,14 @@
           <!--I don't think we need one since we already in the same page-->
         </nav>
       </div>
-  
+      <div class='breadcrumb'>
+        <a href="index.html">Home</a>
+        <span> / </span>
+        <a href="Parentdashboard.html">Parent Dashboard</a>
+        <span> / </span>
+        <a href="Courseevaluation.html">Course Evaluation</a>
+      </div>
+  <main>
 <h1>Course evaluation</h1>
 
 <div class="evaluation">
@@ -38,12 +47,12 @@
     <h2>Choose the course:*</h2>
    
     <select>
-        <option>C++</option>
+        <option>Robotics</option>
         <option>Java</option>
-        <option>Php</option>
+        <option>Scratch</option>
         <option>Python</option>
         <option>Java Script</option>
-        <option>C#</option>
+        <option>Styling with CSS</option>
         <option>Swift</option>
         <option>SQL</option>
         <option>HTML</option>
@@ -53,7 +62,11 @@
  
 <div class="item2">
         <h2>Rate:*</h2>
-         <img src="images/Star.jpeg" alt="stars for Rate" width="200" height="40">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
         </div>
   </div>
 
@@ -66,8 +79,9 @@
     </div>  
     
 <div class="EvaButtn"> 
-    <button type="submit"> Evaluate</button>
+    <button type="submit">Evaluate</button>
 </div>
 </div>
+</main>
 </body>
 </html>

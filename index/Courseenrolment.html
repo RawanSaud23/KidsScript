@@ -4,7 +4,8 @@
     <meta charset="utf-8"> 
            <title>Course enrolment</title> 
            <link rel="stylesheet" href="styleenrolment.css">
-           </head>
+           <link rel="stylesheet" href="kidsScript.css">
+</head>
  
 <body>
     <header>
@@ -23,12 +24,20 @@
       </header>
       <!--End of navigation bar -->
   
+      <div class='breadcrumb'>
+        <a href="index.html">Home</a>
+        <span> / </span>
+        <a href="Parentdashboard.html">Parent Dashboard</a>
+        <span> / </span>
+        <a href="Courseenrolment.html">Course Enrolment</a>
+      </div>
+
       <div class="pageLink">
         <nav>
           <!--I don't think we need one since we already in the same page-->
         </nav>
       </div>
-  
+  <main>
 <h1>Course enrolment</h1>
 
 <div class="enrolment">
@@ -37,14 +46,14 @@
 <div class="item1">
   <h2>Choose your kid:*</h2>
   <select name="Choosing the kid name">
-      <option>Abdullah Sulaiman</option>
-      <option>Reem Ali</option>
-      <option>Khaled Nasser</option>
-      <option>Shoug Fahad</option>
-      <option>Waleed Saleh</option>
-      <option>Rana Saif</option>
-      <option>Nawaf Abdulllah</option>
-      <option>Maha Fahad</option>
+      <option>Emma Johnson</option>
+      <option>Liam Johnson</option>
+      <option>Olivia Johnson</option>
+      <option>Noah Martinez</option>
+      <option>Ava Wilson</option>
+      <option>Ethan Davis</option>
+      <option>Mia Patel</option>
+      <option>Sophia Rodriguez</option>
      </select>
  
     </div>
@@ -61,38 +70,37 @@
       <option>Scratch</option>
       <option>Python</option>
       <option>Java Script</option>
-      <option>Styling with CSS</C></option>
+      <option>Styling with CSS</option>
       <option>Swift</option>
       <option>SQL</option>
       <option>HTML</option>
      </optgroup>
       <optgroup label="Tutor">
-      <option>Sara Ahmed</option>
-      <option>Rasha Thamer</option>
-      <option>Faris Yousef</option>
-      <option>Layan Turki</option>
-      <option>Ghala Hussam</option>
-      <option>Nasser Alyehya</option>
-      <option>Alanoud Abdulaziz</option>
-      <option>Yasser Alharbi</option>
+      <option>Lane Clark</option>
+      <option>Rachel Adam</option>
+      <option>Kevin Lee</option>
+      <option>Michael Turner</option>
+      <option>Joe Adams</option>
+      <option>Daniel loe</option>
+      <option>Emily Anderson</option>
+      <option>John Foster</option>
       </optgroup>
   </select>
 
-
+<div class="list1">
   <ul id="list">
-   <li><input type="checkbox" name="Course type" value="c++ course"><img src="images/robotics.png" alt="robotics logo" width="30" height="30">Robotics</li> 
-   <li><input type="checkbox" name="Course type" value="java course"><img src="images/Java.PNG"alt="java logo" width="30" height="30">Java</li> 
-   <li><input type="checkbox" name="Course type" value="php course"><img src="images/Scratch.png"alt="Scratch logo" width="30" height="30">Scratch</li> 
-   <li><input type="checkbox" name="Course type" value="python course"><img src="images/Python.png"alt="python logo" width="30" height="30">Python</li>
-   <li><input type="checkbox" name="Course type" value="Java Script course"><img src="images/JavaScript.png"alt="Java Script logo" width="30" height="30">Java Script</li>
-   <li><input type="checkbox" name="Course type" value="c sharp course"><img src="images/CSS.png"alt="CSS logo" width="30" height="30">Styling with CSS</li>
-   <li><input type="checkbox" name="Course type" value="Swift course"><img src="images/Swift.png"alt="Swift logo" width="30" height="30">Swift</li>
-   <li><input type="checkbox" name="Course type" value="SQL course"><img src="images/SQL.png"alt="SQL logo" width="30" height="30">SQL</li>
-   <li><input type="checkbox" name="Course type" value="HTML course"><img src="images/HTML.png"alt="HTML logo" width="30" height="30">HTML</li>
-  </ul>
-
-
-        </div>
+    <li><input type="checkbox" name="Course type" value="c++ course"><img src="images/robotics.png" alt="robotics logo" width="30" height="30">Robotics</li> 
+    <li><input type="checkbox" name="Course type" value="java course"><img src="images/Java.PNG" alt="java logo" width="30" height="30">Java</li> 
+    <li><input type="checkbox" name="Course type" value="php course"><img src="images/Scratch.png" alt="Scratch logo" width="30" height="30">Scratch</li> 
+    <li><input type="checkbox" name="Course type" value="python course"><img src="images/Python.png" alt="python logo" width="30" height="30">Python</li>
+    <li><input type="checkbox" name="Course type" value="Java Script course"><img src="images/JavaScript.png" alt="Java Script logo" width="30" height="30">Java Script</li>
+    <li><input type="checkbox" name="Course type" value="c sharp course"><img src="images/CSS.png" alt="CSS logo" width="30" height="30">Styling with CSS</li>
+    <li><input type="checkbox" name="Course type" value="Swift course"><img src="images/Swift.png" alt="Swift logo" width="30" height="30">Swift</li>
+    <li><input type="checkbox" name="Course type" value="SQL course"><img src="images/SQL.png" alt="SQL logo" width="30" height="30">SQL</li>
+    <li><input type="checkbox" name="Course type" value="HTML course"><img src="images/HTML.png" alt="HTML logo" width="30" height="30">HTML</li>
+   </ul>
+  </div>
+</div>
   </div>
 
 
@@ -100,5 +108,6 @@
     <button type="submit">Enrol</button>
 </div>
 </div>
+</main>
 </body>
 </html>

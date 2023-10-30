@@ -4,36 +4,36 @@
 <head>
   <meta charset="UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Admin Dashboard</title>
+  <title>Administrator Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kidsScript.css"> 
   <link rel="stylesheet" href="adminstyle.css" >
 </head>
 
 <body>
 
   <header>
-    <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" />
+    <a href="index.html"><img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO"></a>
     <nav>
       <ul class="nav_links">
-        <li><a href="indx.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="Parentdashboard.html">Parent</a></li>
         <li><a href="Tutor.html">Tutor</a></li>
         <li><a href="Administratordashboard.html">Adminstrator</a></li>
         <li><a href="Courses.html">Courses</a></li>
       </ul>
     </nav>
-    <a href="signIn.html" class="signIn"><button>Sign in</button></a>
   </header>
+  <div class='breadcrumb'>
+    <a href="index.html">Home</a>
+    <span> / </span>
+    <a href="Administratordashboard.html">Administrator Dashboard</a>
+  </div>
   <main>
-    <h1>Admin Dashboard</h1>
+    <h1>Administrator Dashboard</h1>
 
-    <div class='breadcrumb'>
-      <a href="index.html">Home</a>
-      <span> / </span>
-      <a href="admin.html">Admin Dashboard</a>
-    </div>
 
     <!-- A list of all children names who are registered in the learning centre -->
     <div class="section-title">
@@ -49,8 +49,8 @@
           <img
             src="images/Kid1.png"
             alt="" >
-          <h2 class="child-name">Rohit Gupta</h2>
-          <p>youremail@mail.com</p>
+          <h2 class="child-name">Emma Johnson</h2>
+          <p>Emma&apos;sMother@gmail.com</p>
         </div>
       </li>
       <li>
@@ -58,8 +58,8 @@
           <img
             src="images/Kid2.png"
             alt="" >
-          <h2 class="child-name">Rohit Gupta</h2>
-          <p>youremail@mail.com</p>
+          <h2 class="child-name">Liam Johnson</h2>
+          <p>Liam&apos;sMother@gmail.com</p>
         </div>
       </li>
       <li>
@@ -67,8 +67,8 @@
           <img
             src="images/Kid3.png"
             alt="" >
-          <h2 class="child-name">Rohit Gupta</h2>
-          <p>youremail@mail.com</p>
+          <h2 class="child-name">Olivia Johnson</h2>
+          <p>Olivia&apos;sMother@gmail.com</p>
         </div>
       </li>
       <li>
@@ -76,26 +76,26 @@
           <img
             src="images/Kid4.png"
             alt="" >
-          <h2 class="child-name">Rohit Gupta</h2>
-          <p>youremail@mail.com</p>
+          <h2 class="child-name">Noah Martinez</h2>
+          <p>Noah&apos;sMother@gmail.com</p>
         </div>
       </li>
       <li>
         <div class="children-card" >
           <img
             src="images/Kid5.png"
-            alt="*" >
-          <h2 class="child-name">Rohit Gupta</h2>
-          <p>youremail@mail.com</p>
+            alt="" >
+          <h2 class="child-name">Ava Wilson</h2>
+          <p>Ava&apos;sMother@gmail.com</p>
         </div>
       </li>
       <li>
         <div class="children-card">
           <img
             src="images/Kid6.png"
-            alt="*" >
-          <h2 class="child-name">Rohit Gupta</h2>
-          <p>youremail@mail.com</p>
+            alt="" >
+          <h2 class="child-name">Ethan Davis</h2>
+          <p>Ethan&apos;sMother@gmail.com</p>
         </div>
       </li>
       <li>
@@ -103,8 +103,8 @@
           <img
             src="images/Kid7.png"
             alt="" >
-          <h2 class="child-name">Rohit Gupta</h2>
-          <p>youremail@mail.com</p>
+          <h2 class="child-name">Mia Patel</h2>
+          <p>Mia&apos;sMother@gmail.com</p>
         </div>
       </li>
       <li>
@@ -112,8 +112,8 @@
           <img
             src="images/Kid8.png"
             alt="" >
-          <h2 class="child-name">Rohit Gupta</h2>
-          <p>youremail@mail.com</p>
+          <h2 class="child-name">Sophia Rodriguez</h2>
+          <p>Mia&apos;sMother@gmail.com</p>
         </div>
       </li>
     </ul>
@@ -141,20 +141,18 @@
               <strong> Students: </strong>
             </p>
             <ul class='card_list'>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
+              <li> Emma Johnson </li>
+              <li> Sophia Rodriguez</li>
+              <li> Mia Patel </li>
+
             </ul>
-            <button class="btn card_btn">Read More</button>
           </div>
         </div>
       </li>
       <li class="cards_item">
         <div class="card">
           <div class="card_image">
-            <img alt="course photo" src="images/CSS.png" >
+            <img alt="course photo" src="images/CSS.png">
           </div>
           <div class="card_content">
             <h2 class="card_title">Styling with CSS</h2>
@@ -165,13 +163,13 @@
               <strong> Students: </strong>
             </p>
             <ul class='card_list'>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
+              <li> Olivia Johnson </li>
+              <li> Ethan Davis </li>
+              <li> Mia Patel</li>
+              <li> Ava Wilson </li>
+              <li> Noah Martinez </li>
             </ul>
-            <button class="btn card_btn">Read More</button>
+            <button class="btn card_btn">More</button>
           </div>
         </div>
       </li>
@@ -189,13 +187,8 @@
               <strong> Students: </strong>
             </p>
             <ul class='card_list'>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
+              <li> Liam Johnson </li>
             </ul>
-            <button class="btn card_btn">Read More</button>
           </div>
         </div>
       </li>
@@ -213,13 +206,11 @@
               <strong> Students: </strong>
             </p>
             <ul class='card_list'>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
+              <li> Sophia Rodriguez</li>
+              <li> Mia Patel </li>
+              <li> Olivia Johnson </li>
+              <li> Emma Johnson </li>
             </ul>
-            <button class="btn card_btn">Read More</button>
           </div>
         </div>
       </li>
@@ -237,13 +228,13 @@
               <strong> Students: </strong>
             </p>
             <ul class='card_list'>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
+              <li> Ava Wilson</li>
+              <li> Liam Johnson </li>
+              <li> Mia Patel </li>
+              <li> Sophia Rodriguez </li>
+              <li> Emma Johnson </li>
             </ul>
-            <button class="btn card_btn">Read More</button>
+            <button class="btn card_btn">More</button>
           </div>
         </div>
       </li>
@@ -261,13 +252,9 @@
               <strong> Students: </strong>
             </p>
             <ul class='card_list'>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
+              <li> Ava Wilson </li>
+              <li> Mia Patel </li>
             </ul>
-            <button class="btn card_btn">Read More</button>
           </div>
         </div>
       </li>
@@ -285,13 +272,9 @@
               <strong> Students: </strong>
             </p>
             <ul class='card_list'>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
+              <li> Sophia Rodriguez </li>
+              <li> Liam Johnson </li>
             </ul>
-            <button class="btn card_btn">Read More</button>
           </div>
         </div>
       </li>
@@ -309,13 +292,10 @@
               <strong> Students: </strong>
             </p>
             <ul class='card_list'>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
+              <li> Ethan Davis </li>
+              <li> Emma Johnson</li>
+              <li> Ava Wilson </li>
             </ul>
-            <button class="btn card_btn">Read More</button>
           </div>
         </div>
       </li>
@@ -327,19 +307,19 @@
           <div class="card_content">
             <h2 class="card_title">Introduction to Swift</h2>
             <p class="card_text">
-              Instructor: Rohit Gupta
+              Instructor: T. Lara Kevin
             </p>
             <p class="card_text">
               <strong> Students: </strong>
             </p>
             <ul class='card_list'>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
-              <li> Prashant Dubey </li>
+              <li> Olivia Johnson </li>
+              <li> Emma Johnson </li>
+              <li> Mia Patel</li>
+              <li> Sophia Rodriguez </li>
+              <li> Noah Martinez </li>
             </ul>
-            <button class="btn card_btn">Read More</button>
+            <button class="btn card_btn">More</button>
           </div>
         </div>
       </li>
@@ -357,7 +337,7 @@
     <div class="Tutor-card">
       <div class="Tutor-box">
         <img
-          src="images/Tutor1.png"
+          src="images/LaneClark.png"
           alt="">
         <a href="Sschedule2.html" class="Tutor-name">T. Lane Clark </a>
         <p class="Course">Courses: </p>
@@ -367,7 +347,7 @@
       </div>
       <div class="Tutor-box" >
         <img
-          src="images/Tutor1.png"
+          src="images/RachelAdams.png"
           alt="">
         <a href="schedule.html" class="Tutor-name">T. Rachel Adam</a>
         <p class="Course">Courses: </p>
@@ -376,7 +356,7 @@
     </div>
       <div class="Tutor-box" >
         <img
-          src="images/Tutor3.png"
+          src="images/KevinLee.png"
           alt="">
         <a href="Sschedule2.html" class="Tutor-name">T. Kevin Lee</a>
         <p class="Course">Courses: </p>
@@ -385,7 +365,7 @@
     </div>
       <div class="Tutor-box" >
         <img
-          src="images/Tutor4.png"
+          src="images/MichealTurner.png"
           alt="">
         <a href="schedule.html" class="Tutor-name">T. Michael Turner</a>
         <p class="Course">Courses: </p>
@@ -394,7 +374,7 @@
     </div>
       <div class="Tutor-box" >
         <img
-          src="images/Tutor5.png"
+          src="images/JoeAdams.png"
           alt="">
         <a href="Sschedule2.html" class="Tutor-name">T. Joe Adams</a>
         <p class="Course">Courses: </p>
@@ -403,7 +383,7 @@
     </div>
       <div class="Tutor-box">
         <img
-          src="images/Tutor6.png"
+          src="images/DanielLoe.png"
           alt="">
         <a href="schedule.html" class="Tutor-name">T.Daniel loe</a>
         <p class="Course">Courses: </p>
@@ -412,7 +392,7 @@
     </div>
       <div class="Tutor-box">
         <img
-          src="images/Tutor7.png"
+          src="images/EmilyAnderson.png"
           alt="">
         <a href="Sschedule2.html" class="Tutor-name">T. Emily Anderson</a>
         <p class="Course">Courses: </p>
@@ -422,7 +402,7 @@
     </div>
       <div class="Tutor-box">
         <img
-          src="images/Tutor8.png"
+          src="images/JohnFoster.png"
           alt="">
         <a href="schedule.html" class="Tutor-name">T. John Foster</a>
         <p class="Course">Courses: </p>
@@ -430,6 +410,17 @@
         
       </ul> 
     </div>
+
+    <div class="Tutor-box">
+      <img
+        src="images/LaraKevin.png"
+        alt="">
+      <a href="schedule.html" class="Tutor-name">T. Lara Kevin</a>
+      <p class="Course">Courses: </p>
+     <ul><li class="Course-name">Introduction to Swift</li>
+      
+    </ul> 
+  </div>
 
     </div>
 
