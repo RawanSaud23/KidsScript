@@ -60,6 +60,7 @@ border-radius: 43px;
 
   .courseDetails{
 padding: 10px;
+margin: auto;
 }
 
 .courseDetails h4{
@@ -100,27 +101,19 @@ line-height: normal;
   }
         
   .Tutor img {
-    
     float: left;
     margin: 0 10px 0 -25px;
     height: 40px;
     width: 40px;
-    border-radius: 15px;
-
+    border-radius: 45px;
   } 
 
-  .MoreInfo p{
-    border: 2px solid #dad7d7;
-    border-radius: 12px;
-    padding: 5px;
-    background-color: #dad7d7;
-    float: right;
-  }
 
   .checked {
     color: orange;
   }
-  
+
+  /*
   .cardInfo{
     display: none;
 }
@@ -128,15 +121,21 @@ line-height: normal;
 .Onhover:hover + .cardInfo{
     display: block;
 }
+*/
+
 
   
   .MoreInfo { 
-    float: right;
+    margin: 1px;
+    width: auto;
   } 
 
   .MoreInfo p{
-    border: 2px solid #dad7d7;
+    margin: 5px 0;
+    font-size: 12px;
+    border: 2px;
     border-radius: 12px;
     padding: 5px;
     background-color: #dad7d7;
+    margin: 1px;
   }
