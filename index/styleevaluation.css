@@ -37,17 +37,19 @@ div.evaluationfeedback{
 
 h1{
   text-align: center; 
-  text-shadow: 2px 2px 5px rgba(162, 0, 255, 0.623);
   font-family: "Times New Roman", Times, serif;
 }
 
 .evaluation div select{
-width:200px;
-font-size: large;
-background-color: #9187e3;
-border-color: transparent transparent rgb(199, 157, 235) transparent;
-}
+  width:200px;
+  font-size: large;
+  background-color: #9287e385;
+  }
 
 body {
   background-color: #abacc9ad ;
+}
+
+.checked {
+  color: #9187e3;
 }
