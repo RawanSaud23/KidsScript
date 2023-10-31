@@ -13,13 +13,9 @@ div {
   text-align: center;
 }
 
+.item2{
+width:100;
 
-Filter{
-  display: flex;
-  padding-right: 100vw;
-  flex-direction: row;
-  justify-content: top;
-  background-color: #9187e3;
 }
 
 h1{
@@ -56,8 +52,8 @@ body {
 }
 .list1{  
   justify-content: center;  
-  margin-left: 37%;
-  margin-right: 37%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .enrolment div select{
