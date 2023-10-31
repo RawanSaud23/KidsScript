@@ -4,17 +4,20 @@
 }
 
  div.evaluation {
- background-color: #9287e37a;
-  margin: 10px;
+  background-color: #9287e37a;
+  margin: auto;
+  margin-bottom: 3em;
   padding: 20px;
-  position: center;
   text-align:center;
   font-size: 30px;
+  border-radius: 20px;
+  width: 90%;
 }
 
 div {
   justify-content:center;
   text-align: center;
+  align-items: center;
 }
 
 .row1{
@@ -41,6 +44,12 @@ div.evaluationfeedback{
 
 h1{
   text-align: center; 
+  font-size: xx-large;
+}
+
+h2{
+  text-align: center; 
+  font-size: x-large;
 }
 
 .evaluation div select{
