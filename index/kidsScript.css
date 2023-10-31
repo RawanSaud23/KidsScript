@@ -4,6 +4,19 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.breadcrumb{
+  margin: 20px 0;
+  text-align: left;
+}
+.breadcrumb a{
+  color: #000;
+  font-size: 1rem;
+}
+.breadcrumb a:hover{
+  color: #0008;
+}
+
 li a {
   color: #000000;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -58,4 +71,55 @@ header img {
   width: 177px;
 
   cursor: pointer;
+}
+.main-footer {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #2f2b53;
+}
+
+.main-footer h2 {
+  font-size: 22px;
+  line-height: 117%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #2f2b53;
+  border-top: 1px solid #1d2742;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.Us {
+  color: white;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.contact ul li {
+  padding: 5px 0;
+  color: white;
+  line-height: 2rem;
+  list-style: none;
+  text-align: left;
+}
+.Social ul {
+  list-style: none;
+  text-align: left;
 }
