@@ -1,3 +1,7 @@
+body {
+  background-color: #abacc9ad;
+}
+
 .all-courses-cards {
   display: flex;
   flex-direction: column;
