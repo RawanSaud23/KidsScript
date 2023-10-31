@@ -5,15 +5,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-.breadcrumb{
+.breadcrumb {
   margin: 20px 0;
   text-align: left;
 }
-.breadcrumb a{
+.breadcrumb a {
   color: #000;
   font-size: 1rem;
 }
-.breadcrumb a:hover{
+.breadcrumb a:hover {
   color: #0008;
 }
 
