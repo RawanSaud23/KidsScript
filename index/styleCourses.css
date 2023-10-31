@@ -40,9 +40,7 @@
 .courseD-title {
   color: #000;
   font-size: 15px;
-  font-style: normal;
   font-weight: 200;
-  line-height: normal;
   margin: 5px 0;
 }
 
@@ -88,13 +86,14 @@
   flex-direction: column; 
   padding: 10px;
   
-  margin-bottom: 1px;
+  margin-bottom: 5px;
 }
 
 .more-info > p {
   background: #ddd; 
   border-radius: 8px; 
   padding: 5px; 
+  margin-bottom: 5px;
 }
 
 #Scpre:hover::After {
@@ -106,7 +105,7 @@
 }
 
 #Javapre:hover::After {
-  content: ": None";
+  content: ": HTML";
 }
 
 #javaobj:hover::After {
@@ -162,14 +161,14 @@
 }
   
 #Robotpre:hover::After {
-  content: ": Python";
+  content: ": None";
 }
 
 #Robotobj:hover::After {
   content: ": Create intelligent machines that can assist humans in a variety of ways.";
   }
 
-/* footer  */
+/* card footer  */
 .card-footer {
   display: flex;
   flex-direction: row;
@@ -206,4 +205,3 @@
   line-height: normal;
   margin: 5px 0;
 }
-
