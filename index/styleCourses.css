@@ -86,13 +86,14 @@
   flex-direction: column; 
   padding: 10px;
   
-  margin-bottom: 1px;
+  margin-bottom: 5px;
 }
 
 .more-info > p {
   background: #ddd; 
   border-radius: 8px; 
   padding: 5px; 
+  margin-bottom: 5px;
 }
 
 #Scpre:hover::After {
@@ -104,7 +105,7 @@
 }
 
 #Javapre:hover::After {
-  content: ": None";
+  content: ": HTML";
 }
 
 #javaobj:hover::After {
