@@ -1,8 +1,12 @@
+body {
+  background-color: #abacc9ad;
+}
 
 .all-courses-cards {
   display: flex;
   flex-direction: column;
-  background-color: #a69cecc5;
+  background-color:#9597c7ad;
+  font-style: normal;
   width: 80%;
   border-radius: 43px;
   align-items: stretch;
@@ -22,10 +26,10 @@
   box-sizing: border-box;
   border-radius: 43px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   background-color: #f4f4f4;
   margin: 25px 25px 25px; 
   transition: all 10s ease;
+  gap: 20px;
 }
 
 .course-container img {
@@ -49,9 +53,7 @@
   margin: 5px 0;
   color: #6B6A6A;
   font-size: 12px;
-  font-style: normal;
   font-weight: 200;
-  line-height: normal;
   height: 5rem;
 }
 
@@ -86,7 +88,7 @@
   display: flex;
   flex-direction: column; 
   padding: 10px;
-  
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
