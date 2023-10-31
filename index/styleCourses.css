@@ -8,18 +8,16 @@ body {
   background-color:#9597c7ad;
   font-style: normal;
   width: 80%;
-  line-height: normal;
   border-radius: 43px;
   align-items: stretch;
   justify-content: space-around;
   margin: auto;
-  margin-bottom: 3em;
 }
 
 .courses-row {
   display: flex;
   flex-direction: row; 
- 
+  align-items: start;
   justify-content: space-around;
 }
 
