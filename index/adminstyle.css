@@ -148,6 +148,7 @@
     max-width: 50%;
     border-radius: 50%;
     text-align: center;
+    aspect-ratio: 1 / 1;
     border: 5px solid rgb(141,102,161);
   }
   
@@ -175,6 +176,7 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+
     justify-content: between;
   }
   
@@ -206,6 +208,7 @@
     border-radius: 50%;
     margin: auto; 
     text-align: center;
+    aspect-ratio: 1 / 1;
     border: 5px solid rgb(141,102,161);
   }
   
@@ -233,4 +236,5 @@
     list-style: none;
     font-size: 1rem;
   }
+  /* */
   
