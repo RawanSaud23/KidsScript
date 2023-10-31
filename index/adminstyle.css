@@ -139,12 +139,10 @@
   }
   .children-card a {
     color: black;
-    padding: 10px 15px;
     width: 100%;
     display: block;
     border-radius: 20px;
     text-decoration: none;
-    margin-top: 15px;
     font-weight: normal;
   }
   /* * courses * */
