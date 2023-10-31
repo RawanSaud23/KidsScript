@@ -70,20 +70,9 @@
   .cards_item {
     display: flex;
     padding: 1rem;
+    width: 33.3333%;
+
   }
-  
-  @media (min-width: 40rem) {
-    .cards_item {
-      width: 50%;
-    }
-  }
-  
-  @media (min-width: 56rem) {
-    .cards_item {
-      width: 33.3333%;
-    }
-  }
-  
   .card {
     background-color: white;
     border-radius: 1.25rem;
@@ -176,7 +165,6 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: between;
   }
   
@@ -236,5 +224,5 @@
     list-style: none;
     font-size: 1rem;
   }
-  /* */
+
   
