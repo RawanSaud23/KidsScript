@@ -5,17 +5,14 @@
 }
 table {
   box-align: center;
-  font-family: "Times New Roman", Times, serif;
   text-align: center;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 1%;
-  margin-bottom: 3%;
+  margin:auto;
+  margin-bottom: 8em;
+
 }
 
 table caption {
-  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   justify-content: center;
   line-height: 100px;
@@ -37,6 +34,7 @@ table tbody td {
   color: rgb(0, 0, 0);
 }
 
-body {
+
+body{
   background-color: #abacc9ad;
 }
