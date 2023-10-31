@@ -11,6 +11,7 @@ form{
 background-color:#abacc9ad; 
 padding: 20px; 
 border-radius: 20px;
+margin-bottom:5em;
 }
 
 
@@ -68,10 +69,16 @@ font-size: 18px;
 font-weight: 500;
 border-radius: 5px;
 letter-spacing: 1px;
-border-color:black;
-background-color:white;
+ background-color: #565275;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
+
+ 
 
  
 form .genderCategory{
