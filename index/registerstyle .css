@@ -1,6 +1,9 @@
  .register h2{
 text-align: center;}
-   
+
+body{
+background-color:#abacc9ad; 
+} 
 #kidForm{
 display: flex;
 justify-content: center;
