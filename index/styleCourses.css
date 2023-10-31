@@ -87,7 +87,8 @@
   display: flex;
   flex-direction: column; 
   padding: 10px;
-  gap: 10px;
+  
+  margin-bottom: 1px;
 }
 
 .more-info > p {
@@ -95,18 +96,78 @@
   border-radius: 8px; 
   padding: 5px; 
 }
-.pre::before, .obj::before {
-  content: "";
-} 
 
-.pre:hover::before {
-  content: "New ";
+#Scpre:hover::After {
+  content: ": None";
 }
 
-.obj:hover::before {
-  content: "New ";
+#Scobj:hover::After {
+  content: ": it promotes computational thinking and problem solving skills";
 }
 
+#Javapre:hover::After {
+  content: ": None";
+}
+
+#javaobj:hover::After {
+  content: ": it provide programmers with one-time write and run, anywhere functionality.";
+}
+
+#Swiftpre:hover::After {
+  content: ": None";
+}
+
+#Swiftobj:hover::After {
+  content: ": learn how to write code more efficiently and with fewer errors.";
+}
+
+#Htmlpre:hover::After {
+  content: ": None";
+}
+
+#htmlobj:hover::After {
+  content: ": help to create Web pages and tells the browser how to display them.";
+}
+
+#csspre:hover::After {
+  content: ": HTML";
+}
+
+#cssobj:hover::After {
+  content: ": Style and layout web pages";
+}
+
+#Scriptpre:hover::After {
+  content: ": HTML Basics and Styling With CSS";
+}
+
+#Scriptobj:hover::After {
+  content: ": Add dynamic and interactive elements to websites.";
+}
+
+#SQLpre:hover::After {
+  content: ": None";
+}
+
+#SQLobj:hover::After {
+  content: ": Create the database and relation structures. Also, perform insertion, modification, deletion of data from relations.";
+}
+
+#Pythonpre:hover::After {
+  content: ": None";
+}
+
+#Pythonobj:hover::After {
+  content: ": developing websites and software. Also, data visualisation.";
+}
+  
+#Robotpre:hover::After {
+  content: ": Python";
+}
+
+#Robotobj:hover::After {
+  content: ": Create intelligent machines that can assist humans in a variety of ways.";
+  }
 
 /* footer  */
 .card-footer {
