@@ -64,15 +64,17 @@ rel="stylesheet">
 <div class="item2">
 
   <h2>Choose the course:*</h2>
-  <p>(Note that you can check more than one.)<br></p>
-  <h3>Filter:</h3>
-  <select name="Filter" size="5" multiple>
-  <optgroup label="Prerequisite course">
+  <p>(Note that you can check more than one.)</p>
+  <h3><br>Filter:</h3>
+  <select id="Prerequisites" name="Prerequisites">
+      <option>Filter by Prerequisites</option>
       <option>Styling with CSS</option>
       <option>HTML Basics</option>
       <option>None</option>
-     </optgroup>
-      <optgroup label="Tutor">
+     </select>
+     
+     <select id="Tutor" name="Tutor">
+      <option>Filter by Tutor</option>
       <option>Lane Clark</option>
       <option>Rachel Adam</option>
       <option>Kevin Lee</option>
@@ -82,7 +84,6 @@ rel="stylesheet">
       <option>Emily Anderson</option>
       <option>John Foster</option>
       <option>Lara Kevin</option>
-      </optgroup>
   </select>
 
 <div class="list1">
