@@ -176,7 +176,6 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: between;
   }
   
@@ -236,5 +235,4 @@
     list-style: none;
     font-size: 1rem;
   }
-  /* */
   
