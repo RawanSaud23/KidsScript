@@ -41,11 +41,16 @@ p{
 body {
   background-color: #abacc9ad ;
 }
-
 #list{
   text-align: left;
   list-style-type: none;
   align-items: center;
+}
+
+#list input{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 .list1{  
   justify-content: center;  
