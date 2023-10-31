@@ -224,7 +224,6 @@ body {
 
 .CourseContainer:hover {
   transform: scale(1.05);
- 
 }
 .coursesRow1 {
   display: flex;
@@ -255,7 +254,7 @@ body {
 .coursesRow2 :last-child {
   margin-right: 0;
 }
- 
+
 .coursePic {
   height: 275px;
   width: auto;
@@ -435,7 +434,7 @@ body {
   height: 29rem;
   background-color: white;
   border-radius: 1.5rem;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 02);
   padding: 2em 1em;
   display: flex;
   align-items: center;
