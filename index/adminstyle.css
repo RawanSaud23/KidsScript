@@ -148,7 +148,6 @@
     max-width: 50%;
     border-radius: 50%;
     text-align: center;
-    aspect-ratio: 1 / 1;
     border: 5px solid rgb(141,102,161);
   }
   
@@ -207,7 +206,6 @@
     border-radius: 50%;
     margin: auto; 
     text-align: center;
-    aspect-ratio: 1 / 1;
     border: 5px solid rgb(141,102,161);
   }
   
