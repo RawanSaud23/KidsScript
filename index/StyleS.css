@@ -30,9 +30,13 @@ body {
 }
 
 /*----------Vision Sectio----------*/
+.visionContainer {
+  display: flex;
+  align-items: center;
+}
 .Vision-text {
-  color: #fff;
-
+  color: #3c2d48;
+  display: flex;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 700;
@@ -43,24 +47,60 @@ body {
 /*-------The reviews section ----------*/
 
 .Vision-title {
-  color: #fff;
   margin-left: 30px;
   font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
+
+  font-weight: 600;
   line-height: 8rem;
-  margin-top: 5rem;
+}
+
+.vision-container {
+  display: flex;
+  align-items: center;
+}
+
+.vision-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.vision-image {
+  margin-top: 70px;
+  flex: 1;
+}
+.vision-image img {
+  height: 650px;
+}
+
+.Vision-title {
+  margin-bottom: 10px;
 }
 
 /*-------The reviews section ----------*/
 
 .allTheReviews {
+  position: relative;
+  height: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  fill: #fff;
+  filter: blur(50px);
   border-radius: 30px;
   filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
+  margin-bottom: 50px;
+}
+
+.allTheReviews::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  filter: blur(60px);
+  z-index: -1;
 }
 
 .Container {
@@ -150,12 +190,25 @@ body {
 
 /* The beginning of "Most common courses" section */
 .allTheCourses {
-  background-color: white;
+  position: relative;
+  border-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-
   filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
+}
+
+.allTheCourses::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #fff;
+  filter: blur(60px);
+  z-index: -1;
 }
 .coursesRow1 {
   display: flex;
@@ -193,9 +246,13 @@ body {
   flex-direction: column;
   width: 336px;
   height: 539px;
-
   filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
   border-radius: 43px;
+  transition: transform 0.3s ease;
+}
+
+.CourseContainer:hover {
+  transform: scale(1.05);
 }
 
 .coursePic {
@@ -241,7 +298,7 @@ body {
   color: #6b6a6a;
   font-family: Inter;
   font-size: 0.7rem;
- 
+
   font-weight: 200;
   line-height: normal;
   height: 5rem;
@@ -296,7 +353,6 @@ body {
 
 /*----------------------Tutor's page------------------*/
 
- 
 .TutorContainer {
   display: inline-block;
   width: 310px;
@@ -344,7 +400,7 @@ body {
   color: white;
   background-color: #565275;
   border-radius: 50%;
- 
+
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -365,7 +421,7 @@ body {
 .AllTheTutors {
   width: 100%;
   display: flex;
- 
+
   overflow-x: scroll;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
@@ -427,4 +483,8 @@ body {
   text-align: center;
   font-size: 0.8rem;
   margin-top: 1.5rem;
+}
+
+.checked {
+  color: orange;
 }
