@@ -12,6 +12,7 @@ body {
   align-items: stretch;
   justify-content: space-around;
   margin: auto;
+  margin-bottom: 3em;
 }
 
 .courses-row {
@@ -88,7 +89,7 @@ body {
   display: flex;
   flex-direction: column; 
   padding: 10px;
-  
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
