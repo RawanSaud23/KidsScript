@@ -4,6 +4,19 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.breadcrumb{
+  margin: 20px 0;
+  text-align: left;
+}
+.breadcrumb a{
+  color: #000;
+  font-size: 1rem;
+}
+.breadcrumb a:hover{
+  color: #0008;
+}
+
 li a {
   color: #000000;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
