@@ -207,8 +207,24 @@ body {
   height: 100%;
   border-radius: 50px;
   background-color: #fff;
-  filter: blur(60px);
+  filter: blur(90px);
   z-index: -1;
+}
+
+.CourseContainer {
+  background: #fffefe;
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  height: 539px;
+  filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
+  border-radius: 43px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.CourseContainer:hover {
+  transform: scale(1.05);
+ 
 }
 .coursesRow1 {
   display: flex;
@@ -239,22 +255,7 @@ body {
 .coursesRow2 :last-child {
   margin-right: 0;
 }
-
-.CourseContainer {
-  background: #fffefe;
-  display: flex;
-  flex-direction: column;
-  width: 336px;
-  height: 539px;
-  filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
-  border-radius: 43px;
-  transition: transform 0.3s ease;
-}
-
-.CourseContainer:hover {
-  transform: scale(1.05);
-}
-
+ 
 .coursePic {
   height: 275px;
   width: auto;
