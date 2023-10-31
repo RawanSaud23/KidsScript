@@ -137,12 +137,6 @@
   .child-name {
     margin: 5px 0;
   }
-  
-  .children-card .role {
-    font-size: 80%;
-    margin-bottom: 20px;
-  }
-  
   .children-card a {
     color: black;
     padding: 10px 15px;
@@ -158,7 +152,7 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: between;
+    justify-content: center;
   }
   
   /* Tutor card */
