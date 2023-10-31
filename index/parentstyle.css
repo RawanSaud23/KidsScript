@@ -105,3 +105,11 @@ border-radius: 10px;
 margin-top:5%;
 margin-bottom:2%;
 }
+
+.kidsPart ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
