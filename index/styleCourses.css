@@ -40,9 +40,7 @@
 .courseD-title {
   color: #000;
   font-size: 15px;
-  font-style: normal;
   font-weight: 200;
-  line-height: normal;
   margin: 5px 0;
 }
 
@@ -162,14 +160,14 @@
 }
   
 #Robotpre:hover::After {
-  content: ": Python";
+  content: ": None";
 }
 
 #Robotobj:hover::After {
   content: ": Create intelligent machines that can assist humans in a variety of ways.";
   }
 
-/* footer  */
+/* card footer  */
 .card-footer {
   display: flex;
   flex-direction: row;
@@ -206,4 +204,3 @@
   line-height: normal;
   margin: 5px 0;
 }
-
