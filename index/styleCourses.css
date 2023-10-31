@@ -5,7 +5,8 @@ body {
 .all-courses-cards {
   display: flex;
   flex-direction: column;
-  background-color: #a69cecc5;
+  background-color:#9597c7ad;
+  font-style: normal;
   width: 80%;
   border-radius: 43px;
   align-items: stretch;
@@ -28,6 +29,7 @@ body {
   background-color: #f4f4f4;
   margin: 25px 25px 25px; 
   transition: all 10s ease;
+  gap: 20px;
 }
 
 .course-container img {
