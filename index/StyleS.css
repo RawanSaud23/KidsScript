@@ -263,7 +263,7 @@ body {
 .courseDetails h4 {
   margin: 0;
   color: #000;
-  font-family: Inter;
+
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
@@ -272,7 +272,7 @@ body {
 
 .courseD-title {
   color: #000;
-  font-family: Inter;
+
   font-size: 15px;
   font-style: normal;
   font-weight: 200;
@@ -283,7 +283,7 @@ body {
 .courseD-text {
   margin: 5px 0;
   color: #6b6a6a;
-  font-family: Inter;
+
   font-size: 0.7rem;
 
   font-weight: 200;
@@ -305,7 +305,7 @@ body {
 
 .TutorInfo-course {
   color: #a1a1a1;
-  font-family: Inter;
+
   font-size: 12px;
   font-style: normal;
   font-weight: 200;
@@ -323,7 +323,7 @@ body {
   font-size: 0.5rem;
   margin-right: 1.3rem;
   color: #000;
-  font-family: Inter;
+
   font-size: 17px;
   font-style: normal;
   font-weight: 200;
@@ -383,26 +383,26 @@ body {
   line-height: 35px;
 }
 
-.Email {
-  color: white;
-  background-color: #565275;
-  border-radius: 50%;
-
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: 40px;
-  border-radius: 15px;
-  width: 17rem;
-}
-
 .EmailContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   height: 100%;
+}
+
+.Email {
+  color: white;
+  background-color: #565275;
+  border-radius: 50%;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 15px;
+  width: 17rem;
 }
 
 .AllTheTutors {
@@ -421,7 +421,7 @@ body {
   height: 29rem;
   background-color: white;
   border-radius: 1.5rem;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 2);
   padding: 2em 1em;
   display: flex;
   align-items: center;
@@ -468,10 +468,10 @@ body {
 }
 .TutorDescription {
   text-align: center;
-  font-size: 0.8rem;
-  margin-top: 1.5rem;
+  font-size: 0.78rem;
+  margin-top: 1rem;
 }
-
+/*----*/
 .checked {
   color: orange;
 }
