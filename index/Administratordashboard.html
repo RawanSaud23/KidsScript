@@ -15,6 +15,25 @@
   </head>
 
   <body>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const startOfWeek = new Date();
+        startOfWeek.setDate(startOfWeek.getDate() - startOfWeek.getDay());
+        const formattedDate = startOfWeek.toLocaleDateString("en-US", {
+          weekday: "long",
+          day: "numeric",
+          month: "long"
+        });
+      
+        const weekStartDateElement = document.createElement("div");
+        weekStartDateElement.textContent = `week starting on ${formattedDate}`;
+        weekStartDateElement.style.textAlign = "center";
+        weekStartDateElement.style.marginBottom = "20px";
+      
+        document.querySelector("main").prepend(weekStartDateElement);
+      });
+      </script>
     <header>
       <a href="index.html"
         ><img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO"
@@ -165,8 +184,10 @@
                 <li>Mia Patel</li>
                 <li>Ava Wilson</li>
                 <li>Noah Martinez</li>
+                <li><span class="moreText">
+                  Liam Johnson  </span></li>
               </ul>
-              <button class="btn card_btn">More</button>
+              <button class="btn card_btn" id="btn">More</button>
             </div>
           </div>
         </li>
@@ -218,14 +239,17 @@
               <p class="card_text">
                 <strong> Students: </strong>
               </p>
-              <ul class="card_list">
+              <ul class="card_list" id="card_list">
                 <li>Ava Wilson</li>
                 <li>Liam Johnson</li>
                 <li>Mia Patel</li>
                 <li>Sophia Rodriguez</li>
                 <li>Emma Johnson</li>
+                <li><span class="moreText">
+                  Olivia Johnson
+                </span></li>
               </ul>
-              <button class="btn card_btn">More</button>
+              <button class="btn card_btn" id ="btn">More</button>
             </div>
           </div>
         </li>
@@ -301,8 +325,11 @@
                 <li>Mia Patel</li>
                 <li>Sophia Rodriguez</li>
                 <li>Noah Martinez</li>
+                <li><span class="moreText">
+                  Ava Wilson
+                </span></li>
               </ul>
-              <button class="btn card_btn">More</button>
+              <button class="btn card_btn" id ="btn">More</button>
             </div>
           </div>
         </li>
