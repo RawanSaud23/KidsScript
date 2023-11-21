@@ -109,7 +109,7 @@
     font-size: 0.875rem;
     line-height: 1.5;
     margin: -1rem 0 1.25rem 2rem;
-    list-style: disc;
+    list-style: circle;
   }
   
   .children-card {
@@ -208,5 +208,14 @@
     list-style: none;
     font-size: 1rem;
   }
-
-  
+  .moreText{
+    display: none;
+  }
+  .moreText--show{
+    display: block;
+    color: #020202;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: -1rem 0 1.25rem 2rem;
+    list-style: circle;
+  }
