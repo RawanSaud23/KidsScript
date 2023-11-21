@@ -249,7 +249,7 @@
                   Olivia Johnson
                 </span></li>
               </ul>
-              <button class="btn card_btn" id ="btn">More</button>
+              <button class="btn card_btn">More</button>
             </div>
           </div>
         </li>
@@ -325,11 +325,12 @@
                 <li>Mia Patel</li>
                 <li>Sophia Rodriguez</li>
                 <li>Noah Martinez</li>
-                <li><span class="moreText">
-                  Ava Wilson
-                </span></li>
               </ul>
               <button class="btn card_btn" id ="btn">More</button>
+              <span class="moreText"><ul>
+                <li>Ava Wilson</li>
+              </ul>
+               </span>
             </div>
           </div>
         </li>
@@ -430,6 +431,24 @@
           </ul>
         </div>
       </div>
+      <script> 
+      document.addEventListener('DOMContentLoaded', function () {
+         var buttons = document.querySelectorAll('.card_btn');
+          buttons.forEach(function (button) {
+             button.addEventListener('click', function () { 
+              var moreText = this.closest('.card_content').querySelector('.moreText');
+               moreText.classList.toggle('moreText--show');
+            //Hide the button
+            if (moreText.classList.contains('moreText--show')){
+              this.style.display='none';
+            }else{
+              this.style.display='block'; 
+            }
+               }); 
+              }); 
+            });
+          
+      </script>
     </main>
     <footer>
       <section id="footer">
