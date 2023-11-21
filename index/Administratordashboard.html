@@ -21,7 +21,6 @@
         const startOfWeek = new Date();
         startOfWeek.setDate(startOfWeek.getDate() - startOfWeek.getDay());
         const formattedDate = startOfWeek.toLocaleDateString("en-US", {
-          weekday: "long",
           day: "numeric",
           month: "long"
         });
@@ -440,7 +439,7 @@
           buttons.forEach(function (button) {
              button.addEventListener('click', function () { 
               var moreText = this.closest('.card_content').querySelector('.moreText');
-               moreText.classList.toggle('moreText--show');
+              moreText.classList.toggle('moreText--show');
             //Hide the button
             if (moreText.classList.contains('moreText--show')){
               this.style.display='none';
