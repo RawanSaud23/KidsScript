@@ -17,10 +17,11 @@
       //getItem(حسب ما سمت ريم؟)
       if(localStorage.getItem('childrenNames') == null){
         var childrenNames =['Emma Johnson', 'Liam Johnson'];
-        // and displays them in the dashboard.
+        // and displays them in the dashboard. مو متأكدة
         var ChildInfo= 
-        localStorage.setItem('childrenNames', )
+        localStorage.setItem('childrenNames', childrenNames)
       }
+      else{
       // If not, it will (retrieve) the children's names from the local storage
       //  var storedWord = localStorage.getItem("WORD");
       var storedchildrenNames = localStorage.getItem('childrenNames');
@@ -29,8 +30,9 @@
       var newAddedElement = document.getElementsByClassName('kidblock');
 
       for(var i=0; i< newAddedElement.length; i++){
-        var nameElement = newAddedElement[i].getElementsByTagName('h2')[0];
-        newAddedElement.innerHTML = storedchildrenNames;
+      var nameElement = newAddedElement[i].getElementsByTagName('h2')[0];
+      newAddedElement.innerHTML = storedchildrenNames;
+      }
       }
     }
     </script>
