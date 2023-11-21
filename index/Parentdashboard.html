@@ -9,50 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="kidsScript.css"> 
              <link rel="stylesheet" href="parentstyle.css" >
-          
-  <script>
-    /*
-    // Check the local storage if it has this parent’s children:
-    function checkLocalStorage(){
-      // If it is empty, then save 2 children's names in the local storage
-      if(localStorage.getItem('childrenNames') == null){
-        var childrenNames =['Emma Johnson', 'Liam Johnson'];
-        // and displays them in the dashboard. مو متأكدة
-        //var ChildInfo= 
-        localStorage.setItem('childrenNames', JSON.stringify(childrenNames));
-      }
-      else{
-      // If not, it will (retrieve) the children's names from the local storage
-      //  var storedWord = localStorage.getItem("WORD");
-      //var storedchildrenNames = localStorage.getItem('childrenNames');
-      var storedChildrenNames = JSON.parse(localStorage.getItem('childrenNames'));
-
-      // and display it in the page.
-      var newAddedElement = document.getElementsByClassName('kidblock');
-
-      for (var i = 0; i < newAddedElements.length; i++) {
-            var nameElement = newAddedElements[i].getElementsByTagName('h2')[0];
-            nameElement.textContent = storedChildrenNames[i];
-      }
-      
-      //localStorage.key[i]
-      }
-
-    }
-    */
-    function checkLocalStorage(){
-      // Check the local storage if it has this parent’s children: 
-      // If it is empty, then save 2 children's names in the local storage
-      if(localStorage.getItem('kidsname') == null){
-        var childrenNames =['Emma Johnson', 'Liam Johnson'];
-        localStorage.setItem('kidsname', JSON.stringify('kidsname'));
-
-        // and displays them in the dashboard. (reload??)
-        document.h2 =localStorage.getItem('kidsname');
-      }      
-    }
-
-    </script>
 
     </head>
  <body>
@@ -84,19 +40,10 @@
 <section id="myKids">
 
 <div class="kidsPart">
-<div class="kidblock">
-<img src="images/Kid3.png" alt="Emma Johnson" >
-<h2>Emma Johnson</h2>
-</div>
 
 <div class="kidblock">
-<img src="images/Kid4.png" alt="Liam Johnson" >
-<h2>Liam Johnson</h2>
 </div>
-<div class="kidblock">
-<img src="images/Kid5.png" alt="Olivia Johnson" >
-<h2>Olivia Johnson</h2>
-</div>
+
 </div>
 </section>
 
@@ -219,7 +166,43 @@
     </p>
   </section>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  if(localStorage.getItem('kidsname') == null){
+    var kidsData = [
+      {name: 'Emma Johnson', kidimg: 'images/Kid3.png'},
+      {name: 'Liam Johnson', kidimg: 'images/Kid4.png'}
+    ];
 
+    localStorage.setItem('kidsname', JSON.stringify(kidsData));
+  }
+
+  var storekidsData = JSON.parse(localStorage.getItem('kidsname'));
+  displayKids(storekidsData);
+});
+
+function displayKids(kidsData) {
+  var KidsList = document.querySelector('.kidsPart');
+
+  kidsData.forEach(function(kid) {
+    var KidDiv = document.createElement('div');
+    KidDiv.classList.add('kidblock');
+
+    var image = document.createElement('img');
+    image.src = kid.kidimg;
+    image.alt = kid.name;
+
+    var kidName = document.createElement('h2');
+    kidName.style.textAlign = 'center';
+    kidName.textContent = kid.name;
+
+    KidDiv.appendChild(image);
+    KidDiv.appendChild(kidName);
+    KidsList.appendChild(KidDiv);
+  });
+}
+  
+  </script>
 </body>
 
 </html> 
