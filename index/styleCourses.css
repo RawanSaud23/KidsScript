@@ -113,7 +113,7 @@ font-size: 19px;
 }
 
 #Javapre:hover::After {
-  content: ": HTML";
+  content: ": Introduction To HTML";
 }
 
 #javaobj:hover::After {
@@ -121,7 +121,7 @@ font-size: 19px;
 }
 
 #Swiftpre:hover::After {
-  content: ": None";
+  content: ": Introduction To Scratch";
 }
 
 #Swiftobj:hover::After {
@@ -129,7 +129,7 @@ font-size: 19px;
 }
 
 #Htmlpre:hover::After {
-  content: ": None";
+  content: ": Introduction To Scratch";
 }
 
 #htmlobj:hover::After {
@@ -137,7 +137,7 @@ font-size: 19px;
 }
 
 #csspre:hover::After {
-  content: ": HTML";
+  content: ": Introduction To HTML";
 }
 
 #cssobj:hover::After {
@@ -145,7 +145,7 @@ font-size: 19px;
 }
 
 #Scriptpre:hover::After {
-  content: ": HTML Basics and Styling With CSS";
+  content: ": Introduction To CSS";
 }
 
 #Scriptobj:hover::After {
