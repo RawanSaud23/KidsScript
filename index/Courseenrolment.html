@@ -167,118 +167,126 @@ rel="stylesheet">
   </section>
 </footer>
 <script>
-  //1
-var kids= JSON.parse(localStorage.getItem("kidsname"));
-var Kidname=kidsdata.name;
+//1
+function populateKidsDropdown() {
+  var kidsDropdown = document.getElementById("nkids");
+  var kids = JSON.parse(localStorage.getItem("kidsname"));
 
-  //2
-  var courses = [
-   {cname: "Introduction To Robotics" , tname: "T.Joe Adams"},
-   {cname: "Introduction To Java", tname: "T.Rachel Adam", pre: "Introduction To HTML"},
-   {cname: "Introduction To Scratch", tname: "T.Daniel loe"},
-   {cname: "Introduction To Python", tname: "T.Kevin Lee"},
-   {cname: "Introduction To JavaScript", tname: "T. Emily Anderson", pre: "Introduction To CSS"},
-   {cname: "Introduction To CSS", tname: "T. Michael Turner", pre: "Introduction To HTML"},
-   {cname: "Introduction To Swift", tname: "T.Lara Kevin", pre: "Introduction To Scratch"},
-   {cname: "Introduction To SQL", tname: "T.John Foster", pre: "Introduction To Java"},
-   {cname: "Introduction To HTML", tname: "T. Lane Clark", pre: "Introduction To Scratch"} ];
+  kids.forEach(function (kid) {
+    var option = document.createElement("option");
+    option.value = kid.name;
+    option.textContent = kid.name;
+    kidsDropdown.appendChild(option);
+  });
 
-   //3
-   filterOptions("nkids", Kidname);
-   filterOptions("Prerequisites", getPrerequisites(courses));
-   filterOptions("Tutor", getTutors(courses));
+}
+populateKidsDropdown();
+  
+var courses = [
+  { cname: "Introduction To Robotics", tname: "T.Joe Adams" },
+  { cname: "Introduction To Java", tname: "T.Rachel Adam", pre: "Introduction To HTML" },
+  { cname: "Introduction To Scratch", tname: "T.Daniel loe" },
+  { cname: "Introduction To Python", tname: "T.Kevin Lee" },
+  { cname: "Introduction To JavaScript", tname: "T. Emily Anderson", pre: "Introduction To CSS" },
+  { cname: "Introduction To CSS", tname: "T. Michael Turner", pre: "Introduction To HTML" },
+  { cname: "Introduction To Swift", tname: "T.Lara Kevin", pre: "Introduction To Scratch" },
+  { cname: "Introduction To SQL", tname: "T.John Foster", pre: "Introduction To Java" },
+  { cname: "Introduction To HTML", tname: "T. Lane Clark", pre: "Introduction To Scratch" }
+];
 
-   document.getElementById("Tutor").addEventListener("change", filterCourses);
-   document.getElementById("Prerequisites").addEventListener("change", filterCourses);
-   document.querySelector("form").addEventListener("submit", handleFormSubmit);
+filterOptions("nkids", getKidsNames());
+filterOptions("Prerequisites", getPrerequisites(courses));
+filterOptions("Tutor", getTutors(courses));
 
-   filterCourses(); // Initial course filtering based on selected tutor or prerequisite
+document.getElementById("Tutor").addEventListener("change", filterCourses);
+document.getElementById("Prerequisites").addEventListener("change", filterCourses);
+document.querySelector("form").addEventListener("submit", handleFormSubmit);
+
+filterCourses(); // Initial course filtering based on selected tutor or prerequisite
 
 function filterOptions(selectId, options) {
-    // Function to fill filter options
-    var select = document.getElementById(selectId);
-    options.forEach(function (option) {
-        var optionElement = document.createElement("option");
-        optionElement.value = option;
-        optionElement.textContent = option;
-        select.appendChild(optionElement);
-    });
+  var select = document.getElementById(selectId);
+  select.innerHTML = ""; // Clear existing options
+
+  options.forEach(function (option) {
+    var optionElement = document.createElement("option");
+    optionElement.value = option;
+    optionElement.textContent = option;
+    select.appendChild(optionElement);
+  });
+}
+
+function getKidsNames() {
+  var kids = JSON.parse(localStorage.getItem("kidsname"));
+  return kids.map(kid => kid.name);
 }
 
 function getPrerequisites(courses) {
-    // Function to get unique prerequisites from courses array
-    var prerequisites = courses.map(course => course.pre);
-    return Array.from(new Set(prerequisites.filter(Boolean)));
+  var prerequisites = courses.map(course => course.pre);
+  return Array.from(new Set(prerequisites.filter(Boolean)));
 }
 
 function getTutors(courses) {
-    // Function to get unique tutors from courses array
-    var tutors = courses.map(course => course.tname);
-    return Array.from(new Set(tutors));
+  var tutors = courses.map(course => course.tname);
+  return Array.from(new Set(tutors));
 }
 
 function filterCourses() {
-    // Function to filter courses based on selected tutor or prerequisite
-    var selectedTutor = document.getElementById("Tutor").value;
-    var selectedPrerequisite = document.getElementById("Prerequisites").value;
+  var selectedTutor = document.getElementById("Tutor").value;
+  var selectedPrerequisite = document.getElementById("Prerequisites").value;
 
-    var filteredCourses = courses.filter(function (course) {
-        return (selectedTutor === "" || course.tutor === selectedTutor) &&
-            (selectedPrerequisite === "" || course.prerequisite === selectedPrerequisite);
-    });
+  var filteredCourses = courses.filter(function (course) {
+    return (selectedTutor === "" || course.tname === selectedTutor) &&
+      (selectedPrerequisite === "" || course.pre === selectedPrerequisite);
+  });
 
-    updateCourseCheckboxes(filteredCourses);
+  updateCourseCheckboxes(filteredCourses);
 }
 
 function updateCourseCheckboxes(filteredCourses) {
-    // Function to update course checkboxes based on the filtered courses
-    var checkboxes = document.querySelectorAll(".list1");
-    checkboxes.forEach(function (checkbox) {
-        var courseName = checkbox.getAttribute("data-course");
-        var isVisible = filteredCourses.some(course => course.cname === courseName);
-        checkbox.style.display = isVisible ? "flex" : "none";
-    });
+  var checkboxes = document.querySelectorAll(".list1");
+  checkboxes.forEach(function (checkbox) {
+    var courseName = checkbox.getAttribute("data-course");
+    var isVisible = filteredCourses.some(course => course.cname === courseName);
+    checkbox.style.display = isVisible ? "list-item" : "none";
+  });
 }
 
 function handleFormSubmit(event) {
-    // Submit button click event
-    event.preventDefault(); // Prevent the default form submission behavior
+  event.preventDefault();
 
-    // Check if a child is selected
-    var selectedChild = document.getElementById("nkids").value;
-    if (!selectedChild) {
-        alert("Please select a child.");
-        return;
-    }
+  var selectedChild = document.getElementById("nkids").value;
+  if (!selectedChild) {
+    alert("Please select a child.");
+    return;
+  }
 
-    // Check if at least one course is selected
-    var selectedCourses = Array.from(document.querySelectorAll(".list1 input:checked")).map(function (checkbox) {
-        return checkbox.getAttribute("data-course");
-    });
+  var selectedCourses = Array.from(document.querySelectorAll(".list1 input:checked")).map(function (checkbox) {
+    return checkbox.getAttribute("data-course");
+  });
 
-    if (selectedCourses.length === 0) {
-        alert("Please select at least one course.");
-        return;
-    }
+  if (selectedCourses.length === 0) {
+    alert("Please select at least one course.");
+    return;
+  }
 
-    // Display information on the page
-    var infoContainer = document.createElement("div");
-    infoContainer.className = "enrolment";
-    infoContainer.innerHTML = "<h1>Course enrolment</h1>" +
-        "<p>Child: " + selectedChild + "</p>" +
-        "<p>Courses:</p><ul>" + selectedCourses.map(course => "<li>" + course + "</li>").join("") + "</ul>";
+  var infoContainer = document.createElement("div");
+  infoContainer.className = "enrollment";
+  infoContainer.innerHTML = "<h1>Course enrollment</h1>" +
+    "<h2>Choose your kid:* " + selectedChild + "</h2>" +
+    "<h2>Choose the course:*</h2> <ul>" + selectedCourses.map(course => "<li>" + course + "</li>").join("") + "</ul>";
 
-    // Clear previous information and display new information
-    var previousInfo = document.querySelector(".enrolment");
-    if (previousInfo) {
-        previousInfo.remove();
-    }
+  var previousInfo = document.querySelector(".enrollment");
+  if (previousInfo) {
+    previousInfo.remove();
+  }
 
-    document.querySelector("main").appendChild(infoContainer);
+  document.querySelector("main").appendChild(infoContainer);
 
-    // Clear the form
-    document.querySelector("form").reset();
+  document.querySelector("form").reset();
 }
+
+
 
   //4
 
