@@ -80,12 +80,13 @@ var l = parseInt(letter);
  
 if (localStorage.getItem("kidsname") === null){
 const a =[];
-a[0]= name;
+
+a[0]= {name: name , kidimg: photo };
 localStorage.setItem('kidsname', JSON.stringify(a));
   
 } else { 
  const myArray = JSON.parse(localStorage.getItem('kidsname'));
- myArray[myArray.length]=name;
+ myArray[myArray.length]= {name: name , kidimg: photo };
  localStorage.setItem('kidsname', JSON.stringify(myArray));
 }
   
