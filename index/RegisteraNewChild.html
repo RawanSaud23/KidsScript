@@ -77,17 +77,31 @@ var l = parseInt(letter);
             }
     
 
- 
+  var photo = document.getElementById("photo");
 if (localStorage.getItem("kidsname") === null){
 const a =[];
-
-a[0]= {name: name , kidimg: photo };
+var fr = new FileReader();
+fr.onload=function(){
+p = fr.result;
+a[0]= {name: name , kidimg:fr.result  };
 localStorage.setItem('kidsname', JSON.stringify(a));
+}
+fr.readAsDataURL(photo.files[0]) 
+
   
 } else { 
  const myArray = JSON.parse(localStorage.getItem('kidsname'));
- myArray[myArray.length]= {name: name , kidimg: photo };
+ var fr = new FileReader();
+fr.onload=function(){
+p = fr.result;
+ myArray[myArray.length]= {name: name , kidimg:fr.result };
  localStorage.setItem('kidsname', JSON.stringify(myArray));
+}
+fr.readAsDataURL(photo.files[0]) 
+ 
+ 
+ 
+
 }
   
    var pagePrint = '<html><head><title>Print</title></head><body>' + "name:" + name + "<br>" + "date of birth:" + date + "<br>" +"gender:" +gender + "<br>"+ "phone number:" + tel +"<br>" +  "email:" + email  + '</body></html>';
