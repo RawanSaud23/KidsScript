@@ -33,19 +33,18 @@
     </div>  
 
 <main>
-<div class="parent">
+  <h1>My Kids</h1>
+  <section id="myKids">
+  
+  <div class="kidsPart">
+  <div class="kidblock">
+
+  </div>
+  
+  </div>
+  </section>
 
 
-<h1>My Kids</h1>
-<section id="myKids">
-
-<div class="kidsPart">
-
-<div class="kidblock">
-</div>
-
-</div>
-</section>
 
 
 <div class="pagesPart">
@@ -173,35 +172,27 @@ document.addEventListener('DOMContentLoaded', function(){
       {name: 'Emma Johnson', kidimg: 'images/Kid3.png'},
       {name: 'Liam Johnson', kidimg: 'images/Kid4.png'}
     ];
-
     localStorage.setItem('kidsname', JSON.stringify(kidsData));
   }
-
   var storekidsData = JSON.parse(localStorage.getItem('kidsname'));
   displayKids(storekidsData);
 });
-
 function displayKids(kidsData) {
   var KidsList = document.querySelector('.kidsPart');
-
   kidsData.forEach(function(kid) {
     var KidDiv = document.createElement('div');
     KidDiv.classList.add('kidblock');
-
     var image = document.createElement('img');
     image.src = kid.kidimg;
     image.alt = kid.name;
-
     var kidName = document.createElement('h2');
     kidName.style.textAlign = 'center';
     kidName.textContent = kid.name;
-
     KidDiv.appendChild(image);
     KidDiv.appendChild(kidName);
     KidsList.appendChild(KidDiv);
   });
 }
-  
   </script>
 </body>
 
