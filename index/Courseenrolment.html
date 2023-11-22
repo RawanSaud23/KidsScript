@@ -37,20 +37,14 @@ rel="stylesheet">
   <main>
 <h1>Course enrolment</h1>
 
+<form>
 <div class="enrolment">
 
   <div class="row1">
 <div class="item1">
   <h2>Choose your kid:*</h2>
-  <select name="Choosing the kid name">
-      <option>Emma Johnson</option>
-      <option>Liam Johnson</option>
-      <option>Olivia Johnson</option>
-      <option>Noah Martinez</option>
-      <option>Ava Wilson</option>
-      <option>Ethan Davis</option>
-      <option>Mia Patel</option>
-      <option>Sophia Rodriguez</option>
+  <select id="nkids" name="Choosing the kid name">
+      
      </select>
  
     </div>
@@ -61,23 +55,11 @@ rel="stylesheet">
   <p>(Note that you can check more than one.)</p>
   <h3><br>Filter:</h3>
   <select id="Prerequisites" name="Prerequisites">
-      <option>Filter by Prerequisites</option>
-      <option>Styling with CSS</option>
-      <option>HTML Basics</option>
-      <option>None</option>
+      
      </select>
      
      <select id="Tutor" name="Tutor">
-      <option>Filter by Tutor</option>
-      <option>Lane Clark</option>
-      <option>Rachel Adam</option>
-      <option>Kevin Lee</option>
-      <option>Michael Turner</option>
-      <option>Joe Adams</option>
-      <option>Daniel loe</option>
-      <option>Emily Anderson</option>
-      <option>John Foster</option>
-      <option>Lara Kevin</option>
+      
   </select>
 
 <div class="list1">
@@ -101,6 +83,7 @@ rel="stylesheet">
     <button type="submit">Enrol</button>
 </div>
 </div>
+</form>
 </main>
 
 <footer>
@@ -183,5 +166,142 @@ rel="stylesheet">
     </p>
   </section>
 </footer>
+<script>
+//1
+function populateKidsDropdown() {
+  var kidsDropdown = document.getElementById("nkids");
+  var kids = JSON.parse(localStorage.getItem("kidsname"));
+
+  kids.forEach(function (kid) {
+    var option = document.createElement("option");
+    option.value = kid.name;
+    option.textContent = kid.name;
+    kidsDropdown.appendChild(option);
+  });
+
+}
+populateKidsDropdown();
+  
+var courses = [
+  { cname: "Introduction To Robotics", tname: "T.Joe Adams" },
+  { cname: "Introduction To Java", tname: "T.Rachel Adam", pre: "Introduction To HTML" },
+  { cname: "Introduction To Scratch", tname: "T.Daniel loe" },
+  { cname: "Introduction To Python", tname: "T.Kevin Lee" },
+  { cname: "Introduction To JavaScript", tname: "T. Emily Anderson", pre: "Introduction To CSS" },
+  { cname: "Introduction To CSS", tname: "T. Michael Turner", pre: "Introduction To HTML" },
+  { cname: "Introduction To Swift", tname: "T.Lara Kevin", pre: "Introduction To Scratch" },
+  { cname: "Introduction To SQL", tname: "T.John Foster", pre: "Introduction To Java" },
+  { cname: "Introduction To HTML", tname: "T. Lane Clark", pre: "Introduction To Scratch" }
+];
+
+filterOptions("nkids", getKidsNames());
+filterOptions("Prerequisites", getPrerequisites(courses));
+filterOptions("Tutor", getTutors(courses));
+
+document.getElementById("Tutor").addEventListener("change", filterCourses);
+document.getElementById("Prerequisites").addEventListener("change", filterCourses);
+document.querySelector("form").addEventListener("submit", handleFormSubmit);
+
+filterCourses(); // Initial course filtering based on selected tutor or prerequisite
+
+function filterOptions(selectId, options) {
+  var select = document.getElementById(selectId);
+  select.innerHTML = ""; // Clear existing options
+
+  options.forEach(function (option) {
+    var optionElement = document.createElement("option");
+    optionElement.value = option;
+    optionElement.textContent = option;
+    select.appendChild(optionElement);
+  });
+}
+
+function getKidsNames() {
+  var kids = JSON.parse(localStorage.getItem("kidsname"));
+  return kids.map(kid => kid.name);
+}
+
+function getPrerequisites(courses) {
+  var prerequisites = courses.map(course => course.pre);
+  return Array.from(new Set(prerequisites.filter(Boolean)));
+}
+
+function getTutors(courses) {
+  var tutors = courses.map(course => course.tname);
+  return Array.from(new Set(tutors));
+}
+
+function filterCourses() {
+  var selectedTutor = document.getElementById("Tutor").value;
+  var selectedPrerequisite = document.getElementById("Prerequisites").value;
+
+  var filteredCourses = courses.filter(function (course) {
+    return (selectedTutor === "" || course.tname === selectedTutor) &&
+      (selectedPrerequisite === "" || course.pre === selectedPrerequisite);
+  });
+
+  updateCourseCheckboxes(filteredCourses);
+}
+
+function updateCourseCheckboxes(filteredCourses) {
+  var checkboxes = document.querySelectorAll(".list1");
+  checkboxes.forEach(function (checkbox) {
+    var courseName = checkbox.getAttribute("data-course");
+    var isVisible = filteredCourses.some(course => course.cname === courseName);
+    checkbox.style.display = isVisible ? "list-item" : "none";
+  });
+}
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+
+  var selectedChild = document.getElementById("nkids").value;
+  if (!selectedChild) {
+    alert("Please select a child.");
+    return;
+  }
+
+  var selectedCourses = Array.from(document.querySelectorAll(".list1 input:checked")).map(function (checkbox) {
+    return checkbox.getAttribute("data-course");
+  });
+
+  if (selectedCourses.length === 0) {
+    alert("Please select at least one course.");
+    return;
+  }
+
+  var infoContainer = document.createElement("div");
+  infoContainer.className = "enrollment";
+  infoContainer.innerHTML = "<h1>Course enrollment</h1>" +
+    "<h2>Choose your kid:* " + selectedChild + "</h2>" +
+    "<h2>Choose the course:*</h2> <ul>" + selectedCourses.map(course => "<li>" + course + "</li>").join("") + "</ul>";
+
+  var previousInfo = document.querySelector(".enrollment");
+  if (previousInfo) {
+    previousInfo.remove();
+  }
+
+  document.querySelector("main").appendChild(infoContainer);
+
+  document.querySelector("form").reset();
+}
+
+
+
+  //4
+
+
+  //5
+
+  //6
+
+  //7
+
+
+
+
+
+
+</script>
 </body>
 </html>

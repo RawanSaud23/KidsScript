@@ -26,13 +26,7 @@ rel="stylesheet">
         </nav>
         
       </header>
-      <!--End of navigation bar -->
   
-      <div class="pageLink">
-        <nav>
-          <!--I don't think we need one since we already in the same page-->
-        </nav>
-      </div>
       <div class='breadcrumb'>
         <a href="index.html">Home</a>
         <span> / </span>
@@ -50,16 +44,17 @@ rel="stylesheet">
 <div class="item1">
     <h2>Choose the course:*</h2>
    
-    <select id="sel">
-      <option>Introduction To Robotics</option>
-      <option>Introduction To Java</option>
-      <option>Introduction To Scratch</option>
-      <option>Introduction To Python</option>
-      <option>Introduction To JavaScript</option>
-      <option>Styling with CSS</option>
-      <option>Introduction To Swift</option>
-      <option>SQL Basics</option>
-      <option>HTML Basics</option>
+    <select id="sel" required>
+      <option value="" disabled selected> Select a course</option>
+      <option value="Introduction To Robotics">Introduction To Robotics</option>
+      <option value="Introduction To Java">Introduction To Java</option>
+      <option value="Introduction To Scratch">Introduction To Scratch</option>
+      <option value="Introduction To Python">Introduction To Python</option>
+      <option value="Introduction To JavaScript">Introduction To JavaScript</option>
+      <option value="Introduction To CSS">Introduction To CSS</option>
+      <option value="ntroduction To Swift">Introduction To Swift</option>
+      <option value="Introduction To SQL">Introduction To SQL</option>
+      <option value="Introduction To HTML">Introduction To HTML</option>
       </select>
  
     </div>
@@ -87,11 +82,27 @@ rel="stylesheet">
 </div>
 </div>
 <script>
+  function validation(){
+  var selectedCourse = document.getElementById("sel").value;
+  var rating =document.querySelectorAll(".fa-star.checked").length>0 ; 
+
+  if(selectedCourse ==""){
+    alert("Please select a course")
+    return false; 
+  }
+  if(!rating){
+    alert("Please provide a rating")
+    return false ; 
+  }
+  return true;
+  }
   function EvaluateCourse(){
+    if(validation()){
     var COURSE_NAME=document.getElementById("sel").value;
     var USER_RATING= document.querySelectorAll(".fa-star.checked").length;
 
     alert("Thank you for your feedback! \n your rating for course "+COURSE_NAME +" is :"+USER_RATING);
+    }
   }
 </script>
 </form>
