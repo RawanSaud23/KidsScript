@@ -177,8 +177,23 @@ document.addEventListener('DOMContentLoaded', function(){
   var storekidsData = JSON.parse(localStorage.getItem('kidsname'));
   displayKids(storekidsData);
 });
+/*
+<section id="myKids">
+  
+  <div class="kidsPart">
+  <div class="kidblock">
+
+  </div>
+  
+  </div>
+  </section>
+*/
 function displayKids(kidsData) {
   var KidsList = document.querySelector('.kidsPart');
+
+  // Clear the existing children divs
+  KidsList.innerHTML = '';
+
   kidsData.forEach(function(kid) {
     var KidDiv = document.createElement('div');
     KidDiv.classList.add('kidblock');
@@ -188,6 +203,7 @@ function displayKids(kidsData) {
     var kidName = document.createElement('h2');
     kidName.style.textAlign = 'center';
     kidName.textContent = kid.name;
+
     KidDiv.appendChild(image);
     KidDiv.appendChild(kidName);
     KidsList.appendChild(KidDiv);
