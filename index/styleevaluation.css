@@ -62,10 +62,7 @@ body {
   background-color: #abacc9ad ;
 }
 
-.checked {
-  color: #9187e3;
-}
 
 .item2 .fa-star.active{
-  color: #fbff0b;
+  color:  #9187e3;
 }
