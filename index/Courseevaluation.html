@@ -88,26 +88,40 @@ rel="stylesheet">
 </div>
 </div>
 <script>
-  function validation(){
-  var selectedCourse = document.getElementById("sel").value;
-  var rating =document.querySelectorAll(".fa-star.checked").length>0 ; 
 
-  if(selectedCourse ==""){
-    alert("Please select a course")
-    return false; 
-  }
-  if(!rating){
-    alert("Please provide a rating")
-    return false ; 
-  }
-  return true;
-  }
-  function EvaluateCourse(){
-    if(validation()){
-    var COURSE_NAME=document.getElementById("sel").value;
-    var USER_RATING= document.querySelectorAll(".fa-star.checked").length;
 
-    alert("Thank you for your feedback! \n your rating for course "+COURSE_NAME +" is :"+USER_RATING);
+  var item2 = document.querySelectorAll('span')
+
+  item2.forEach((item, index1) => {
+    item.addEventListener('click', () => {
+      item2.forEach((star, index2) => {
+        index1 >= index2 ? star.classList.add('active') : star.classList.remove('active')
+      })
+    })
+  })
+
+
+  function validation() {
+    var selectedCourse = document.getElementById("sel").value;
+    var rating = document.querySelectorAll(".fa-star.active").length > 0;
+
+
+    if (selectedCourse == "") {
+      alert("Please select a course")
+      return false;
+    }
+    if (!rating) {
+      alert("Please provide a rating")
+      return false;
+    }
+    return true;
+  }
+  function EvaluateCourse() {
+    if (validation()) {
+      var COURSE_NAME = document.getElementById("sel").value;
+      var USER_RATING = document.querySelectorAll(".fa-star.active").length;
+
+      alert("Thank you for your feedback! \n Your rating for course " + COURSE_NAME + " is :" + USER_RATING);
     }
   }
 </script>
