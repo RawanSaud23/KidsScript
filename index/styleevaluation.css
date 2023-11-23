@@ -65,3 +65,7 @@ body {
 .checked {
   color: #9187e3;
 }
+
+.item2 .fa-star.active{
+  color: #fbff0b;
+}
