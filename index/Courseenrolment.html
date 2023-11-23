@@ -230,7 +230,7 @@
 
     function getKidsNames() {
       var kids = JSON.parse(localStorage.getItem('kidsname'));
-      return kids.map((kid) => kid.name);
+      return kids((kid) => kid.name);
     }
 
     function getPrerequisites(courses) {
