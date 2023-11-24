@@ -2,20 +2,20 @@
 <html lang="el">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" >
   <title>Course enrolment</title>
-  <link rel="stylesheet" href="styleenrolment.css" />
-  <link rel="stylesheet" href="kidsScript.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styleenrolment.css">
+  <link rel="stylesheet" href="kidsScript.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet" >
 </head>
 
 <body>
   <header>
-    <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" />
+    <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" >
     <nav>
       <ul class="nav_links">
         <li><a href="index.html" accesskey="h">Home</a></li>
@@ -25,6 +25,7 @@
         <li><a href="Courses.html" accesskey="c">Courses</a></li>
       </ul>
     </nav>
+    <img id="moon" src="images/moon.png" alt="moon for dark mood">
   </header>
   <!--End of navigation bar -->
 
@@ -276,6 +277,11 @@
       document.querySelector('form').reset();
     }
 
+//changing color
+    var moon = document.getElementById("moon");
+    moon.onclick=function(){
+      document.body.classList.toggle("dark");
+    }
   </script>
 </body>
 
