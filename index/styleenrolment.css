@@ -1,6 +1,6 @@
 
  div.enrolment {
- background-color: #9597c7ad;
+ background-color: var(--secondary-color);
   margin: auto;
   margin-bottom: 3em;
   padding: 20px;
@@ -37,7 +37,7 @@ p.item2{
 }
 
 body {
-  background-color: #abacc9ad ;
+  background-color: var(--primary-color) ;
 }
 
 #list{
@@ -61,5 +61,8 @@ body {
 .enrolment div select{
   width:200px;
   font-size: large;
-  background-color: #9287e385;
-  }
+  background-color: var(--primary-color);
+}
+
+
+
