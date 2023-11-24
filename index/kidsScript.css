@@ -37,6 +37,27 @@ li a {
   padding: 0px 20px;
 }
 
+/*chnging color*/
+
+:root{
+  --primary-color: #abacc9ad;
+  --secondary-color: #9287e385;
+}
+
+.dark{
+  --primary-color: rgba(25, 32, 240, 0.678);
+  --secondary-color: #07060e85;
+}
+
+#moon {
+  width: 30px;
+  cursor: pointer;
+}
+
+/**/
+
+
+
 .nav_links li a {
   transition: all 0.3s ease 0s;
 }
