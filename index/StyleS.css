@@ -21,6 +21,7 @@ body {
 }
 .Titles {
   font-family: Inter;
+
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 300;
@@ -43,8 +44,6 @@ body {
   line-height: normal;
   margin-left: 70px;
 }
-
-/*-------The reviews section ----------*/
 
 .Vision-title {
   margin-left: 30px;
@@ -104,7 +103,7 @@ body {
 }
 
 .Container {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-right: 5rem;
   padding: 1rem 2rem;
   justify-content: space-between;
@@ -474,4 +473,68 @@ body {
 /*----*/
 .checked {
   color: orange;
+}
+/*---------------*/
+@media only screen and (max-width: 700px) {
+  .Titles {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+  }
+
+  .Vision-text {
+    margin-left: 4px;
+    margin-top: 4px;
+    font-size: 0.8rem;
+  }
+  .Vision-title {
+    font-size: 1.5rem;
+  }
+
+  .vision-image {
+    margin-top: 70px;
+    flex: 1;
+  }
+  .vision-image img {
+    height: 350px;
+    margin-left: 0px;
+  }
+  .coursesRow1,
+  .coursesRow2 {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .CourseContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .coursePic img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .TutorInfo-course img {
+    margin-left: 0;
+  }
+  /*The reviews section*/
+  .allTheReviews {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0;
+    filter: none;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .Container {
+    width: 320px;
+    margin-bottom: 1.5rem;
+    margin-right: 1px;
+  }
+
+  .allTheReviews::before {
+    display: none;
+  }
 }

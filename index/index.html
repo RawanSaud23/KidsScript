@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="StyleS.css" />
+    
+    <link rel="stylesheet" href="Menustyles.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="StyleS.css" >
-    <link rel="stylesheet" href="kidsScript.css" >
- 
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    >
-    <!--for rating-->
-    <title>Home</title>
+    />
   </head>
   <body>
-    <!--Header and Navigation-->
-
-    <!--top bar of the page-->
+    <section class="Header"> 
     <header>
-      <img src="images/kidsScriptLOGO.png" alt="kidsScriptLOGO" >
+      
       <nav>
-        <ul class="nav_links">
-          <li><a href="index.html" accesskey="h">Home</a></li>
-          <li><a href="Parentdashboard.html" accesskey="p">Parent</a></li>
-          <li><a href="Tutor.html" accesskey="t">Tutor</a></li>
-          <li>
-            <a href="Administratordashboard.html" accesskey="a">Adminstrator</a>
-          </li>
-          <li><a href="Courses.html" accesskey="c">Courses</a></li>
-        </ul>
+        <a href="index.html"
+          ><img src="images/kidsScriptLOGO.png" alt="Logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html" accesskey="h">Home</a></li>
+            <li><a href="Parentdashboard.html" accesskey="p">Parent</a></li>
+            <li><a href="Tutor.html" accesskey="t">Tutor</a></li>           
+            <li> 
+              <a href="Administratordashboard.html" accesskey="a">Adminstrator</a>
+            </li>
+            <li><a href="Courses.html" accesskey="c">Courses</a></li>
+ 
+         
+            
+         </ul>
+           
+        
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
-    </header>
-    <!--End of navigation bar -->
-
-    <!--End-header-->
-    <main>
-      <!--Vision-->
-      <div class="vision-container">
-        <div class="vision-content">
-          <div class="Vision-title">
-            <h2>Vision</h2>
-          </div>
-          <div class="Vision-text">
-            <p>
-              The Kids Script initiative aims to nurture the creativity <br>
-              and innovation of young minds by providing captivating programs
-              <br >
-              that encourage coding skills. By empowering children with the
-              <br >
-              necessary tools, Kids Script prepares them to shape an unlimited
-              <br >
-
-              future in the era of digital technology.
-            </p>
-          </div>
-        </div>
-        <div class="vision-image">
-          <img src="images/Vision_img.png" alt="Vision Image" class="vision" >
-        </div>
+    </section>
+      <div class="text-box">
+        <h1>Kids Script Vision</h1>
+  
+         
+        <p>
+          The Kids Script initiative aims to nurture the creativity and
+          innovation of young minds by providing captivating programs that
+          encourage coding skills. By empowering children with the necessary
+          tools, Kids Script prepares them to shape an unlimited future in the
+          era of digital technology.
+        </p>
+        <a href="RegisteraNewChild.html" class="hero-btn"
+          >Register In A Course</a
+        >
       </div>
+    </header>
 
-      <!--End-Vision-->
-
+    <!-----Java script for toggle menu----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  
       <!--Common courses section-->
       <div class="TitlesContainer">
         <div class="Titles">
@@ -81,7 +87,7 @@
           <!--Course1-->
           <div class="CourseContainer">
             <div class="coursePic">
-              <img src="images/robotics.png" alt="Robotics course" >
+              <img src="images/robotics.png" alt="Robotics course" />
             </div>
             <div class="courseDetails">
               <h4>Introduction to robotics</h4>
@@ -98,7 +104,7 @@
               </div>
             </div>
             <div class="TutorInfo-course">
-              <img src="images/JoeAdams.png" alt="tutor photo" >
+              <img src="images/JoeAdams.png" alt="tutor photo" />
               <p>T Joe Adams</p>
             </div>
             <div class="rate-course">
@@ -116,7 +122,7 @@
           <!--Course2-->
           <div class="CourseContainer">
             <div class="coursePic">
-              <img src="images/Java.png" alt="Robotics course" >
+              <img src="images/Java.png" alt="Robotics course" />
             </div>
             <div class="courseDetails">
               <h4>Introduction to Java</h4>
@@ -133,7 +139,7 @@
               </div>
             </div>
             <div class="TutorInfo-course">
-              <img src="images/RachelAdams.png" alt="T. Rachel Adam" >
+              <img src="images/RachelAdams.png" alt="T. Rachel Adam" />
               <p>T. Rachel Adam</p>
             </div>
             <div class="rate-course">
@@ -151,7 +157,7 @@
           <!--Course3-->
           <div class="CourseContainer">
             <div class="coursePic">
-              <img src="images/scratch.png" alt="Scratch course" >
+              <img src="images/scratch.png" alt="Scratch course" />
             </div>
             <div class="courseDetails">
               <h4>Programming with Scratch</h4>
@@ -167,7 +173,7 @@
               </div>
             </div>
             <div class="TutorInfo-course">
-              <img src="images/DanielLoe.png " alt="T. Daniel loe" >
+              <img src="images/DanielLoe.png " alt="T. Daniel loe" />
               <p>T. Daniel loe</p>
             </div>
             <div class="rate-course">
@@ -180,18 +186,17 @@
                 <span class="fa fa-star"></span>
               </p>
             </div>
-        <!--END of course3-->
-
+            <!--END of course3-->
           </div>
         </div>
         <!--End of the first row of the common  courses section-->
 
         <!--Start of the second row of the most common courses sectin-->
-          <!--Course4-->
-          <div class="coursesRow2">
+        <!--Course4-->
+        <div class="coursesRow2">
           <div class="CourseContainer">
             <div class="coursePic">
-              <img src="images/html.png" alt="html course" >
+              <img src="images/html.png" alt="html course" />
             </div>
             <div class="courseDetails">
               <h4>HTML Basics</h4>
@@ -207,7 +212,7 @@
               </div>
             </div>
             <div class="TutorInfo-course">
-              <img src="images/LaneClark.png" alt=" T. Lane Clark" >
+              <img src="images/LaneClark.png" alt=" T. Lane Clark" />
               <p>T. Lane Clark</p>
             </div>
             <div class="rate-course">
@@ -225,7 +230,7 @@
           <!--Course5-->
           <div class="CourseContainer">
             <div class="coursePic">
-              <img src="images/css.png" alt="CSS course" >
+              <img src="images/css.png" alt="CSS course" />
             </div>
             <div class="courseDetails">
               <h4>Styling with CSS</h4>
@@ -240,7 +245,7 @@
               </div>
             </div>
             <div class="TutorInfo-course">
-              <img src="images/MichealTurner.png" alt="T. Michael Turner" >
+              <img src="images/MichealTurner.png" alt="T. Michael Turner" />
               <p>T. Michael Turner</p>
             </div>
             <div class="rate-course">
@@ -258,7 +263,7 @@
           <!--Course6-->
           <div class="CourseContainer">
             <div class="coursePic">
-              <img src="images/javascript.png" alt="JavaScript course" >
+              <img src="images/javascript.png" alt="JavaScript course" />
             </div>
             <div class="courseDetails">
               <h4>Introduction to javascript</h4>
@@ -274,7 +279,7 @@
               </div>
             </div>
             <div class="TutorInfo-course">
-              <img src="images/EmilyAnderson.png" alt="T. Emily Anderson" >
+              <img src="images/EmilyAnderson.png" alt="T. Emily Anderson" />
               <p>T. Emily Anderson</p>
             </div>
             <div class="rate-course">
@@ -304,7 +309,7 @@
         <!--Review 1-->
         <div class="Container">
           <div class="title">
-            <img src="images/ProfilePic.png.webp" alt="Martin Turner" >
+            <img src="images/ProfilePic.png.webp" alt="Martin Turner" />
             <div class="info">
               <h4 class="name">Martin</h4>
               <p class="userName">@MartinTurner</p>
@@ -336,7 +341,7 @@
         <!--Review 2-->
         <div class="Container">
           <div class="title">
-            <img src="images/ProfilePic.png.webp" alt="Emma" >
+            <img src="images/ProfilePic.png.webp" alt="Emma" />
             <div class="info">
               <h4 class="name">Emma</h4>
               <p class="userName">@Emma_92</p>
@@ -369,7 +374,7 @@
         <!--Review 3-->
         <div class="Container">
           <div class="title">
-            <img src="images/ProfilePic.png.webp" alt="profile picture" >
+            <img src="images/ProfilePic.png.webp" alt="profile picture" />
             <div class="info">
               <h4 class="name">Jane</h4>
               <p class="userName">@JaneSmith</p>
@@ -424,7 +429,7 @@
                     alt="instgram icon"
                     width="20"
                     height="20"
-                  >KidsScript@gmail.com</a
+                  />KidsScript@gmail.com</a
                 >
               </li>
               <li>
@@ -433,7 +438,7 @@
                   alt="instgram icon"
                   width="20"
                   height="20"
-                >+966555518694
+                />+966555518694
               </li>
             </ul>
           </div>
@@ -447,7 +452,7 @@
                     alt="instgram icon"
                     width="20"
                     height="20"
-                  >
+                  />
                   KidsScript
                 </a>
               </li>
@@ -458,7 +463,7 @@
                     alt="X icon"
                     width="20"
                     height="20"
-                  >
+                  />
                   KidsScript
                 </a>
               </li>
@@ -469,7 +474,7 @@
                     alt="instgram icon"
                     width="20"
                     height="20"
-                  >
+                  />
                   KidsScript
                 </a>
               </li>
@@ -478,7 +483,7 @@
         </div>
         <p>
           Copy right ©2023 made with
-          <img src="images/heart.png" alt="love" width="15" height="15" > in
+          <img src="images/heart.png" alt="love" width="15" height="15" /> in
           KSU
         </p>
       </section>
