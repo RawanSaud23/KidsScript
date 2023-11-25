@@ -1,69 +1,68 @@
 
- div.enrolment {
- background-color: #abacc9ad;
-  margin: auto;
-  margin-bottom: 3em;
-  padding: 20px;
-  text-align:center;
-  font-size: 30px;
-  border-radius: 20px;
-  width: 90%;
-}
-
-div {
-  justify-content:center;
-  text-align: center;
-  align-items: center;
-}
-
-h1{
-  text-align: center; 
-  font-size: xx-large;
-}
-
-h2{
-  text-align: center; 
-  font-size: x-large;
-}
-
-h3{
-  text-align: center; 
-  font-size: small;
-}
-
-p.item2{
-  font-size: x-small; 
-  line-height: 0%;
-}
-
-body {
-  background-color: #abacc9ad;
-  ;
-}
-
-#list{
-  text-align: left;
-  list-style-type: none;
-  align-items: center;
-}
-
-#list input{
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
-}
-
-.list1{  
-  justify-content: center;  
-  margin-left: 28%;
-  margin-right: 28%;
-}
-
-.enrolment div select{
-  width:200px;
-  font-size: large;
-  background-color: #abacc9ad;
-}
+div.enrolment {
+  background-color: #9597c7ad;
+   margin: auto;
+   margin-bottom: 3em;
+   padding: 20px;
+   text-align:center;
+   font-size: 30px;
+   border-radius: 20px;
+   width: 90%;
+ }
+ 
+ div {
+   justify-content:center;
+   text-align: center;
+   align-items: center;
+ }
+ 
+ h1{
+   text-align: center; 
+   font-size: xx-large;
+ }
+ 
+ h2{
+   text-align: center; 
+   font-size: x-large;
+ }
+ 
+ h3{
+   text-align: center; 
+   font-size: small;
+ }
+ 
+ p.item2{
+   font-size: x-small; 
+   line-height: 0%;
+ }
+ 
+ body {
+   background-color: #abacc9ad ;
+ }
+ 
+ #list{
+   text-align: left;
+   list-style-type: none;
+   align-items: center;
+ }
+ 
+ #list input{
+   height: 30px;
+   width: 30px;
+   margin-right: 10px;
+ }
+ 
+ .list1{  
+   justify-content: center;  
+   margin-left: 28%;
+   margin-right: 28%;
+ }
+ 
+ .enrolment div select{
+   width:200px;
+   font-size: large;
+   background-color: #9287e385;
+   }
 
 
 
