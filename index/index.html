@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+     
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     
     <link rel="stylesheet" href="StyleS.css" />
-    
+
     <link rel="stylesheet" href="Menustyles.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,12 +21,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    
+   
   </head>
+  
   <body>
     <section class="Header"> 
     <header>
       
       <nav>
+       
         <a href="index.html"
           ><img src="images/kidsScriptLOGO.png" alt="Logo"
         /></a>
@@ -38,15 +44,20 @@
               <a href="Administratordashboard.html" accesskey="a">Adminstrator</a>
             </li>
             <li><a href="Courses.html" accesskey="c">Courses</a></li>
- 
-         
-            
-         </ul>
-           
-        
+       
+          </ul>
         </div>
+        <img src="images/moon.png" id="icon" alt="trigger">
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
+ <!--JavaScript for dark mode-->
+
+ <script>
+  var icon = document. getElementById ("icon");
+  icon.onclick = function () {
+  document. body.classList. toggle ("dark-theme");
+  }
+ </script>
     </section>
       <div class="text-box">
         <h1>Kids Script Vision</h1>

@@ -6,9 +6,6 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-body {
-  background-color: #abacc9ad;
-}
 
 /*---Titles size and style -----*/
 
@@ -475,7 +472,7 @@ body {
   color: orange;
 }
 /*---------------*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .Titles {
     font-size: 1rem;
     color: rgb(0, 0, 0);
@@ -519,6 +516,7 @@ body {
   }
   /*The reviews section*/
   .allTheReviews {
+    display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
