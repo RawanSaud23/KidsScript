@@ -183,6 +183,9 @@ h1 {
 }
 
 /* Tutor card */
+.custom-text-color {
+  color: var(--Third-color);
+}
 
 .Tutor-card {
   display: flex;

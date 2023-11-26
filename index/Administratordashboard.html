@@ -22,20 +22,21 @@
         const startOfWeek = new Date();
         startOfWeek.setDate(startOfWeek.getDate() - startOfWeek.getDay());
         const formattedDate = startOfWeek.toLocaleDateString("en-US", {
-          weekday:"long",
+          weekday: "long",
           day: "numeric",
           month: "long"
-          
         });
-      
+    
         const weekStartDateElement = document.createElement("div");
         weekStartDateElement.textContent = `week starting on ${formattedDate}`;
+        weekStartDateElement.classList.add("custom-text-color"); // Add the class
         weekStartDateElement.style.textAlign = "center";
         weekStartDateElement.style.marginBottom = "20px";
-      
+    
         document.querySelector("main").prepend(weekStartDateElement);
       });
-      </script>
+    </script>
+    
      <section class="Header"> 
       <header>
         
