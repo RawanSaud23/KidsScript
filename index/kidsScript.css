@@ -29,9 +29,7 @@ body span {
   color: var(--blackToWhite);
   font-size: 1rem;
 }
-.breadcrumb a:hover {
-  color: #0008;
-}
+
 /*
 li a {
   color: #000000;
