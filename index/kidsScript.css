@@ -5,15 +5,28 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --blackToWhite: rgb(0, 0, 0);
+  --bb: rgb(0, 0, 0);
+}
+
+.dark-theme {
+  --blackToWhite: white;
+  --bb: rgb(57, 57, 57);
+}
 body {
   background-color: var(--primary-color);
 }
+body span {
+  color: var(--blackToWhite);
+}
+
 .breadcrumb {
   margin: 20px 0;
   text-align: left;
 }
 .breadcrumb a {
-  color: #000;
+  color: var(--blackToWhite);
   font-size: 1rem;
 }
 .breadcrumb a:hover {
@@ -74,6 +87,11 @@ nav img {
   font-size: 13px;
 }
 
+.nav-links ul li a {
+  color: var(--headerNav);
+  text-decoration: none;
+  font-size: 13px;
+}
 .nav-links ul li ::after {
   content: "";
   width: 0%;
