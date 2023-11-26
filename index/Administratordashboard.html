@@ -21,8 +21,10 @@
         const startOfWeek = new Date();
         startOfWeek.setDate(startOfWeek.getDate() - startOfWeek.getDay());
         const formattedDate = startOfWeek.toLocaleDateString("en-US", {
+          weekday:"long",
           day: "numeric",
           month: "long"
+          
         });
       
         const weekStartDateElement = document.createElement("div");
