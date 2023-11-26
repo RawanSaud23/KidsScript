@@ -81,5 +81,5 @@ body {
 }
 
 .item2 .fa-star.active {
-  color: var(--stars);
+  color: var(--backG2);
 }
