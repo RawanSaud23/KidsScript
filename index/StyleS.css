@@ -18,7 +18,7 @@
 }
 .Titles {
   font-family: Inter;
-
+  color: var(--blactToWhite);
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 300;
@@ -27,7 +27,7 @@
   margin-left: 3rem;
 }
 
-/*----------Vision Sectio----------*/
+/*----------Vision Sectio---------- 
 .visionContainer {
   display: flex;
   align-items: center;
@@ -70,7 +70,7 @@
 
 .Vision-title {
   margin-bottom: 10px;
-}
+}*/
 
 /*-------The reviews section ----------*/
 
@@ -122,6 +122,7 @@
 }
 
 .title {
+  color: var(--secondary-color);
   display: flex;
   align-items: center;
 }
@@ -450,6 +451,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 .TutorName {
   font-size: 1.5rem;
   line-height: 50px;
@@ -472,6 +474,7 @@
   color: orange;
 }
 /*---------------*/
+
 @media only screen and (max-width: 600px) {
   .Titles {
     font-size: 1rem;
@@ -535,4 +538,67 @@
   .allTheReviews::before {
     display: none;
   }
+}
+
+@media only screen and (max-width: 1024px) {
+  .coursesRow1,
+  .coursesRow2 {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .CourseContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .TutorInfo-course img {
+    margin-left: 0;
+  }
+
+  .Container {
+    width: 310px;
+    height: 400px;
+    margin-bottom: 1.5rem;
+    margin-right: 1px;
+    gap: 11px;
+  }
+
+  .allTheReviews::before {
+    display: none;
+  }
+  .courseInfo {
+    margin-top: 25px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.625rem;
+    height: 2rem;
+    border-radius: 20px;
+    background: #efeefb;
+  }
+}
+/*Dark mode */
+
+:root {
+  --primary-color: #abacc9ad; /*Background*/
+  --secondary-color: #000000;
+  --blactToWhite: black;
+  --secondary3-color: white;
+  --headerNav: rgb(0, 0, 0);
+  --backGimage: linear-gradient(rgba(4, 9, 30, 0), rgba(4, 9, 30)),
+    url(images/background.jpeg);
+  --footer: #2f2b53;
+}
+
+.dark-theme {
+  --blactToWhite: white;
+  --primary-color: #050a1f; /*Background*/
+  --secondary-color: rgb(0, 0, 0);
+  --headerNav: rgb(255, 255, 255);
+  --secondary3-color: #c0b7de;
+  --backGimage: linear-gradient(rgba(4, 9, 30, 0.568), rgba(4, 9, 30)),
+    url(images/background.jpeg);
+  --footer: #2f2b53;
 }

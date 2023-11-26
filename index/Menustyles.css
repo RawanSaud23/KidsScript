@@ -242,15 +242,7 @@ footer a {
   }
 }*/
 
-@media only screen and (max-height: 700) and (orientation: landscape) {
-  .Header {
-    background-image: linear-gradient(rgba(4, 9, 30, 0), rgba(4, 9, 30)),
-      url(images/background.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
+ 
 
 #icon {
   background-image: var(--background-image);

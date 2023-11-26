@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      function sortTutors() {
+        var tutorsContainer = document.querySelector('.AllTheTutors');
+        var tutors = Array.from(document.querySelectorAll('.card'));
+
+        var sortOrder = document.getElementById('sortOrder').value;
+
+        tutors.sort(function(a, b) {
+          var nameA = a.querySelector('.TutorName').textContent.toUpperCase();
+          var nameB = b.querySelector('.TutorName').textContent.toUpperCase();
+
+          if (sortOrder === 'asc') {
+            return nameA.localeCompare(nameB);
+          } else {
+            return nameB.localeCompare(nameA);
+          }
+        });
+
+        tutors.forEach(function(tutor) {
+          tutorsContainer.appendChild(tutor);
+        });
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,8 +39,10 @@
     />
     <link rel="stylesheet" href="StyleS.css" />
     <link rel="stylesheet" href="kidsScript.css" />
+    <script src="darkMode.js" defer></script>
     <title>Tutor</title>
   </head>
+  
   <body>
     <section class="Header"> 
       <header>
@@ -57,7 +82,12 @@
     <!--End-header-->
     <main>
       <div class="Titles">
-        <h2>Tutors</h2>
+        <h2 class="Tut">Tutors</h2>
+        <label for="sortOrder">Sort by:</label>
+<select id="sortOrder" onchange="sortTutors()">
+  <option value="asc">A-Z</option>
+  <option value="desc">Z-A</option>
+</select>
       </div>
       <div class="AllTheTutors">
         <!--Tutor card 1-->
