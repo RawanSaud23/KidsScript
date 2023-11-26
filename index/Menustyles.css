@@ -251,6 +251,11 @@ footer a {
   cursor: pointer;
   z-index: 999;
 }
+@media only screen and (max-width: 600px) {
+  #icon {
+    right: 20px;
+  }
+}
 
 :root {
   --background-image: url(images/moon.png);
