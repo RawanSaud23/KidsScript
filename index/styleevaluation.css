@@ -14,6 +14,11 @@
   --blackToWhite: white;
   --stars: #ffffff;
 }
+
+#sel{
+  color: var(--blackToWhite);
+}
+
 div.evaluation {
   background-color: var(--backG2);
   margin: auto;
